@@ -1,0 +1,2 @@
+verify: release/source.zip: 669 entries, sha256=09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04
+verify: PASS — deterministic contract holds (sorted, fixed 1980-01-01 timestamps, relative paths only)

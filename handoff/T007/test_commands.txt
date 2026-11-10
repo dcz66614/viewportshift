@@ -1,0 +1,13 @@
+npm run test:geometry
+npm run oracle:diff:geometry
+npm run typecheck
+npm run test:schema
+npm run test:validation
+npm run test:modes
+npm run oracle:diff:modes
+npm run test:events
+npm run test:event-order
+npm run oracle:diff:events
+npm run s0:geometry
+npm run s0:gate
+python3 oracle/python/geometry_full_oracle.py --files tests/fixtures/geometry/*.json --out /tmp/t007-py-repeat.json --repeat 5

@@ -1,0 +1,7 @@
+
+> viewportshift@0.1.0 release:verify
+> node scripts/release-verify.mjs
+
+FAIL: release/ is NOT created by this rehearsal (T014 owns the formal freeze)
+release:verify: dist manifest (4 files): assets/index-Ck8UGF3U.js, assets/index-Zih-ycei.css, index.html, viewportshift.mjs
+release:verify: 14 passed, 1 failed

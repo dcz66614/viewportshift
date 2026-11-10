@@ -1,0 +1,6 @@
+=== CMD: node .tmp-immutability-check.mjs ===
+status=OK
+initial-after-replay={"layoutWidth":390000,"layoutHeight":844000,"visualOffsetLeft":0,"visualOffsetTop":0,"visualWidth":390000,"visualHeight":844000,"keyboardRect":{"x":0,"y":844000,"width":390000,"height":0},"keyboardVisible":false,"scrollX":0,"scrollY":0,"mode":"resizes-visual","pendingPan":{"dx":0,"dy":0},"eventClock":0}
+final={"layoutWidth":390000,"layoutHeight":844000,"visualOffsetLeft":0,"visualOffsetTop":300000,"visualWidth":390000,"visualHeight":544000,"keyboardRect":{"x":0,"y":544000,"width":390000,"height":300000},"keyboardVisible":true,"scrollX":0,"scrollY":0,"mode":"resizes-visual","pendingPan":{"dx":0,"dy":0},"eventClock":300}
+initial-unchanged=true
+EXIT_CODE=0

@@ -1,0 +1,22 @@
+
+> viewportshift@0.1.0 test:perf
+> node scripts/test-perf.mjs
+
+test:performance: build took 6320 ms
+test:performance: demo times 102, 101, 99 ms (median 101)
+test:performance: preview startup took 539 ms
+test:performance: page loads 521, 226, 223 ms (median 226)
+test:performance: timeline click 170, 168, 159 ms (median 168)
+test:performance: mode switch 167, 163, 163, 164, 162, 163 ms (median 163)
+test:performance: template switch 163, 162, 162, 161, 163, 172 ms (median 163)
+test:performance: 11 passed, 0 failed
+test:performance: PASS — all measured values within frozen thresholds
+test:perf: measured vs frozen thresholds (ms)
+test:perf:   buildMs: measured 6320 / threshold 120000 — PASS
+test:perf:   demoMs: measured 101 / threshold 10000 — PASS
+test:perf:   previewStartupMs: measured 539 / threshold 10000 — PASS
+test:perf:   pageLoadMs: measured 226 / threshold 5000 — PASS
+test:perf:   timelineClickMs: measured 168 / threshold 1000 — PASS
+test:perf:   modeSwitchMs: measured 163 / threshold 1000 — PASS
+test:perf:   templateSwitchMs: measured 163 / threshold 1000 — PASS
+test:perf: PASS — performance aggregate green (11 checks, 0 failed)

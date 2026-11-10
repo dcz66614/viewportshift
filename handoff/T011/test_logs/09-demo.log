@@ -1,0 +1,10 @@
+$ node dist/viewportshift.mjs demo
+demo: scenario=DEMO-chat-input-overlays-content status=FAIL
+demo: scenarioSha256=b3bc29aa2e21970964eb26959848ebf76c2d0019dcb6c21aed65d27f113048e2
+demo: resultSha256=88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60
+demo: reportSha256=f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8
+demo: witnessLength=1
+demo: wrote demo-output/viewportshift-demo.json
+demo: wrote demo-output/viewportshift-demo-report.html
+demo: wrote demo-output/DEMO_MANIFEST.json
+exit=0

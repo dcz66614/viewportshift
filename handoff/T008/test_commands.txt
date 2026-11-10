@@ -1,0 +1,13 @@
+npm run typecheck
+npm run test:schema
+npm run test:validation
+npm run test:modes
+npm run oracle:diff:modes
+npm run test:events
+npm run test:event-order
+npm run oracle:diff:events
+npm run test:geometry
+npm run oracle:diff:geometry
+npm run s0:gate
+npm run test:bfs
+npm run test:bfs:determinism

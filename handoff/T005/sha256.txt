@@ -1,0 +1,58 @@
+SHA-256 (new/changed files, T005):
+
+c3603018a0c06d3b0c0fc736216b6e94e864c7927231d271ad99b8bc66c9b56a  package.json
+3ea204a45c10d327d88f3877ad3f398730764952cf09cafa0f89c2a3483fcbe5  oracle/python/modes_oracle.py
+e20799473871a73c3dc7a8d881a635485c429bebec5a7c0863c8b94695386596  scripts/oracle-diff-modes.mjs
+2b007cf2db9e3158c700166e3489b4148e4af2ea99e6bbf4535b93ce5876e6d0  scripts/t005-lib.mjs
+7ec777f46cb68b98032d40f0cb900ab4c21e707c9601c98b1f3d81160daa0c8a  scripts/test-modes.mjs
+f6e05f54e7cfb84abcc3700d3d03353d7b81e0cf5cbb0272d6a6b65e6e2aa835  src/domain/modes.ts
+
+SHA-256 (tests/fixtures/modes/, 41 files):
+
+8c8e039228ed610a8b98e20434c7f69619d8513fd8ffd423b1a72ddc3ba593e1  tests/fixtures/modes/modes-clock-regression.json
+c898942b034c4b922bb7c9a937b4d9d905154b0383a1face37c6467d8add50da  tests/fixtures/modes/modes-event-limit.json
+796a5d1ab03c1892a0d2eac174ebbc234ce5690e2f75c7e4bcdba9e36e3d55ab  tests/fixtures/modes/modes-invalid-duplicate-event-id.json
+6cc7945389c46b65e97335ee5d36c0504f2f57dc71b254d2cb029994967fc331  tests/fixtures/modes/modes-invalid-missing-mode.json
+be990bc678702051624d54f17297edb18ae63d9b0831a9f920968dbb547989af  tests/fixtures/modes/modes-invalid-non-integer.json
+79ddcdc2f2f99440f19dbe7875748432fa1ba5ddf81080cbbdff7e2f5ae3b46e  tests/fixtures/modes/modes-invalid-zero-area.json
+344cbe5c18d6e68d2c23b7f1f08425af0a240335a74ed788bee497dcf4596f42  tests/fixtures/modes/modes-keyboard-too-tall.json
+0ec159133166337acae97d49beda13a8fc4408ae53cb913b8278521d6084d797  tests/fixtures/modes/modes-oc-close-idle.json
+570c77ac70ff6d6978c7ea318be45e546f02e3ee7b908bdd5ce42fa72ed16d65  tests/fixtures/modes/modes-oc-open-close.json
+38c6c2cdc3a9fdb402d0e1f2b0dc368c5477cbf28cf3ff28a349f79f9b3f837a  tests/fixtures/modes/modes-oc-open-full-kb.json
+a3a71ff2bba845d7e84fa3393838b7f76d838fe3369aeccd238c8cbce48fccfb  tests/fixtures/modes/modes-oc-open-pan-clamp.json
+2fc2bf2bb00be307db56990f1dba3aa718421882fe90c94d6ac4f2ae7cf339a2  tests/fixtures/modes/modes-oc-open-scroll.json
+eb1f96dcb6973a4b0b37b07ec73595bbd4dc2ae48e7158410fecd3e0602b22ea  tests/fixtures/modes/modes-oc-open-zero-kb.json
+03a294d358bd108d5b85b46c56d22def5d40f324b0da84a13474d7c28de8726c  tests/fixtures/modes/modes-oc-open.json
+a85b7b64061e4ce7f7a1835717830d125d1d5ecdd24605a3d055f97e108211f5  tests/fixtures/modes/modes-oc-reopen.json
+32a3d64e2c9b807f976cd649aed5dff486ef6a810f2b251953fc1c9114feccd6  tests/fixtures/modes/modes-pan-limit.json
+04b9d1b9433c4a7fa9681e85c1a3c9344359af433b9a43065aa514337ddaadb2  tests/fixtures/modes/modes-rc-close-idle.json
+fdebd3342e2c3fadf7f81764c40185f5dc3a064eb4e64bf56ab23b41fb0d2011  tests/fixtures/modes/modes-rc-open-close.json
+962e97f9c26544d5ea707dd47448c15a32ec2f9d3330614a697186b0dac113a9  tests/fixtures/modes/modes-rc-open-full-kb.json
+e183fec1e150a4d4b6d371501c6460dc2e07f814a28ef82803c3509e14672ea9  tests/fixtures/modes/modes-rc-open-pan-clamp.json
+1f0fab9ee2858b5f32876c039990aaf92ff1a615266603b2f862064cfb0c2793  tests/fixtures/modes/modes-rc-open-scroll.json
+0359fe85952053c097ab394571df870fc6da3c3c0aab203c33e9190fb8400e5d  tests/fixtures/modes/modes-rc-open-zero-kb.json
+d651c0629124bd92a8be3931e3c9bbfdb30199867d7c70b5940ab6f66737d00e  tests/fixtures/modes/modes-rc-open.json
+4811ffa2923155330c8c60cd8a8acbaa9f7e4f19bedb788cada8aa527f45186f  tests/fixtures/modes/modes-rc-reopen.json
+51a8b87ad5cdcd685cea6532bcbea0ec239914c60f0f20b1b68dd2ce3fde268b  tests/fixtures/modes/modes-rv-close-idle.json
+aef94b7d0346c86de72766f7c8e762e3f73c2a5ff59ca3ac15033ef30f6120a2  tests/fixtures/modes/modes-rv-equal-timestamps.json
+20088581a98a6ef8239741eeb83a12ca326d78a0132b9929b47f3a66ac27a57c  tests/fixtures/modes/modes-rv-open-close.json
+0940b0bea246acbf5f485bb7d4f876e4cec3390b96ff6271ee239c51855f850f  tests/fixtures/modes/modes-rv-open-full-kb.json
+c30bb87bda15c0a40ffaf149d0f966675f3ba5aba56e74fb2f5abf6024fe2e57  tests/fixtures/modes/modes-rv-open-pan-clamp.json
+f7ee3f6d01f36c990dab6ac37890e0a57bc15775a1bb4dabf605ef1b83935363  tests/fixtures/modes/modes-rv-open-pan-close.json
+0540a7105c02bf71ab66da65492d4aad29b8bc652133deac15ded161b6420e3d  tests/fixtures/modes/modes-rv-open-pan-settled.json
+ba79316e2f61792396286937c09b975d9677697771029838617633845343b86b  tests/fixtures/modes/modes-rv-open-scroll.json
+f8bfde64b0b01810928abb245b8430c33e963b1338eae47e57a9334f0ed788cd  tests/fixtures/modes/modes-rv-open-zero-kb.json
+3f2c64da4f31ef8e1fde9c5c947b16a80b3d730610804dddf533736bd8545be3  tests/fixtures/modes/modes-rv-open.json
+6a80462fc6166c1cc9778f1bd06b55b711a5cc50ee956b1ecaf6c8db6d2c821e  tests/fixtures/modes/modes-rv-pan-exact.json
+09d4d6d021f9c080970994acddef1e448fc0ab494d65dff8c8de0c542fac4d7d  tests/fixtures/modes/modes-rv-reopen.json
+e14704e70868d6e82b0406afccef9248027dc49aaf6947093f12e0d5d98f9f8f  tests/fixtures/modes/modes-rv-scroll-negative.json
+6c4485f27001d33d96d44a62bb578aeb67456cf3df80726a5eabe7421eabd759  tests/fixtures/modes/modes-scale-2.json
+8a151e5fc6ffff4a0ea6e68a7c7d5273f400a66b71232cd63272e8908547ae19  tests/fixtures/modes/modes-unknown-event-type.json
+0f6b2ef59974f0866f7ed0a439a10a262dee3f5c2d39c4184344371282e49bd5  tests/fixtures/modes/modes-unknown-mode.json
+6dce63ee1a92b29f20be93db9f2892f52c299697da999ed5f371bfb8befbd71c  tests/fixtures/modes/modes-unknown-template.json
+
+SHA-256 (evidence/modes/):
+
+54eded57b25b1a4623f093f55b9060b642ff3556d6127141ea7254b3fa3aec8a  evidence/modes/MODES_TS.json
+c9161ca459d9207d8209cae860f5baec55cd68ac9b10ffc06028921d4c4decae  evidence/modes/MODES_PY.json
+5b6c6bd93a5072d396a26be106cac9cfde7ed14f8ea1f633a6e3787e5abfe782  evidence/modes/MODES_DIFF.json

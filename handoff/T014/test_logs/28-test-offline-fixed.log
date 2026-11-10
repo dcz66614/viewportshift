@@ -1,0 +1,7 @@
+
+> viewportshift@0.1.0 test:offline
+> node scripts/test-offline.mjs
+
+test:offline: URL literals inventoried in dist/: http://www.w3.org/1998/Math/MathML, http://www.w3.org/1999/xlink, http://www.w3.org/2000/svg, http://www.w3.org/XML/1998/namespace, https://react.dev/errors/
+test:offline: 26 passed, 0 failed
+test:offline: PASS — 0 external requests in all three legs

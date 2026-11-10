@@ -1,0 +1,10 @@
+npm test
+npm run test:property -- --seed P021-VIEWPORTSHIFT-S0-2026-11-10
+npm run test:oracle
+npm run test:mutation
+npm run test:coverage
+npm run oracle:diff:coverage
+npm run typecheck
+npm run build
+node dist/viewportshift.mjs demo
+npm run s0:gate

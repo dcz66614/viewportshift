@@ -1,0 +1,8 @@
+ M package.json
+?? handoff/T004/
+?? scripts/t004-lib.mjs
+?? scripts/test-schema.mjs
+?? scripts/test-validation.mjs
+?? src/domain/types.ts
+?? src/domain/validate.ts
+?? tests/fixtures/schema/

@@ -1,0 +1,8 @@
+
+> viewportshift@0.1.0 test:event-order
+> node scripts/test-event-order.mjs
+
+
+checks passed: 22, checks failed: 0
+
+Event order: PASS

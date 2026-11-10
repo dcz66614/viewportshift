@@ -1,0 +1,293 @@
+$ npm run test:coverage
+
+> viewportshift@0.1.0 test:coverage
+> node scripts/test-coverage.mjs
+
+test:coverage P2 verification — passed: 33, failed: 0
+golden fixtures: 24
+checks passed: 107, checks failed: 0
+Golden (TS): PASS
+test:coverage — test:golden PASS
+checks passed: 709, checks failed: 0
+Property (TS): PASS
+test:coverage — test:property PASS
+modes oracle: fixtures=41 statuses={'UNKNOWN': 8, 'INVALID': 4, 'OK': 29} analysisSha256=c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7 runs=1 uniqueHashes=1
+T005-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T005-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T005-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T005-invalid-missing-mode: ts=INVALID py=INVALID reason=missing_field parity=true
+T005-invalid-non-integer: ts=INVALID py=INVALID reason=non_integer_value parity=true
+T005-invalid-zero-area: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T005-keyboard-too-tall: ts=UNKNOWN py=UNKNOWN reason=keyboard_height_out_of_range parity=true
+T005-oc-close-idle: ts=OK py=OK reason=- parity=true
+T005-oc-open-close: ts=OK py=OK reason=- parity=true
+T005-oc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-oc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-oc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open: ts=OK py=OK reason=- parity=true
+T005-oc-reopen: ts=OK py=OK reason=- parity=true
+T005-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T005-rc-close-idle: ts=OK py=OK reason=- parity=true
+T005-rc-open-close: ts=OK py=OK reason=- parity=true
+T005-rc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open: ts=OK py=OK reason=- parity=true
+T005-rc-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-close-idle: ts=OK py=OK reason=- parity=true
+T005-rv-equal-timestamps: ts=OK py=OK reason=- parity=true
+T005-rv-open-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T005-rv-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rv-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open: ts=OK py=OK reason=- parity=true
+T005-rv-pan-exact: ts=OK py=OK reason=- parity=true
+T005-rv-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-scroll-negative: ts=OK py=OK reason=- parity=true
+T005-scale-2: ts=UNKNOWN py=UNKNOWN reason=unsupported_scale parity=true
+T005-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+T005-unknown-mode: ts=UNKNOWN py=UNKNOWN reason=unsupported_mode parity=true
+T005-unknown-template: ts=UNKNOWN py=UNKNOWN reason=unsupported_layout_template parity=true
+
+wrote evidence/modes/MODES_DIFF.json
+parity: 41/41, mismatches: 0
+ts analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+py analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+
+checks passed: 98, checks failed: 0
+
+Modes oracle diff: PASS
+test:oracle — oracle-diff-modes.mjs PASS
+events oracle: fixtures=27 statuses={'UNKNOWN': 4, 'OK': 22, 'INVALID': 1} analysisSha256=b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951 runs=1 uniqueHashes=1
+T006-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T006-close-idle: ts=OK py=OK reason=- parity=true
+T006-equal-timestamps: ts=OK py=OK reason=- parity=true
+T006-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T006-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T006-monotonic-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-full-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-pan-at-limit: ts=OK py=OK reason=- parity=true
+T006-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T006-rc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-retained: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-clamped: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-zero-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-exact-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-negative: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-over-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-scroll-pan: ts=OK py=OK reason=- parity=true
+T006-rv-open-zero-kb-pan: ts=OK py=OK reason=- parity=true
+T006-rv-reopen-pan: ts=OK py=OK reason=- parity=true
+T006-scroll-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-scroll-negative-clamp: ts=OK py=OK reason=- parity=true
+T006-settled-idempotent: ts=OK py=OK reason=- parity=true
+T006-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+
+wrote evidence/events/EVENTS_DIFF.json
+parity: 27/27, mismatches: 0
+ts analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+py analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+
+checks passed: 70, checks failed: 0
+
+Events oracle diff: PASS
+test:oracle — oracle-diff-events.mjs PASS
+geometry oracle: fixtures=34 statuses={'OK': 26, 'INVALID': 4, 'UNKNOWN': 4} analysisSha256=c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f runs=1 uniqueHashes=1
+T007-direct-01: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-direct-02: ts=OK py=OK reason=- parity=true visible=17160000000 obscured=21840000000 ratio=440 bottomGap=244000
+T007-direct-03: ts=OK py=OK reason=- parity=true visible=0 obscured=21840000000 ratio=0 bottomGap=0
+T007-direct-04: ts=OK py=OK reason=- parity=true visible=9000000000 obscured=0 ratio=450 bottomGap=44000
+T007-direct-05: ts=OK py=OK reason=- parity=true visible=17160000000 obscured=60840000000 ratio=127 bottomGap=-144000
+T007-direct-06: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-direct-07: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-direct-08: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=300000
+T007-direct-09: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=0 ratio=1000 bottomGap=44000
+T007-direct-10: ts=OK py=OK reason=- parity=true visible=21280000000 obscured=0 ratio=974 bottomGap=0
+T007-direct-11: ts=OK py=OK reason=- parity=true visible=20124000000 obscured=0 ratio=921 bottomGap=-4000
+T007-direct-12: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-direct-13: ts=OK py=OK reason=- parity=true visible=1000000 obscured=0 ratio=333 bottomGap=0
+T007-scen-01: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-02: ts=OK py=OK reason=- parity=true visible=0 obscured=21840000000 ratio=0 bottomGap=0
+T007-scen-03: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-04: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=0 ratio=250 bottomGap=-300000
+T007-scen-05: ts=OK py=OK reason=- parity=true visible=156000000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-06: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=200000
+T007-scen-07: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-08: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=778000
+T007-scen-09: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-10: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-scen-11: ts=UNKNOWN py=UNKNOWN reason=unsupported_mode parity=true
+T007-scen-12: ts=UNKNOWN py=UNKNOWN reason=unsupported_scale parity=true
+T007-scen-13: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T007-scen-14: ts=UNKNOWN py=UNKNOWN reason=keyboard_height_out_of_range parity=true
+T007-scen-15: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T007-scen-16: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=56000
+T007-scen-17: ts=OK py=OK reason=- parity=true visible=0 obscured=0 ratio=0 bottomGap=-300000
+T007-scen-18: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=778000
+T007-scen-19: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-20: ts=OK py=OK reason=- parity=true visible=0 obscured=0 ratio=0 bottomGap=0
+T007-scen-21: ts=OK py=OK reason=- parity=true visible=156000000000 obscured=0 ratio=1000 bottomGap=0
+
+wrote evidence/geometry/GEOMETRY_DIFF.json
+parity: 34/34, mismatches: 0
+ts analysisSha256: c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f
+py analysisSha256: c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f
+
+checks passed: 86, checks failed: 0
+
+Geometry oracle diff: PASS
+test:oracle — oracle-diff-geometry.mjs PASS
+modes oracle: fixtures=41 statuses={'UNKNOWN': 8, 'INVALID': 4, 'OK': 29} analysisSha256=c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7 runs=1 uniqueHashes=1
+T005-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T005-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T005-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T005-invalid-missing-mode: ts=INVALID py=INVALID reason=missing_field parity=true
+T005-invalid-non-integer: ts=INVALID py=INVALID reason=non_integer_value parity=true
+T005-invalid-zero-area: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T005-keyboard-too-tall: ts=UNKNOWN py=UNKNOWN reason=keyboard_height_out_of_range parity=true
+T005-oc-close-idle: ts=OK py=OK reason=- parity=true
+T005-oc-open-close: ts=OK py=OK reason=- parity=true
+T005-oc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-oc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-oc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open: ts=OK py=OK reason=- parity=true
+T005-oc-reopen: ts=OK py=OK reason=- parity=true
+T005-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T005-rc-close-idle: ts=OK py=OK reason=- parity=true
+T005-rc-open-close: ts=OK py=OK reason=- parity=true
+T005-rc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open: ts=OK py=OK reason=- parity=true
+T005-rc-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-close-idle: ts=OK py=OK reason=- parity=true
+T005-rv-equal-timestamps: ts=OK py=OK reason=- parity=true
+T005-rv-open-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T005-rv-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rv-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open: ts=OK py=OK reason=- parity=true
+T005-rv-pan-exact: ts=OK py=OK reason=- parity=true
+T005-rv-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-scroll-negative: ts=OK py=OK reason=- parity=true
+T005-scale-2: ts=UNKNOWN py=UNKNOWN reason=unsupported_scale parity=true
+T005-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+T005-unknown-mode: ts=UNKNOWN py=UNKNOWN reason=unsupported_mode parity=true
+T005-unknown-template: ts=UNKNOWN py=UNKNOWN reason=unsupported_layout_template parity=true
+
+wrote evidence/modes/MODES_DIFF.json
+parity: 41/41, mismatches: 0
+ts analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+py analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+
+checks passed: 98, checks failed: 0
+
+Modes oracle diff: PASS
+events oracle: fixtures=27 statuses={'UNKNOWN': 4, 'OK': 22, 'INVALID': 1} analysisSha256=b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951 runs=1 uniqueHashes=1
+T006-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T006-close-idle: ts=OK py=OK reason=- parity=true
+T006-equal-timestamps: ts=OK py=OK reason=- parity=true
+T006-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T006-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T006-monotonic-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-full-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-pan-at-limit: ts=OK py=OK reason=- parity=true
+T006-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T006-rc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-retained: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-clamped: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-zero-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-exact-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-negative: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-over-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-scroll-pan: ts=OK py=OK reason=- parity=true
+T006-rv-open-zero-kb-pan: ts=OK py=OK reason=- parity=true
+T006-rv-reopen-pan: ts=OK py=OK reason=- parity=true
+T006-scroll-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-scroll-negative-clamp: ts=OK py=OK reason=- parity=true
+T006-settled-idempotent: ts=OK py=OK reason=- parity=true
+T006-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+
+wrote evidence/events/EVENTS_DIFF.json
+parity: 27/27, mismatches: 0
+ts analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+py analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+
+checks passed: 70, checks failed: 0
+
+Events oracle diff: PASS
+geometry oracle: fixtures=34 statuses={'OK': 26, 'INVALID': 4, 'UNKNOWN': 4} analysisSha256=c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f runs=1 uniqueHashes=1
+T007-direct-01: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-direct-02: ts=OK py=OK reason=- parity=true visible=17160000000 obscured=21840000000 ratio=440 bottomGap=244000
+T007-direct-03: ts=OK py=OK reason=- parity=true visible=0 obscured=21840000000 ratio=0 bottomGap=0
+T007-direct-04: ts=OK py=OK reason=- parity=true visible=9000000000 obscured=0 ratio=450 bottomGap=44000
+T007-direct-05: ts=OK py=OK reason=- parity=true visible=17160000000 obscured=60840000000 ratio=127 bottomGap=-144000
+T007-direct-06: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-direct-07: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-direct-08: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=300000
+T007-direct-09: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=0 ratio=1000 bottomGap=44000
+T007-direct-10: ts=OK py=OK reason=- parity=true visible=21280000000 obscured=0 ratio=974 bottomGap=0
+T007-direct-11: ts=OK py=OK reason=- parity=true visible=20124000000 obscured=0 ratio=921 bottomGap=-4000
+T007-direct-12: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-direct-13: ts=OK py=OK reason=- parity=true visible=1000000 obscured=0 ratio=333 bottomGap=0
+T007-scen-01: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-02: ts=OK py=OK reason=- parity=true visible=0 obscured=21840000000 ratio=0 bottomGap=0
+T007-scen-03: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-04: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=0 ratio=250 bottomGap=-300000
+T007-scen-05: ts=OK py=OK reason=- parity=true visible=156000000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-06: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=200000
+T007-scen-07: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-08: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=778000
+T007-scen-09: ts=OK py=OK reason=- parity=true visible=39000000000 obscured=117000000000 ratio=250 bottomGap=0
+T007-scen-10: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T007-scen-11: ts=UNKNOWN py=UNKNOWN reason=unsupported_mode parity=true
+T007-scen-12: ts=UNKNOWN py=UNKNOWN reason=unsupported_scale parity=true
+T007-scen-13: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T007-scen-14: ts=UNKNOWN py=UNKNOWN reason=keyboard_height_out_of_range parity=true
+T007-scen-15: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T007-scen-16: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=56000
+T007-scen-17: ts=OK py=OK reason=- parity=true visible=0 obscured=0 ratio=0 bottomGap=-300000
+T007-scen-18: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=778000
+T007-scen-19: ts=OK py=OK reason=- parity=true visible=21840000000 obscured=0 ratio=1000 bottomGap=0
+T007-scen-20: ts=OK py=OK reason=- parity=true visible=0 obscured=0 ratio=0 bottomGap=0
+T007-scen-21: ts=OK py=OK reason=- parity=true visible=156000000000 obscured=0 ratio=1000 bottomGap=0
+
+wrote evidence/geometry/GEOMETRY_DIFF.json
+parity: 34/34, mismatches: 0
+ts analysisSha256: c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f
+py analysisSha256: c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f
+
+checks passed: 86, checks failed: 0
+
+Geometry oracle diff: PASS
+bfs oracle: fixtures=39 analysisSha256=b731a75a2177bc84194c0ad021d13b6e429491a2d9ed1d3662f7ee90246c12aa runs=1 uniqueHashes=1
+geometry oracle: fixtures=24 statuses={'INVALID': 1, 'OK': 20, 'UNKNOWN': 3} analysisSha256=fd7c70d487330dc5f36f3b7415e4f9f82dabe7bd7a8ce6d7707deb4ea93bd146 runs=1 uniqueHashes=1
+coverage parity: 165/165 (100%)
+checks passed: 24, checks failed: 0
+Oracle coverage diff: PASS — parity 100%
+test:oracle — oracle-diff-coverage.mjs PASS
+test:oracle: PASS — all Oracle diffs at 100% parity
+test:coverage — test:oracle PASS
+checks passed: 31, checks failed: 0
+Mutation (TS): PASS — all 8 mutants detected
+test:coverage — test:mutation PASS
+test:coverage: PASS — Golden + Property + Oracle + Mutation
+exit=0

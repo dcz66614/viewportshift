@@ -1,0 +1,15 @@
+cd ~/workspace/p021-viewportshift
+git status --porcelain; git rev-parse HEAD
+npm run typecheck
+npm run test:schema
+npm run test:validation
+npm run s0:state-machine
+npm run s0:geometry
+npm run s0:oracle
+npm run s0:determinism
+npm run s0:gate
+npm run build
+grep -rnE "Date\.now|setTimeout|setInterval|Math\.random|new Date\(|performance\.now|randomUUID" src/domain/types.ts src/domain/validate.ts scripts/t004-lib.mjs scripts/test-schema.mjs scripts/test-validation.mjs
+git status --porcelain
+git diff --stat
+sha256sum of new/changed files (see sha256.txt)

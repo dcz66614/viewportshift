@@ -1,0 +1,28 @@
+# P021 T014 — 关键文件 SHA-256
+# 生成方式：sha256sum（冻结完成后）；性能证据文件不在此列——
+# 它们是运行期再生文件（T012-P2-1），哈希随每次运行变化，不冻结。
+# 另见 release/SHA256SUMS.txt（冻结产物三项）与
+# release/RELEASE_MANIFEST.json（source 602 文件逐项清单）。
+#
+# 修正记录（2026-11-10 ~11:24–11:31 GMT，协调员选 A——接受一次修正后的冻结）：
+# 旧冻结的 source.zip（4dcaa21e…）混入了工作树改过的 package.json
+# （含 T014 加的 "release:freeze" 入口，工作树哈希 505a4afa…）；
+# 修正后冻结改从 git archive HEAD 取数，source.zip = 09b4eef2…，
+# 才是纯 e58411b 内容（HEAD 的 package.json = 2ee4f205…）。
+# 旧哈希仅见于本文件历史与冻结报告修正章节，不再是有效冻结值。
+# scripts/release-freeze.mjs 与 scripts/release-verify.mjs 亦因此次修正而改动，
+# 其哈希为修正后值；release-verify.mjs 的 HEAD 版哈希为 3b6ab81b…（见下）。
+
+09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04  release/source.zip
+7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e  release/dist.zip
+d63b4e725cadbd5a4921c838dc4f520928923c8718ba35cb683202b7860f9c70  release/SHA256SUMS.txt
+8041e89aa9cdc6375b18895ce694f1251e7ff0d1a039a66134694869be166f24  release/RELEASE_MANIFEST.json
+2367bd01b321d44120611ac99ba89c16e6d9ff952e6576ca3d92c89a3a0c2b09  scripts/deterministic_zip.py
+4a2d5d4e7014a524647ad5781e7f9e148e94b70783362134e63e39b451b8fbc7  scripts/release-freeze.mjs
+98a1540fb5cfba504666bd3a2c95f78e095d68d745a99e0fa2b85f318eb65b4f  scripts/release-verify.mjs
+505a4afa0dba9a03f29f2635a9bb1c711c23b985930275e697c12e5cbd5108d7  package.json
+57b5e1f8513000c1d34ed7571b73d42510f9df610e3b3e3bdf10d2a9a1827151  evidence/s0/S0_GATE.json
+78b324cf55a5e20554da907f11845f58749055d51870d974962afa6f7c66a95b  demo-output/viewportshift-demo.json
+f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8  demo-output/viewportshift-demo-report.html
+abcb07caeec3e9bbb41b6415b1d59824f9ed327cf7c97cf814a2385f7112e344  demo-output/DEMO_MANIFEST.json
+41165857dee714212f3dcd477999a2561f94645ebfd81ea8477b85a8926135f7  handoff/T013/INDEPENDENT_REVIEW.md

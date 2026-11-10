@@ -1,0 +1,8 @@
+$ npm run test:mutation
+
+> viewportshift@0.1.0 test:mutation
+> node scripts/test-mutation.mjs
+
+checks passed: 31, checks failed: 0
+Mutation (TS): PASS — all 8 mutants detected
+exit=0

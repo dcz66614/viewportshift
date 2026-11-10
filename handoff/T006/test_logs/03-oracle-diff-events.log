@@ -1,0 +1,41 @@
+
+> viewportshift@0.1.0 oracle:diff:events
+> node scripts/oracle-diff-events.mjs
+
+events oracle: fixtures=27 statuses={'UNKNOWN': 4, 'OK': 22, 'INVALID': 1} analysisSha256=b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951 runs=1 uniqueHashes=1
+T006-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T006-close-idle: ts=OK py=OK reason=- parity=true
+T006-equal-timestamps: ts=OK py=OK reason=- parity=true
+T006-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T006-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T006-monotonic-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-full-timeline: ts=OK py=OK reason=- parity=true
+T006-oc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-pan-at-limit: ts=OK py=OK reason=- parity=true
+T006-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T006-rc-open-pan-no-room: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-retained: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-close-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-clamped: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-dx-zero-exact: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-exact-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-negative: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-over-top: ts=OK py=OK reason=- parity=true
+T006-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T006-rv-open-scroll-pan: ts=OK py=OK reason=- parity=true
+T006-rv-open-zero-kb-pan: ts=OK py=OK reason=- parity=true
+T006-rv-reopen-pan: ts=OK py=OK reason=- parity=true
+T006-scroll-down-up-exact: ts=OK py=OK reason=- parity=true
+T006-scroll-negative-clamp: ts=OK py=OK reason=- parity=true
+T006-settled-idempotent: ts=OK py=OK reason=- parity=true
+T006-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+
+wrote evidence/events/EVENTS_DIFF.json
+parity: 27/27, mismatches: 0
+ts analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+py analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+
+checks passed: 70, checks failed: 0
+
+Events oracle diff: PASS

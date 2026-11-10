@@ -1,0 +1,13 @@
+
+> viewportshift@0.1.0 test:bfs
+> node scripts/test-bfs.mjs
+
+
+fixtures: 11 (FAIL=5, BOUNDED_NO_WITNESS=3, UNKNOWN=2, INVALID=1)
+analysisSha256: a55d28a9b0d73fc83463480e1746c2c3d7bdb15efa7969d873f379ade2869245
+wrote evidence/bfs/BFS_TS.json
+wrote evidence/bfs/SEARCH_BOUNDS_REPORT.md
+
+checks passed: 277, checks failed: 0
+
+BFS (TS): PASS

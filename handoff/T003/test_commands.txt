@@ -1,0 +1,5 @@
+npm run typecheck
+npm run s0:geometry
+npm run s0:oracle
+npm run s0:determinism
+npm run s0:gate

@@ -1,0 +1,9 @@
+=== CMD: sha256sum P021_PROJECT_BOOK.md P021_IMPLEMENTATION_PLAN.md oracle/python/geometry_oracle.py ===
+8070d7e3055d5e16cac422cd2f1341796bbe61fe6cd1e769e65fdcb65181edf3  P021_PROJECT_BOOK.md
+458cd409f58e748aaa8cbf9d1bdc3fff52b7975087528c613bff99c99ce54b35  P021_IMPLEMENTATION_PLAN.md
+3717a4cccd9a0bd67740e2d2e04201b689b2ee7a42435a30b6dca35efa0e3e99  oracle/python/geometry_oracle.py
+=== NOTE ===
+T001 sha256.txt lists no spec-file entries (specs were pre-existing, not T001 outputs), so there is no T001 baseline hash to compare; T002 never wrote to the spec files (read-only access).
+Oracle hash 3717a4cc... matches T001 sha256.txt entry exactly: Oracle untouched.
+3717a4cccd9a0bd67740e2d2e04201b689b2ee7a42435a30b6dca35efa0e3e99  oracle/python/geometry_oracle.py
+EXIT_CODE=0

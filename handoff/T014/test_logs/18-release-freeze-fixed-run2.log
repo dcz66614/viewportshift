@@ -1,0 +1,36 @@
+
+> viewportshift@0.1.0 release:freeze
+> node scripts/release-freeze.mjs
+
+freeze: PASS — HEAD is the T013-PASS commit e58411b
+freeze: PASS — working tree clean except release/, handoff/T014/ and T014 tooling
+freeze: PASS — no LICENSE in the frozen tree (PENDING_SAM_DECISION)
+freeze: PASS — S0 gateSha256 unchanged
+freeze: PASS — clean build exits 0
+freeze: PASS — dist manifest includes index.html
+freeze: PASS — dist manifest includes the CLI bundle viewportshift.mjs
+freeze: PASS — dist manifest includes at least one JS asset
+freeze: PASS — dist manifest includes at least one CSS asset
+freeze: PASS — dist manifest is exactly 4 files
+freeze: PASS — demo run 1 exits 0 with frozen hashes + witnessLength 1
+freeze: PASS — demo run 2 exits 0 with frozen hashes + witnessLength 1
+freeze: PASS — two demo runs agree
+freeze: PASS — demo-output is exactly 3 files
+freeze: PASS — source file list is non-empty
+freeze: PASS — git archive HEAD exits 0
+freeze: PASS — git archive HEAD extracts cleanly
+freeze: PASS — git archive HEAD tree matches git ls-files exactly
+freeze: PASS — deterministic_zip source pass 1 exits 0
+freeze: PASS — deterministic_zip source pass 2 exits 0
+freeze: PASS — two source.zip passes are byte-identical
+freeze: PASS — deterministic_zip dist pass 1 exits 0
+freeze: PASS — deterministic_zip dist pass 2 exits 0
+freeze: PASS — two dist.zip passes are byte-identical
+freeze: PASS — release/source.zip hash equals pass hashes
+freeze: PASS — release/dist.zip hash equals pass hashes
+freeze: PASS — SHA256SUMS.txt self-check: all OK
+freeze: PASS — release/ contains exactly the 4 freeze artefacts
+freeze: source.zip sha256=09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04 size=3518579 files=602
+freeze: dist.zip sha256=7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e size=109911 files=7
+freeze: 28 passed, 0 failed
+freeze: PASS — source.zip + dist.zip frozen, byte-identical across two passes, manifest + SHA256SUMS closed

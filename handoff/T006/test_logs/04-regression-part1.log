@@ -1,0 +1,45 @@
+=== typecheck ===
+> viewportshift@0.1.0 typecheck
+> tsc --noEmit
+
+exit=0
+=== test:schema ===
+checks passed: 259, checks failed: 0
+
+test:schema: PASS
+exit=0
+=== test:validation ===
+checks passed: 273, checks failed: 0
+
+test:validation: PASS
+exit=0
+=== test:modes ===
+checks passed: 1159, checks failed: 0
+
+Modes (TS): PASS
+exit=0
+=== oracle:diff:modes ===
+checks passed: 98, checks failed: 0
+
+Modes oracle diff: PASS
+exit=0
+=== s0:state-machine ===
+PoC fixtures: 8, cases: 9, checks passed: 68, checks failed: 0
+
+S0 state-machine: PASS
+exit=0
+=== s0:geometry ===
+checks passed: 627, checks failed: 0
+
+S0 geometry (TS): PASS
+exit=0
+=== s0:oracle ===
+checks passed: 117, checks failed: 0
+
+S0 oracle (Python): PASS
+exit=0
+=== s0:determinism ===
+checks passed: 6, checks failed: 0
+
+S0 determinism: PASS
+exit=0

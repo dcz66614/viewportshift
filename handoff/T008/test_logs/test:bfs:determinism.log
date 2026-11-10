@@ -1,0 +1,11 @@
+
+> viewportshift@0.1.0 test:bfs:determinism
+> node scripts/test-bfs-determinism.mjs
+
+full runs: 2 uniqueHashes=1 hash=a55d28a9b0d73fc83463480e1746c2c3d7bdb15efa7969d873f379ade2869245
+repeat runs: 100 uniqueHashes=1 hash=93d99daf5a40cc1931829fadda59028d69830692903f842be5f94d0def8d1883
+wrote evidence/bfs/BFS_DETERMINISM.json
+
+checks passed: 4, checks failed: 0
+
+BFS determinism: PASS

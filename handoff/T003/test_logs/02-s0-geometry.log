@@ -1,0 +1,66 @@
+
+> viewportshift@0.1.0 s0:geometry
+> node scripts/s0-geometry.mjs
+
+S0-chat-rv-open: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=0 clipped=21840000000 bottomGap=-300000 drift=300000
+S0-chat-rv-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-rv-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-rv-open-pan: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=0 clipped=21840000000 bottomGap=-290000 drift=290000
+S0-chat-rc-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-rc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-rc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-rc-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-oc-open: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=21840000000 clipped=0 bottomGap=0 drift=0
+S0-chat-oc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-oc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-chat-oc-open-pan: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=21840000000 clipped=0 bottomGap=0 drift=0
+S0-sheet-rv-open: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=0 clipped=117000000000 bottomGap=-300000 drift=300000
+S0-sheet-rv-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-rv-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-rv-open-pan: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","keyboardObscuredArea","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=3900000000 clipped=113100000000 bottomGap=-290000 drift=290000
+S0-sheet-rc-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-rc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-rc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-rc-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-oc-open: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=117000000000 clipped=0 bottomGap=0 drift=0
+S0-sheet-oc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-oc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=0 drift=0
+S0-sheet-oc-open-pan: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=117000000000 clipped=0 bottomGap=0 drift=0
+S0-cta-rv-open: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=0 clipped=17184000000 bottomGap=-284000 drift=300000
+S0-cta-rv-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-rv-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-rv-open-pan: status=FAIL expected=FAIL planted=viewport-clipped failedPredicates=["visibleRatio","bottomGap","anchorDriftMagnitude"] visibleRatio=0 obscured=0 clipped=17184000000 bottomGap=-274000 drift=290000
+S0-cta-rc-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-rc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-rc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-rc-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-oc-open: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=17184000000 clipped=0 bottomGap=16000 drift=0
+S0-cta-oc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-oc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=16000 drift=0
+S0-cta-oc-open-pan: status=FAIL expected=FAIL planted=keyboard-obscured failedPredicates=["visibleRatio","keyboardObscuredArea"] visibleRatio=0 obscured=17184000000 clipped=0 bottomGap=16000 drift=0
+S0-search-rv-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=484000 drift=0
+S0-search-rv-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-rv-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-rv-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=494000 drift=10000
+S0-search-rc-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=484000 drift=0
+S0-search-rc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-rc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-rc-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=484000 drift=0
+S0-search-oc-open: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-oc-open-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-oc-open-scroll-close: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-search-oc-open-pan: status=PASS expected=PASS planted=- failedPredicates=[] visibleRatio=1000 obscured=0 clipped=0 bottomGap=784000 drift=0
+S0-edge-clock-regression: status=UNKNOWN expected=UNKNOWN reason=event_clock_regression failedEventId=e2
+S0-edge-keyboard-too-tall: status=UNKNOWN expected=UNKNOWN reason=keyboard_height_out_of_range failedEventId=e1
+S0-edge-scale-2: status=UNKNOWN expected=UNKNOWN reason=unsupported_scale failedEventId=e1
+S0-edge-unknown-mode: status=UNKNOWN expected=UNKNOWN reason=unsupported_mode failedEventId=e1
+S0-edge-zero-area: status=INVALID expected=INVALID reason=zero_area_surface failedEventId=null
+
+scenarios: 48, edge cases: 5, steps checked: 134, planted: 12/12, false positives: 0
+analysisSha256: a7584d47023c38c19cb7fc9cb71c671744d4917f9a67e1ee9f3c8021375165df
+wrote evidence/s0/S0_GEOMETRY_TS.json
+
+checks passed: 627, checks failed: 0
+
+S0 geometry (TS): PASS
+EXIT_CODE=0

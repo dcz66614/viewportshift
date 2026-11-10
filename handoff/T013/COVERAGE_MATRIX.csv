@@ -1,0 +1,23 @@
+file,lines,status,notes
+src/App.tsx,3,READ,Re-export of src/ui/App.tsx; no logic
+src/cli.ts,211,READ,Demo CLI; shared deriveAnalysisStatus; no @ts-ignore
+src/domain/analysis-status.ts,38,READ,Single shared deriveAnalysisStatus; never returns BOUNDED_NO_WITNESS by design
+src/domain/bfs.ts,777,READ,Alphabet/dedup/limitsFromRawInput/fail-closed; header depth-3 correction verified
+src/domain/events.ts,681,READ,Pan/scroll clamp; ev_close_offsets_retained pins upstream decision
+src/domain/geometry-eval.ts,387,READ,INVALID-step branch (T007 P2-2) examined; direct + scenario evaluators
+src/domain/geometry.ts,846,READ,Triple intersection; computeMetrics INVALID only on zero-area/non-integer surface
+src/domain/modes.ts,626,READ,Contract checks incl. rv_offsets_unchanged on KEYBOARD_CLOSE
+src/domain/types.ts,407,READ,Frozen schema v1; bounds; INVALID-dominates-UNKNOWN
+src/domain/validate.ts,798,READ,Validator; zero-area layout rejected before any replay
+src/domain/viewport-state.ts,542,READ,PoC transition; rv KEYBOARD_CLOSE restores visualHeight only
+src/io/demo.ts,66,READ,Synthetic demo scenario only; frozen seed
+src/io/json.ts,691,READ,exportResultJson recomputes scenarioSha256 and rejects mismatch; pure-TS SHA-256
+src/io/report.ts,401,READ,Self-contained HTML; escapeHtml; no external refs; not-certification disclaimer
+src/main.tsx,9,READ,React root; StrictMode
+src/node-shims.d.ts,36,READ,Minimal node: built-in declarations; no new dependency
+src/render/timeline.tsx,122,READ,Row status derives only from failedPredicates (T013-P2-1)
+src/render/viewportSvg.tsx,194,READ,Hot zone S∩K∩V via domain rectIntersection; display scaling only
+src/ui/App.tsx,564,READ,Status bar result===null defaults UNKNOWN (T013-P2-2); banner disclaimer; 4-layout compare is current-mode only (T009 opt 4)
+src/ui/WitnessPanel.tsx,121,READ,BFS status incl. BOUNDED_NO_WITNESS shown; only first failing step before/after (T009 opt 5)
+src/ui/scenario.ts,469,READ,TimelineRow drops GeometryStep.status; pure UI logic; sha256HexBrowser incl. FNV fallback (transparent via shaMethod)
+src/ui/styles.css,146,READ,Layout incl. 1000px single-column breakpoint; :focus-visible outlines

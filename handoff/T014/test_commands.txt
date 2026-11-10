@@ -1,0 +1,217 @@
+# P021 T014 — 亲自跑过的命令与结果
+# 冻结对象：commit e58411b（e58411bf1f0f8e80bf29ca1af70fc005a09f0d5e）
+# 工作目录：~/workspace/p021-viewportshift
+# 时间：2026-11-10 ~11:13–11:25 GMT
+# 日志全文见 test_logs/；本文件只记命令、退出码与关键数字。
+# 注意：计划书原文写 python，VM 上无 bare python，一律用 python3。
+
+1. npm test
+   exit=0; 全绿
+   schema 259/259, validation 273/273, modes 1159/1159, events 1301/1301,
+   event-order 22/22, geometry 629/629, bfs 277/277, bfs:determinism 4/4,
+   ui 202/202, export 136/136, golden 107/107, property 709/709,
+   mutation 31/31; oracle diffs modes 98, events 70, geometry 86, coverage 165
+   log: test_logs/01-npm-test.log
+
+2. npm run s0:gate
+   exit=0; 120/120 PASS (53/53 parity: 48 main + 5 edge, 12/12 planted,
+   0 false positives, 100 runs / 1 hash)
+   gateSha256=65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26（不变）
+   log: test_logs/02-s0-gate.log
+
+3. npm run typecheck
+   exit=0; 无输出
+   log: test_logs/03-typecheck.log
+
+4. npm run build
+   exit=0
+   log: test_logs/04-build.log
+
+5. node dist/viewportshift.mjs demo
+   exit=0; status=FAIL
+   resultSha256=88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60
+   reportSha256=f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8
+   witnessLength=1
+   log: test_logs/05-demo.log
+
+6. npm run test:e2e
+   exit=0; 55 passed, 0 failed; 0 external requests
+   log: test_logs/06-test-e2e.log
+
+7. npm run test:offline
+   exit=0; 26 passed, 0 failed; 0 external requests in all three legs
+   log: test_logs/07-test-offline.log
+
+8. npm run test:performance
+   exit=0; 11 passed, 0 failed
+   改写了 evidence/performance/PERFORMANCE_TEST.json 与 PERFORMANCE_REPORT.md
+   （仅实测值变，门槛不变）；diff 核对后 git checkout -- 恢复
+   log: test_logs/08-test-performance.log
+
+9. npm run test:perf
+   exit=0; PASS (11 checks, 0 failed)
+   log: test_logs/09-test-perf.log
+
+10. npm run test:stress
+    exit=0; 15 passed, 0 failed
+    test:perf/test:stress 后性能证据两文件再次被重写（仅实测值变）；
+    diff 核对后 git checkout -- 恢复
+    log: test_logs/10-test-stress.log
+
+11. npm run release:freeze（第一次）
+    exit=0; 25 passed, 0 failed
+    source.zip sha256=4dcaa21e76e9630e7d3e444e17d0940e2f997ba4756c27807c63edc0aa69d97f size=3518590 files=602
+    dist.zip sha256=7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e size=109911 files=7
+    log: test_logs/11-release-freeze-run1.log
+
+12. npm run release:freeze（第二次，外部重跑）
+    exit=0; 25 passed, 0 failed
+    source.zip / dist.zip / RELEASE_MANIFEST.json 三哈希与第一次完全相同
+    （byte-identical；见 test_logs/freeze-run1-hashes.txt）
+    log: test_logs/12-release-freeze-run2.log
+
+13. npm run release:verify
+    exit=1; 14 passed, 1 failed
+    唯一失败：首项防护检查 "release/ is NOT created by this rehearsal"——
+    正式冻结已创建 release/，该检查按设计失败；其余 14 项全过。
+    该脚本重写了 evidence/release-rehearsal/ 两份文件（15/15 变 14/15），
+    已 git checkout -- 恢复为提交态。
+    log: test_logs/13-release-verify.log
+
+14. python3 scripts/deterministic_zip.py --verify release/source.zip
+    exit=0; 669 entries, sha256 与冻结值一致, PASS
+    log: test_logs/14-verify-source-zip.log
+
+15. python3 scripts/deterministic_zip.py --verify release/dist.zip
+    exit=0; 10 entries, sha256 与冻结值一致, PASS
+    log: test_logs/15-verify-dist-zip.log
+
+16. sha256sum -c release/SHA256SUMS.txt（独立自校验）
+    exit=0; source.zip: OK, dist.zip: OK, RELEASE_MANIFEST.json: OK
+
+17. /tmp 独立解压核验（python3 -m zipfile -e）
+    exit=0; 两 zip 均可解压；解压出的 source 树文件清单与 git ls-files diff 0 差异；
+    磁盘 dist/demo 7 文件哈希与 manifest 清单逐项一致
+
+---
+# 修正后（协调员选 A——接受一次修正后的冻结），2026-11-10 ~11:24–11:31 GMT
+# 冻结修正执行员亲自跑。修正内容只改两个脚本：
+#   scripts/release-verify.mjs（防护检查改为行为断言）
+#   scripts/release-freeze.mjs（source.zip 改从 git archive HEAD 取数；
+#     ALLOWED_DIRTY 加 scripts/release-verify.mjs；package.json 已在清单内，未动）
+# 修正前复现与修正后结果对照见 handoff/T014/T014_FREEZE_REPORT.md §11。
+# 旧冻结 source.zip 4dcaa21e… 混入工作树 package.json（505a4afa…）；
+# 修正后 source.zip 09b4eef2… 为纯 e58411b 内容（HEAD package.json 2ee4f205…）。
+
+18. npm run release:verify（修正前复现）
+    exit=1; 14 passed, 1 failed
+    唯一失败：首项防护检查 "release/ is NOT created by this rehearsal"——
+    正式冻结已创建 release/，该检查按设计失败；其余 14 项全过。
+    该脚本重写了 evidence/release-rehearsal/ 两份文件（15/15 变 14/15），
+    已 git checkout -- 恢复为提交态。
+    log: test_logs/16-release-verify-PREFIX.log
+
+19. /tmp 模拟重建（修正前核验，非验收命令）
+    git archive HEAD 解出 602 文件，与 git ls-files 逐项 diff 0 差异；
+    以同一 scripts/deterministic_zip.py 从解出的提交树重建 source.zip，
+    sha256=09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04
+    （即修正后冻结应得的哈希；无日志文件，命令在执行记录中）
+
+20. npm run release:freeze（修正后第一次）
+    exit=0; 28 passed, 0 failed（新增 3 项：git archive 退出 0、解压干净、
+    提交树与 git ls-files 逐项一致）
+    source.zip sha256=09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04 size=3518579 files=602
+    dist.zip sha256=7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e size=109911 files=7
+    log: test_logs/17-release-freeze-fixed-run1.log
+
+21. npm run release:freeze（修正后第二次，外部重跑）
+    exit=0; 28 passed, 0 failed
+    source.zip / dist.zip / RELEASE_MANIFEST.json / SHA256SUMS.txt 四哈希与第一次完全相同
+    （byte-identical；见 test_logs/freeze-fixed-run1-hashes.txt 与 freeze-fixed-run2-hashes.txt，diff 空）
+    log: test_logs/18-release-freeze-fixed-run2.log
+
+22. npm run release:verify（修正后，冻结态）
+    exit=0; 15 passed, 0 failed
+    新行为断言 "rehearsal did not create or delete release/ (existence unchanged)" 通过；
+    其余 14 项与修正前相同。此次运行写出的 evidence/release-rehearsal/ 两文件
+    与提交态逐字节一致（15/15），工作树无残留改动，无需恢复。
+    log: test_logs/19-release-verify-fixed.log
+
+23. python3 scripts/deterministic_zip.py --verify release/source.zip
+    exit=0; 669 entries, sha256=09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04, PASS
+    log: test_logs/20-verify-source-zip-fixed.log
+
+24. python3 scripts/deterministic_zip.py --verify release/dist.zip
+    exit=0; 10 entries, sha256=7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e, PASS
+    log: test_logs/21-verify-dist-zip-fixed.log
+
+25. npm test（修正后回归）
+    exit=0; 全绿
+    schema 259/259, validation 273/273, modes 1159/1159, events 1301/1301,
+    event-order 22/22, geometry 629/629, bfs 277/277, bfs:determinism 4/4,
+    ui 202/202, export 136/136, golden 107/107, property 709/709,
+    mutation 31/31; oracle diffs modes 98, events 70, geometry 86, coverage 165
+    log: test_logs/22-npm-test-fixed.log
+
+26. npm run s0:gate（修正后回归）
+    exit=0; checks passed: 120, checks failed: 0（53/53 parity：48 main + 5 edge，
+    12/12 植入检出，0 误报，100 次运行 / 1 哈希）
+    gateSha256=65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26（不变）
+    log: test_logs/23-s0-gate-fixed.log
+
+27. npm run typecheck（修正后回归）
+    exit=0; 无输出
+    log: test_logs/24-typecheck-fixed.log
+
+28. npm run build（修正后回归）
+    exit=0; CLI bundle 75.94 kB
+    log: test_logs/25-build-fixed.log
+
+29. node dist/viewportshift.mjs demo（修正后回归）
+    exit=0; status=FAIL
+    resultSha256=88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60
+    reportSha256=f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8
+    witnessLength=1
+    demo-output 三文件哈希与冻结值一致（78b324cf… / f329e814… / abcb07ca…）
+    log: test_logs/26-demo-fixed.log
+
+30. npm run test:e2e（修正后回归）
+    exit=0; 55 passed, 0 failed; 0 外部请求
+    log: test_logs/27-test-e2e-fixed.log
+
+31. npm run test:offline（修正后回归）
+    exit=0; 26 passed, 0 failed; 三腿 0 外部请求
+    log: test_logs/28-test-offline-fixed.log
+
+32. npm run test:performance（修正后回归）
+    exit=0; 11 passed, 0 failed
+    改写了 evidence/performance/PERFORMANCE_TEST.json 与 PERFORMANCE_REPORT.md
+    （仅实测值变：buildMs 6444→6952、demoMs 94→99、previewStartupMs 558→538、
+    timelineClickMs 162→163、modeSwitchMs 165→162、templateSwitchMs 164→161；
+    门槛 120000/10000/10000/5000/1000 与 thresholds 段未变）；diff 核对后 git checkout -- 恢复
+    log: test_logs/29-test-performance-fixed.log
+
+33. npm run test:perf（修正后回归）
+    exit=0; PASS（11 checks, 0 failed）
+    log: test_logs/30-test-perf-fixed.log
+
+34. npm run test:stress（修正后回归）
+    exit=0; 15 passed, 0 failed
+    test:perf/test:stress 后性能证据两文件再次被重写（仅实测值变，门槛不变）；
+    diff 核对后 git checkout -- 恢复
+    log: test_logs/31-test-stress-fixed.log
+
+35. 重新生成 release/SHA256SUMS.txt + 自校验（全部验收跑完的最后一步）
+    exit=0; 重新生成的内容与冻结输出逐字节相同；
+    cd release && sha256sum -c SHA256SUMS.txt：source.zip: OK, dist.zip: OK,
+    RELEASE_MANIFEST.json: OK（3/3）
+    log: test_logs/32-sha256sums-selfcheck.log
+
+36. 冻结源纯度复核（/tmp 独立解压，非验收命令）
+    exit=0; 解出新 source.zip 的树与 git archive HEAD 解出的树 diff -r 0 差异；
+    zip 内 package.json = HEAD 版 2ee4f205…（非工作树 505a4afa…）；
+    manifest 核对：sourceCommit e58411b、s0 PASS 120/120、demo 88f2153a…/f329e814…、
+    t013Review PASS 0/0/8、reviewSha256 与 handoff/T013/INDEPENDENT_REVIEW.md
+    实际哈希 41165857… 一致、windowsTested NOT_TESTED、license PENDING_SAM_DECISION、
+    unresolvedP2Carried 5 项不变
+    log: test_logs/33-source-purity-diff.log（diff 输出为空）

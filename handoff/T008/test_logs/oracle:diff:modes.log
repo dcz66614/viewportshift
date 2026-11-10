@@ -1,0 +1,55 @@
+
+> viewportshift@0.1.0 oracle:diff:modes
+> node scripts/oracle-diff-modes.mjs
+
+modes oracle: fixtures=41 statuses={'UNKNOWN': 8, 'INVALID': 4, 'OK': 29} analysisSha256=c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7 runs=1 uniqueHashes=1
+T005-clock-regression: ts=UNKNOWN py=UNKNOWN reason=event_clock_regression parity=true
+T005-event-limit: ts=UNKNOWN py=UNKNOWN reason=event_limit_exceeded parity=true
+T005-invalid-duplicate-event-id: ts=INVALID py=INVALID reason=duplicate_event_id parity=true
+T005-invalid-missing-mode: ts=INVALID py=INVALID reason=missing_field parity=true
+T005-invalid-non-integer: ts=INVALID py=INVALID reason=non_integer_value parity=true
+T005-invalid-zero-area: ts=INVALID py=INVALID reason=zero_area_surface parity=true
+T005-keyboard-too-tall: ts=UNKNOWN py=UNKNOWN reason=keyboard_height_out_of_range parity=true
+T005-oc-close-idle: ts=OK py=OK reason=- parity=true
+T005-oc-open-close: ts=OK py=OK reason=- parity=true
+T005-oc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-oc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-oc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-oc-open: ts=OK py=OK reason=- parity=true
+T005-oc-reopen: ts=OK py=OK reason=- parity=true
+T005-pan-limit: ts=UNKNOWN py=UNKNOWN reason=pan_limit_exceeded parity=true
+T005-rc-close-idle: ts=OK py=OK reason=- parity=true
+T005-rc-open-close: ts=OK py=OK reason=- parity=true
+T005-rc-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rc-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rc-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rc-open: ts=OK py=OK reason=- parity=true
+T005-rc-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-close-idle: ts=OK py=OK reason=- parity=true
+T005-rv-equal-timestamps: ts=OK py=OK reason=- parity=true
+T005-rv-open-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-full-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-clamp: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-close: ts=OK py=OK reason=- parity=true
+T005-rv-open-pan-settled: ts=OK py=OK reason=- parity=true
+T005-rv-open-scroll: ts=OK py=OK reason=- parity=true
+T005-rv-open-zero-kb: ts=OK py=OK reason=- parity=true
+T005-rv-open: ts=OK py=OK reason=- parity=true
+T005-rv-pan-exact: ts=OK py=OK reason=- parity=true
+T005-rv-reopen: ts=OK py=OK reason=- parity=true
+T005-rv-scroll-negative: ts=OK py=OK reason=- parity=true
+T005-scale-2: ts=UNKNOWN py=UNKNOWN reason=unsupported_scale parity=true
+T005-unknown-event-type: ts=UNKNOWN py=UNKNOWN reason=unsupported_event_type parity=true
+T005-unknown-mode: ts=UNKNOWN py=UNKNOWN reason=unsupported_mode parity=true
+T005-unknown-template: ts=UNKNOWN py=UNKNOWN reason=unsupported_layout_template parity=true
+
+wrote evidence/modes/MODES_DIFF.json
+parity: 41/41, mismatches: 0
+ts analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+py analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+
+checks passed: 98, checks failed: 0
+
+Modes oracle diff: PASS

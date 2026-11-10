@@ -1,0 +1,13 @@
+
+> viewportshift@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  0.34 kB │ gzip:  0.25 kB
+dist/assets/index-ZsJfjivi.js  222.73 kB │ gzip: 69.43 kB
+✓ built in 1.88s
+build_exit=0

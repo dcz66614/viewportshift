@@ -1,0 +1,32 @@
+=== CMD: npm run env:check ===
+
+> viewportshift@0.1.0 env:check
+> node scripts/env-check.mjs
+
+{
+  "arch": "x64",
+  "chromium_available": true,
+  "cpu_count": 4,
+  "cpu_model": "AMD EPYC 9D25 126-Core Processor",
+  "docker_available": false,
+  "git": {
+    "branch": "master",
+    "clean": false,
+    "head": "NO_COMMITS",
+    "untracked_or_modified_count": 14
+  },
+  "node": "v24.22.1",
+  "npm": "10.9.4",
+  "os_pretty_name": "Ubuntu 24.04.5 LTS",
+  "os_release": "7.0.0-44-generic",
+  "os_type": "Linux",
+  "platform": "linux",
+  "python": "NOT_FOUND",
+  "python3": "Python 3.12.3",
+  "total_disk_bytes": 161042399232,
+  "total_memory_bytes": 8319897600,
+  "fingerprint_sha256": "cd4f6887eefb53e04f6735abd8127907bf45fde8ce83e65ef257748d706b42d5",
+  "free_memory_bytes": 1208442880,
+  "report": "evidence/environment/ENVIRONMENT_REPORT.md"
+}
+EXIT_CODE=0

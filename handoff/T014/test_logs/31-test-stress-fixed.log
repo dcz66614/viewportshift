@@ -1,0 +1,8 @@
+
+> viewportshift@0.1.0 test:stress
+> node scripts/test-stress.mjs
+
+test:stress: rebuild 1: 4 dist files
+test:stress: rebuild 2: 4 dist files
+test:stress: 15 passed, 0 failed
+test:stress: PASS — rebuilds identical, demo stable x5, replay stable x100

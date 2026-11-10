@@ -1,0 +1,4 @@
+npm run build
+node dist/viewportshift.mjs demo
+npm run test:export
+npm run s0:gate

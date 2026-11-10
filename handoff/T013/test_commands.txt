@@ -1,0 +1,73 @@
+# P021 T013 — 审查员亲自跑过的命令与结果
+# 审查对象：commit fff40cb（fff40cb82f971fca384a822401b5934de57d38a8）
+# 工作目录：~/workspace/p021-viewportshift
+# 时间：2026-11-10 ~11:02–11:20 GMT
+# 日志全文见 test_logs/；本文件只记命令、退出码与关键数字。
+
+1. npm ci
+   exit=0; added 69 packages in 2s
+   log: test_logs/01-npm-ci.log
+
+2. npm run typecheck
+   exit=0; tsc --noEmit 无输出
+   log: test_logs/02-typecheck.log
+
+3. npm test
+   exit=0; npm test: PASS — full suite green
+   schema 259/259, validation 273/273, modes 1159/1159, events 1301/1301,
+   event-order 22/22, geometry 629/629, bfs 277/277, bfs:determinism 4/4,
+   ui 202/202, export 136/136, golden 107/107, property 709/709,
+   mutation 31/31; oracle diffs modes 98, events 70, geometry 86, coverage 165;
+   test:coverage P2 verification 33/33
+   log: test_logs/03-npm-test.log
+
+4. npm run test:oracle
+   exit=0; test:oracle: PASS — all Oracle diffs at 100% parity
+   modes 98 checks (parity 41/41), events 70 (27/27), geometry 86 (34/34),
+   coverage parity 165/165 (100%)
+   log: test_logs/04-test-oracle.log
+
+5. npm run test:e2e
+   exit=0; 55 passed, 0 failed; 0 external requests;
+   export via real-blob-download; Tab traversal 17 stops
+   log: test_logs/05-test-e2e.log
+
+6. npm run test:offline
+   exit=0; 26 passed, 0 failed; PASS — 0 external requests in all three legs
+   log: test_logs/06-test-offline.log
+
+7. npm run release:verify
+   exit=0; 15 passed, 0 failed; rehearsal builds identical;
+   dist manifest 4 files; demo hashes re-computed
+   log: test_logs/07-release-verify.log
+
+8. npm run s0:gate（补充回归基线）
+   exit=0; 120/120 PASS (53/53 parity: 48 main + 5 edge, 12/12 planted,
+   0 false positives, 100 runs / 1 hash)
+   gateSha256=65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26（不变）
+   log: test_logs/08-s0-gate.log
+
+9. npm run build（补充）
+   exit=0
+   log: test_logs/09-build.log
+
+10. node dist/viewportshift.mjs demo（补充）
+    exit=0; status=FAIL
+    scenarioSha256=b3bc29aa2e21970964eb26959848ebf76c2d0019dcb6c21aed65d27f113048e2
+    resultSha256=88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60
+    reportSha256=f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8
+    witnessLength=1
+    log: test_logs/10-demo.log
+
+11. node /tmp/t013-probe.mjs（审查员独立探针，脚本已存为 test_logs/probe-corpus-p2-5.mjs）
+    exit=0
+    corpus fixtures=58 (geometry=34 golden=24) steps=50 INVALID=0 UNKNOWN=0
+    golden fixtures=24 with nodesVisited+nodesEnqueued in expected.bfs=0
+    bfs fixtures=15 with nodesVisited+nodesEnqueued=15
+
+12. sha256sum -c handoff/T012/sha256.txt（证据核对，非验收命令）
+    仅 evidence/performance/PERFORMANCE_TEST.json 与 PERFORMANCE_REPORT.md FAILED，
+    其余全部 OK（T012-P2-1 已知状态；本次未跑 test:performance，非本次造成）
+
+13. git status / git rev-parse（审查开始与结束各一次）
+    HEAD=fff40cb82f971fca384a822401b5934de57d38a8；开始时干净；结束时仅新增 handoff/T013/

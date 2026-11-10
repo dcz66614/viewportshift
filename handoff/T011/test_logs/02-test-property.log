@@ -1,0 +1,8 @@
+$ npm run test:property -- --seed P021-VIEWPORTSHIFT-S0-2026-11-10
+
+> viewportshift@0.1.0 test:property
+> node scripts/test-property.mjs --seed P021-VIEWPORTSHIFT-S0-2026-11-10
+
+checks passed: 709, checks failed: 0
+Property (TS): PASS
+exit=0

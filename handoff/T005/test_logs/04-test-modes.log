@@ -1,0 +1,53 @@
+
+> viewportshift@0.1.0 test:modes
+> node scripts/test-modes.mjs
+
+T005-clock-regression: status=UNKNOWN expected=UNKNOWN reason=event_clock_regression steps=0 states=null
+T005-event-limit: status=UNKNOWN expected=UNKNOWN reason=event_limit_exceeded steps=0 states=null
+T005-invalid-duplicate-event-id: status=INVALID expected=INVALID reason=duplicate_event_id steps=0 states=null
+T005-invalid-missing-mode: status=INVALID expected=INVALID reason=missing_field steps=0 states=null
+T005-invalid-non-integer: status=INVALID expected=INVALID reason=non_integer_value steps=0 states=null
+T005-invalid-zero-area: status=INVALID expected=INVALID reason=zero_area_surface steps=0 states=null
+T005-keyboard-too-tall: status=UNKNOWN expected=UNKNOWN reason=keyboard_height_out_of_range steps=0 states=null
+T005-oc-close-idle: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-oc-open-close: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-oc-open-full-kb: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":0,"width":390000,"height":844000} visible=true scrollY=0 offsetTop=0
+T005-oc-open-pan-clamp: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0
+T005-oc-open-scroll: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=50000 offsetTop=0
+T005-oc-open-zero-kb: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=true scrollY=0 offsetTop=0
+T005-oc-open: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0
+T005-oc-reopen: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":644000,"width":390000,"height":200000} visible=true scrollY=0 offsetTop=0
+T005-pan-limit: status=UNKNOWN expected=UNKNOWN reason=pan_limit_exceeded steps=0 states=null
+T005-rc-close-idle: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-rc-open-close: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-rc-open-full-kb: status=OK expected=OK reason=- steps=1 layoutH=0 visualH=0 kb={"x":0,"y":0,"width":390000,"height":844000} visible=true scrollY=0 offsetTop=0
+T005-rc-open-pan-clamp: status=OK expected=OK reason=- steps=2 layoutH=544000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0
+T005-rc-open-scroll: status=OK expected=OK reason=- steps=2 layoutH=544000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=50000 offsetTop=0
+T005-rc-open-zero-kb: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=true scrollY=0 offsetTop=0
+T005-rc-open: status=OK expected=OK reason=- steps=1 layoutH=544000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0
+T005-rc-reopen: status=OK expected=OK reason=- steps=2 layoutH=644000 visualH=644000 kb={"x":0,"y":644000,"width":390000,"height":200000} visible=true scrollY=0 offsetTop=0
+T005-rv-close-idle: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-rv-equal-timestamps: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=10000 offsetTop=0
+T005-rv-open-close: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-rv-open-full-kb: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=0 kb={"x":0,"y":0,"width":390000,"height":844000} visible=true scrollY=0 offsetTop=0
+T005-rv-open-pan-clamp: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000
+T005-rv-open-pan-close: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=100000
+T005-rv-open-pan-settled: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=100000
+T005-rv-open-scroll: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=50000 offsetTop=0
+T005-rv-open-zero-kb: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=true scrollY=0 offsetTop=0
+T005-rv-open: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0
+T005-rv-pan-exact: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000
+T005-rv-reopen: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=644000 kb={"x":0,"y":644000,"width":390000,"height":200000} visible=true scrollY=0 offsetTop=0
+T005-rv-scroll-negative: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0
+T005-scale-2: status=UNKNOWN expected=UNKNOWN reason=unsupported_scale steps=0 states=null
+T005-unknown-event-type: status=UNKNOWN expected=UNKNOWN reason=unsupported_event_type steps=0 states=null
+T005-unknown-mode: status=UNKNOWN expected=UNKNOWN reason=unsupported_mode steps=0 states=null
+T005-unknown-template: status=UNKNOWN expected=UNKNOWN reason=unsupported_layout_template steps=0 states=null
+
+fixtures: 41, steps checked: 47, contract checks: 417, OK=29 UNKNOWN=8 INVALID=4
+analysisSha256: c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7
+wrote evidence/modes/MODES_TS.json
+
+checks passed: 1159, checks failed: 0
+
+Modes (TS): PASS

@@ -1,0 +1,9 @@
+ M package.json
+?? evidence/modes/
+?? handoff/T005/
+?? oracle/python/modes_oracle.py
+?? scripts/oracle-diff-modes.mjs
+?? scripts/t005-lib.mjs
+?? scripts/test-modes.mjs
+?? src/domain/modes.ts
+?? tests/fixtures/modes/

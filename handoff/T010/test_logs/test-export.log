@@ -1,0 +1,141 @@
+
+> viewportshift@0.1.0 test:export
+> node scripts/test-export.mjs
+
+PASS roundtrip: demo scenario exports
+PASS roundtrip: demo scenario re-imports
+PASS roundtrip: demo scenario export->parse->export identical
+PASS roundtrip: demo scenario hash stable
+PASS roundtrip: chat-input/resizes-visual exports
+PASS roundtrip: chat-input/resizes-visual re-imports
+PASS roundtrip: chat-input/resizes-visual export->parse->export identical
+PASS roundtrip: chat-input/resizes-content exports
+PASS roundtrip: chat-input/resizes-content re-imports
+PASS roundtrip: chat-input/resizes-content export->parse->export identical
+PASS roundtrip: chat-input/overlays-content exports
+PASS roundtrip: chat-input/overlays-content re-imports
+PASS roundtrip: chat-input/overlays-content export->parse->export identical
+PASS roundtrip: bottom-sheet/resizes-visual exports
+PASS roundtrip: bottom-sheet/resizes-visual re-imports
+PASS roundtrip: bottom-sheet/resizes-visual export->parse->export identical
+PASS roundtrip: bottom-sheet/resizes-content exports
+PASS roundtrip: bottom-sheet/resizes-content re-imports
+PASS roundtrip: bottom-sheet/resizes-content export->parse->export identical
+PASS roundtrip: bottom-sheet/overlays-content exports
+PASS roundtrip: bottom-sheet/overlays-content re-imports
+PASS roundtrip: bottom-sheet/overlays-content export->parse->export identical
+PASS roundtrip: fixed-cta/resizes-visual exports
+PASS roundtrip: fixed-cta/resizes-visual re-imports
+PASS roundtrip: fixed-cta/resizes-visual export->parse->export identical
+PASS roundtrip: fixed-cta/resizes-content exports
+PASS roundtrip: fixed-cta/resizes-content re-imports
+PASS roundtrip: fixed-cta/resizes-content export->parse->export identical
+PASS roundtrip: fixed-cta/overlays-content exports
+PASS roundtrip: fixed-cta/overlays-content re-imports
+PASS roundtrip: fixed-cta/overlays-content export->parse->export identical
+PASS roundtrip: search-bar/resizes-visual exports
+PASS roundtrip: search-bar/resizes-visual re-imports
+PASS roundtrip: search-bar/resizes-visual export->parse->export identical
+PASS roundtrip: search-bar/resizes-content exports
+PASS roundtrip: search-bar/resizes-content re-imports
+PASS roundtrip: search-bar/resizes-content export->parse->export identical
+PASS roundtrip: search-bar/overlays-content exports
+PASS roundtrip: search-bar/overlays-content re-imports
+PASS roundtrip: search-bar/overlays-content export->parse->export identical
+PASS roundtrip: 12 UI combinations covered
+PASS result: demo replay status is FAIL
+PASS result: envelope exports
+PASS result: envelope re-imports
+PASS result: envelope export->parse->export identical
+PASS result: tampered scenarioSha256 is rejected
+PASS result: tampered mode is rejected
+PASS failclosed: malformed JSON rejected
+PASS failclosed: empty string rejected
+PASS failclosed: array root rejected
+PASS failclosed: string root rejected
+PASS failclosed: number root rejected
+PASS failclosed: null root rejected
+PASS failclosed: oversize document rejected
+PASS failclosed: oversize code is import_too_large
+PASS failclosed: over-deep nesting rejected
+PASS failclosed: over-deep code is import_too_deep
+PASS failclosed: over-large node count rejected
+PASS failclosed: over-large code is import_too_large
+PASS failclosed: duplicate event id rejected
+PASS failclosed: over-limit event count rejected
+PASS failclosed: unit-suffixed string rejected
+PASS failclosed: export of invalid scenario fails
+PASS failclosed: document at exactly the byte limit imports
+PASS hostile: script-tag scenario id imports as data
+PASS hostile: report contains no script element
+PASS hostile: report escapes the script tag as text
+PASS hostile: report external-reference scan is empty
+PASS report: external-reference scan is empty
+PASS report: no script element
+PASS report: no link element
+PASS report: no image element
+PASS report: no remote reference
+PASS report: contains DEMO-chat-input-overlays-content
+PASS report: contains overlays-content
+PASS report: contains P021-VIEWPORTSHIFT-S0-2026-11-10
+PASS report: contains FAIL
+PASS report: contains 21840
+PASS report: contains 0%
+PASS report: contains KEYBOARD_OPEN
+PASS report: contains demo-e1
+PASS report: contains 视口剖面
+PASS report: contains 事件时间轴
+PASS report: contains 最短失败序列
+PASS report: contains b3bc29aa2e21970964eb26959848ebf76c2d0019dcb6c21aed65d27f113048e2
+PASS report: contains inline SVG profile
+PASS demo: built CLI exists
+PASS demo: first run exits 0
+PASS demo: second run exits 0
+PASS demo: two runs print identical output
+PASS demo: manifest scenarioSha256 recomputes
+PASS demo: manifest resultSha256 recomputes
+PASS demo: manifest reportSha256 recomputes
+PASS demo: manifest lists all three files
+PASS demo: result JSON file is canonical
+PASS demo: result JSON file re-imports
+PASS demo: report file external-reference scan is empty
+PASS forbidden: src/io/json.ts has no "Date.now"
+PASS forbidden: src/io/json.ts has no "Math.random"
+PASS forbidden: src/io/json.ts has no "setTimeout"
+PASS forbidden: src/io/json.ts has no "setInterval"
+PASS forbidden: src/io/json.ts has no "setImmediate"
+PASS forbidden: src/io/json.ts has no "fetch("
+PASS forbidden: src/io/json.ts has no "XMLHttpRequest"
+PASS forbidden: src/io/json.ts has no "WebSocket"
+PASS forbidden: src/io/json.ts has no "eval("
+PASS forbidden: src/io/json.ts has no "new Function"
+PASS forbidden: src/io/json.ts has no "http://"
+PASS forbidden: src/io/json.ts has no "https://"
+PASS forbidden: src/io/json.ts has no "node:"
+PASS forbidden: src/io/report.ts has no "Date.now"
+PASS forbidden: src/io/report.ts has no "Math.random"
+PASS forbidden: src/io/report.ts has no "setTimeout"
+PASS forbidden: src/io/report.ts has no "setInterval"
+PASS forbidden: src/io/report.ts has no "setImmediate"
+PASS forbidden: src/io/report.ts has no "fetch("
+PASS forbidden: src/io/report.ts has no "XMLHttpRequest"
+PASS forbidden: src/io/report.ts has no "WebSocket"
+PASS forbidden: src/io/report.ts has no "eval("
+PASS forbidden: src/io/report.ts has no "new Function"
+PASS forbidden: src/io/report.ts has no "http://"
+PASS forbidden: src/io/report.ts has no "https://"
+PASS forbidden: src/io/report.ts has no "node:"
+PASS forbidden: src/io/demo.ts has no "Date.now"
+PASS forbidden: src/io/demo.ts has no "Math.random"
+PASS forbidden: src/io/demo.ts has no "setTimeout"
+PASS forbidden: src/io/demo.ts has no "setInterval"
+PASS forbidden: src/io/demo.ts has no "setImmediate"
+PASS forbidden: src/io/demo.ts has no "fetch("
+PASS forbidden: src/io/demo.ts has no "XMLHttpRequest"
+PASS forbidden: src/io/demo.ts has no "WebSocket"
+PASS forbidden: src/io/demo.ts has no "eval("
+PASS forbidden: src/io/demo.ts has no "new Function"
+PASS forbidden: src/io/demo.ts has no "http://"
+PASS forbidden: src/io/demo.ts has no "https://"
+PASS forbidden: src/io/demo.ts has no "node:"
+test:export: 136/136 checks passed; evidence evidence/io/EXPORT_TEST.json

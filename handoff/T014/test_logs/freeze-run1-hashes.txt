@@ -1,0 +1,3 @@
+4dcaa21e76e9630e7d3e444e17d0940e2f997ba4756c27807c63edc0aa69d97f  release/source.zip
+7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e  release/dist.zip
+88b51d675e3842d2f665ae504d2c382b2a62ea8b077292afdbf84c88228c19b2  release/RELEASE_MANIFEST.json

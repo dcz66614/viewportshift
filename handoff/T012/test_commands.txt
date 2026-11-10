@@ -1,0 +1,11 @@
+npm run test:e2e
+npm run test:offline
+npm run test:performance
+npm run test:perf
+npm run test:stress
+npm run build
+npm run release:verify
+npm run typecheck
+node dist/viewportshift.mjs demo
+npm run s0:gate
+npm test

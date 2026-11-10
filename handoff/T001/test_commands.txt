@@ -1,0 +1,7 @@
+node --version
+npm --version
+python --version
+git --version
+npm ci
+npm run env:check
+npm run typecheck

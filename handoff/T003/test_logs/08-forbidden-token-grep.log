@@ -1,0 +1,4 @@
+== forbidden tokens in src/domain (expect 0 hits, exit 1) ==
+grep EXIT_CODE=1
+== forbidden tokens in oracle (expect 0 hits, exit 1) ==
+grep EXIT_CODE=1

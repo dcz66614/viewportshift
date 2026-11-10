@@ -1,0 +1,18 @@
+== T002 files + specs vs handoff/T002/sha256.txt (expect all OK except package.json + oracle placeholder, both intentionally changed by T003) ==
+src/domain/viewport-state.ts: OK
+scripts/s0-state-machine.mjs: OK
+tests/fixtures/s0/state-machine-poc-01.json: OK
+tests/fixtures/s0/state-machine-poc-02.json: OK
+tests/fixtures/s0/state-machine-poc-03.json: OK
+tests/fixtures/s0/state-machine-poc-04.json: OK
+tests/fixtures/s0/state-machine-poc-05.json: OK
+tests/fixtures/s0/state-machine-poc-06.json: OK
+tests/fixtures/s0/state-machine-poc-07.json: OK
+tests/fixtures/s0/state-machine-poc-08.json: OK
+package.json: FAILED
+evidence/s0/T002_REPORT.md: OK
+P021_PROJECT_BOOK.md: OK
+P021_IMPLEMENTATION_PLAN.md: OK
+oracle/python/geometry_oracle.py: FAILED
+sha256sum: WARNING: 2 computed checksums did NOT match
+sha256sum EXIT_CODE=1

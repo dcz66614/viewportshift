@@ -1,0 +1,8 @@
+
+> viewportshift@0.1.0 release:verify
+> node scripts/release-verify.mjs
+
+release:verify: dist manifest (4 files): assets/index-Ck8UGF3U.js, assets/index-Zih-ycei.css, index.html, viewportshift.mjs
+release:verify: 15 passed, 0 failed
+release:verify: PASS — rehearsal builds identical, dist manifest complete, demo hashes re-computed
+release:verify exit=0

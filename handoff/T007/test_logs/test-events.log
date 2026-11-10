@@ -1,0 +1,40 @@
+
+> viewportshift@0.1.0 test:events
+> node scripts/test-events.mjs
+
+T006-clock-regression: status=UNKNOWN expected=UNKNOWN reason=event_clock_regression steps=0 states=null
+T006-close-idle: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-equal-timestamps: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=10000 offsetTop=50000 pendingPan={"dx":0,"dy":50000}
+T006-event-limit: status=UNKNOWN expected=UNKNOWN reason=event_limit_exceeded steps=0 states=null
+T006-invalid-duplicate-event-id: status=INVALID expected=INVALID reason=duplicate_event_id steps=0 states=null
+T006-monotonic-timeline: status=OK expected=OK reason=- steps=5 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=30000 offsetTop=50000 pendingPan={"dx":0,"dy":0}
+T006-oc-full-timeline: status=OK expected=OK reason=- steps=5 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=40000 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-oc-open-pan-no-room: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-pan-at-limit: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000 pendingPan={"dx":0,"dy":300000}
+T006-pan-limit: status=UNKNOWN expected=UNKNOWN reason=pan_limit_exceeded steps=0 states=null
+T006-rc-open-pan-no-room: status=OK expected=OK reason=- steps=2 layoutH=544000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-rv-open-pan-close-retained: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=100000 pendingPan={"dx":0,"dy":100000}
+T006-rv-open-pan-close-settled: status=OK expected=OK reason=- steps=4 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=100000 pendingPan={"dx":0,"dy":0}
+T006-rv-open-pan-down-up-exact: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":-100000}
+T006-rv-open-pan-dx-clamped: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-rv-open-pan-dx-zero-exact: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=50000 pendingPan={"dx":0,"dy":50000}
+T006-rv-open-pan-exact-top: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000 pendingPan={"dx":0,"dy":300000}
+T006-rv-open-pan-negative: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-rv-open-pan-over-top: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000 pendingPan={"dx":0,"dy":300000}
+T006-rv-open-pan-settled: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=100000 pendingPan={"dx":0,"dy":0}
+T006-rv-open-scroll-pan: status=OK expected=OK reason=- steps=3 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=200000 offsetTop=100000 pendingPan={"dx":0,"dy":100000}
+T006-rv-open-zero-kb-pan: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=true scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-rv-reopen-pan: status=OK expected=OK reason=- steps=5 layoutH=844000 visualH=544000 kb={"x":0,"y":544000,"width":390000,"height":300000} visible=true scrollY=0 offsetTop=300000 pendingPan={"dx":0,"dy":200000}
+T006-scroll-down-up-exact: status=OK expected=OK reason=- steps=2 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-scroll-negative-clamp: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-settled-idempotent: status=OK expected=OK reason=- steps=1 layoutH=844000 visualH=844000 kb={"x":0,"y":844000,"width":390000,"height":0} visible=false scrollY=0 offsetTop=0 pendingPan={"dx":0,"dy":0}
+T006-unknown-event-type: status=UNKNOWN expected=UNKNOWN reason=unsupported_event_type steps=0 states=null
+
+fixtures: 27, steps checked: 57, event checks: 390, contract checks: 473, pan steps: 20, clamped: 8, OK=22 UNKNOWN=4 INVALID=1
+analysisSha256: b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951
+wrote evidence/events/EVENTS_TS.json
+wrote evidence/events/CLAMP_EVIDENCE.json (20 clamp rows)
+
+checks passed: 1301, checks failed: 0
+
+Events (TS): PASS

@@ -1,0 +1,11 @@
+{
+  "assertions": 193,
+  "passed": 193,
+  "failed": 0,
+  "screenshots": {
+    "template-chat-input.png": "32e67fb132f9268dcd9a8a2f6b1299f63665eae264fd4e0e035c737f92f9d5f0",
+    "template-bottom-sheet.png": "e4eb6e8a0361442e967d1808b059119f95b36008047a624ce596f8b4d84b8303",
+    "template-fixed-cta.png": "a7405d2b117d67f1cea73a174228670d221765953d954b527fa9bff02fd70ce4",
+    "timeline-witness.png": "eb8dd998214bb44f3b494f7fae691f0a43bb36511c1077852e614ba54eb4138a"
+  }
+}

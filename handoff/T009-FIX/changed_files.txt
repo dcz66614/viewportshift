@@ -1,0 +1,3 @@
+src/ui/App.tsx
+src/render/timeline.tsx
+scripts/test-ui.mjs

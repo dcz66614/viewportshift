@@ -1,0 +1,24 @@
+=== git status --porcelain ===
+ M package.json
+?? handoff/T004/
+?? scripts/t004-lib.mjs
+?? scripts/test-schema.mjs
+?? scripts/test-validation.mjs
+?? src/domain/types.ts
+?? src/domain/validate.ts
+?? tests/fixtures/schema/
+
+=== git diff --stat ===
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+=== git diff (package.json) ===
+diff --git a/package.json b/package.json
+index 0a1e06f..96afd6c 100644
+--- a/package.json
++++ b/package.json
+@@ -1 +1 @@
+-{"dependencies":{"react":"^19.2.0","react-dom":"^19.2.0"},"description":"ViewportShift — deterministic mobile soft-keyboard viewport behaviour lab (P021). S0 skeleton only; no business logic yet.","devDependencies":{"@types/react":"^19.2.0","@types/react-dom":"^19.2.0","@vitejs/plugin-react":"^5.0.0","typescript":"~5.9.3","vite":"^7.2.0"},"engines":{"node":">=20"},"name":"viewportshift","private":true,"scripts":{"build":"tsc --noEmit && vite build","dev":"vite","env:check":"node scripts/env-check.mjs","s0:determinism":"node scripts/s0-determinism.mjs","s0:gate":"node scripts/s0-gate.mjs","s0:geometry":"node scripts/s0-geometry.mjs","s0:oracle":"node scripts/s0-oracle.mjs","s0:state-machine":"node scripts/s0-state-machine.mjs","typecheck":"tsc --noEmit"},"type":"module","version":"0.1.0"}
+\ No newline at end of file
++{"dependencies":{"react":"^19.2.0","react-dom":"^19.2.0"},"description":"ViewportShift — deterministic mobile soft-keyboard viewport behaviour lab (P021). S0 skeleton only; no business logic yet.","devDependencies":{"@types/react":"^19.2.0","@types/react-dom":"^19.2.0","@vitejs/plugin-react":"^5.0.0","typescript":"~5.9.3","vite":"^7.2.0"},"engines":{"node":">=20"},"name":"viewportshift","private":true,"scripts":{"build":"tsc --noEmit && vite build","dev":"vite","env:check":"node scripts/env-check.mjs","s0:determinism":"node scripts/s0-determinism.mjs","s0:gate":"node scripts/s0-gate.mjs","s0:geometry":"node scripts/s0-geometry.mjs","s0:oracle":"node scripts/s0-oracle.mjs","s0:state-machine":"node scripts/s0-state-machine.mjs","test:schema":"node scripts/test-schema.mjs","test:validation":"node scripts/test-validation.mjs","typecheck":"tsc --noEmit"},"type":"module","version":"0.1.0"}
+\ No newline at end of file

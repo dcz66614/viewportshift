@@ -1,0 +1,69 @@
+
+> viewportshift@0.1.0 s0:gate
+> node scripts/s0-gate.mjs
+
+oracle: scenarios=53 statuses={'FAIL': 12, 'PASS': 36, 'UNKNOWN': 4, 'INVALID': 1} analysisSha256=a7584d47023c38c19cb7fc9cb71c671744d4917f9a67e1ee9f3c8021375165df runs=1 uniqueHashes=1
+S0-chat-rv-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-chat-rv-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-rv-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-rv-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-chat-rc-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-rc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-rc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-rc-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-oc-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-chat-oc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-oc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-chat-oc-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-sheet-rv-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-sheet-rv-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-rv-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-rv-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-sheet-rc-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-rc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-rc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-rc-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-oc-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-sheet-oc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-oc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-sheet-oc-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-cta-rv-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-cta-rv-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-rv-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-rv-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-cta-rc-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-rc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-rc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-rc-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-oc-open: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-cta-oc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-oc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-cta-oc-open-pan: parity=MATCH status=FAIL/FAIL expected=FAIL
+S0-search-rv-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rv-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rv-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rv-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rc-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-rc-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-oc-open: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-oc-open-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-oc-open-scroll-close: parity=MATCH status=PASS/PASS expected=PASS
+S0-search-oc-open-pan: parity=MATCH status=PASS/PASS expected=PASS
+S0-edge-clock-regression: parity=MATCH status=UNKNOWN/UNKNOWN expected=UNKNOWN
+S0-edge-keyboard-too-tall: parity=MATCH status=UNKNOWN/UNKNOWN expected=UNKNOWN
+S0-edge-scale-2: parity=MATCH status=UNKNOWN/UNKNOWN expected=UNKNOWN
+S0-edge-unknown-mode: parity=MATCH status=UNKNOWN/UNKNOWN expected=UNKNOWN
+S0-edge-zero-area: parity=MATCH status=INVALID/INVALID expected=INVALID
+oracle: scenarios=48 statuses={'FAIL': 12, 'PASS': 36} analysisSha256=2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6 runs=100 uniqueHashes=1
+
+S0 gate: scenarios=48 parity=53/53 planted=12/12 falsePositives=0 edge=5/5 determinism=100 runs, tsUnique=1, pyUnique=1
+analysisSha256: a7584d47023c38c19cb7fc9cb71c671744d4917f9a67e1ee9f3c8021375165df
+gateSha256: 65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26
+wrote evidence/s0/S0_GATE.json
+
+checks passed: 120, checks failed: 0
+
+S0 gate: PASS (53/53 parity: 48 main + 5 edge, 12/12 planted, 0 false positives, 100 runs / 1 hash)
+EXIT_CODE=0

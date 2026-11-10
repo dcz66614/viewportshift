@@ -1,0 +1,15 @@
+cd ~/workspace/p021-viewportshift
+git status --short; git rev-parse HEAD; git log --oneline -3
+python3 /tmp/gen_modes_fixtures.py
+npm run typecheck
+npm run test:schema
+npm run test:validation
+npm run test:modes
+npm run oracle:diff:modes
+npm run s0:state-machine
+npm run s0:geometry
+npm run s0:oracle
+npm run s0:determinism
+npm run s0:gate
+npm run build
+git status --short; git diff --stat

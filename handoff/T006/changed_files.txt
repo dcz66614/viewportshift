@@ -1,0 +1,61 @@
+ M package.json
+?? evidence/events/
+?? handoff/T006/
+?? oracle/python/events_oracle.py
+?? scripts/oracle-diff-events.mjs
+?? scripts/t006-lib.mjs
+?? scripts/test-event-order.mjs
+?? scripts/test-events.mjs
+?? src/domain/events.ts
+?? tests/fixtures/events/
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+--- untracked ---
+evidence/events/CLAMP_EVIDENCE.json
+evidence/events/EVENTS_DIFF.json
+evidence/events/EVENTS_PY.json
+evidence/events/EVENTS_TS.json
+handoff/T006/TASK_REPORT.md
+handoff/T006/changed_files.txt
+handoff/T006/sha256.txt
+handoff/T006/test_commands.txt
+handoff/T006/test_logs/01-test-events.log
+handoff/T006/test_logs/02-test-event-order.log
+handoff/T006/test_logs/03-oracle-diff-events.log
+handoff/T006/test_logs/04-regression-part1.log
+handoff/T006/test_logs/05-s0-gate.log
+handoff/T006/test_logs/06-build.log
+handoff/T006/test_logs/07-typecheck.log
+oracle/python/events_oracle.py
+scripts/oracle-diff-events.mjs
+scripts/t006-lib.mjs
+scripts/test-event-order.mjs
+scripts/test-events.mjs
+src/domain/events.ts
+tests/fixtures/events/events-clock-regression.json
+tests/fixtures/events/events-close-idle.json
+tests/fixtures/events/events-equal-timestamps.json
+tests/fixtures/events/events-event-limit.json
+tests/fixtures/events/events-invalid-duplicate-event-id.json
+tests/fixtures/events/events-monotonic-timeline.json
+tests/fixtures/events/events-oc-full-timeline.json
+tests/fixtures/events/events-oc-open-pan-no-room.json
+tests/fixtures/events/events-pan-at-limit.json
+tests/fixtures/events/events-pan-limit.json
+tests/fixtures/events/events-rc-open-pan-no-room.json
+tests/fixtures/events/events-rv-open-pan-close-retained.json
+tests/fixtures/events/events-rv-open-pan-close-settled.json
+tests/fixtures/events/events-rv-open-pan-down-up-exact.json
+tests/fixtures/events/events-rv-open-pan-dx-clamped.json
+tests/fixtures/events/events-rv-open-pan-dx-zero-exact.json
+tests/fixtures/events/events-rv-open-pan-exact-top.json
+tests/fixtures/events/events-rv-open-pan-negative.json
+tests/fixtures/events/events-rv-open-pan-over-top.json
+tests/fixtures/events/events-rv-open-pan-settled.json
+tests/fixtures/events/events-rv-open-scroll-pan.json
+tests/fixtures/events/events-rv-open-zero-kb-pan.json
+tests/fixtures/events/events-rv-reopen-pan.json
+tests/fixtures/events/events-scroll-down-up-exact.json
+tests/fixtures/events/events-scroll-negative-clamp.json
+tests/fixtures/events/events-settled-idempotent.json
+tests/fixtures/events/events-unknown-event-type.json

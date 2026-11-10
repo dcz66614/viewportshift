@@ -1,0 +1,4 @@
+=== CMD: grep forbidden tokens in src/domain/viewport-state.ts ===
+GREP_EXIT=1 (1 = no matches, expected)
+=== CMD: grep floating-point decision helpers ===
+GREP_EXIT=1 (1 = no matches, expected)

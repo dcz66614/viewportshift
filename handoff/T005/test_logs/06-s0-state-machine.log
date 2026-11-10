@@ -1,0 +1,17 @@
+
+> viewportshift@0.1.0 s0:state-machine
+> node scripts/s0-state-machine.mjs
+
+POC-01-RV-OPEN/open-300: status=OK fields=all-match determinism=identical
+POC-02-RC-OPEN/open-300: status=OK fields=all-match determinism=identical
+POC-03-OC-OPEN/open-300: status=OK fields=all-match determinism=identical
+POC-04-RV-OPEN-CLOSE/open-300-close: status=OK fields=all-match determinism=identical
+POC-05-RC-OPEN-CLOSE/open-300-close: status=OK fields=all-match determinism=identical
+POC-06-OC-OPEN-SCROLL-CLOSE-SETTLED/open-scroll-close-settled: status=OK fields=all-match determinism=identical
+POC-07-RV-OPEN-PAN-CLAMP-SETTLED/open-pan-clamp-settled: status=OK fields=all-match determinism=identical
+POC-08-UNKNOWN/unsupported-scale-2: status=UNKNOWN fields=all-match determinism=identical
+POC-08-UNKNOWN/event-clock-regression: status=UNKNOWN fields=all-match determinism=identical
+
+PoC fixtures: 8, cases: 9, checks passed: 68, checks failed: 0
+
+S0 state-machine: PASS

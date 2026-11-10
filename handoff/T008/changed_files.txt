@@ -1,0 +1,8 @@
+ M package.json
+?? evidence/bfs/
+?? handoff/T008/
+?? scripts/t008-lib.mjs
+?? scripts/test-bfs-determinism.mjs
+?? scripts/test-bfs.mjs
+?? src/domain/bfs.ts
+?? tests/fixtures/bfs/

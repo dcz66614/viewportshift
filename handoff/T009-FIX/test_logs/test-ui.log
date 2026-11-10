@@ -1,0 +1,5 @@
+
+> viewportshift@0.1.0 test:ui
+> node scripts/test-ui.mjs
+
+test:ui — 202 passed, 0 failed

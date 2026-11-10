@@ -1,0 +1,74 @@
+# P021 ViewportShift 视口潮汐 — 终审第 1 轮（FINAL REVIEW R1）
+
+这是本立项对话的第 1 轮终审。请按终审标准，对冻结产物做一次完整独立审查，给出明确结论。审查范围：规格书、全部实现（S0–S5，T001–T014）、独立审查 T013、正式冻结 T014。
+
+## 一、项目与冻结物
+
+- PROJECT_ID: P021 ViewportShift 视口潮汐（移动软键盘视口压力实验室：不需要真手机，确定性模拟移动浏览器软键盘引发的视口变化，找出聊天输入框、底部面板、固定 CTA 在哪种事件序列下被遮挡，并给出最短失败证据；三种标准视口响应模式 resizes-visual / resizes-content / overlays-content + 延迟平移压力事件；矩形几何 Oracle；事件时间轴；有界 BFS 最短失败序列；本地 Web UI + JSON 导出；明确标注为行为模型实验室，不是真实设备兼容性认证）
+- SPEC_VERSION: 1.0.0，SPEC_FROZEN / NOT_IMPLEMENTED，零真人（0 名真人参与者，全程合成数据 + 确定性算法 + 独立 Oracle + 自动化断言），USER_VALUE_NOT_MEASURED，LICENSE: PENDING_SAM_DECISION（Sam 在任何公开再分发前决定）
+- 源码提交（冻结对象）: e58411bf1f0f8e80bf29ca1af70fc005a09f0d5e
+- 冻结提交: e4d6912（仅含冻结工具与产物，不改源码）
+- source.zip SHA-256: 09b4eef286ff807b23afa89000520d1e3dc192ae6d38c554e70ba562d7de5d04（3,518,579 字节，602 文件，内容与 git archive e58411b 逐字节 0 差异，主控已亲自解包核实）
+- dist.zip SHA-256: 7b69edd4bfa5c64a2a519fe636e46f67e6ff76ef7bbdb7cd79911c9baee8e32e（109,911 字节，7 文件）
+- RELEASE_MANIFEST.json SHA-256: 8041e89aa9cdc6375b18895ce694f1251e7ff0d1a039a66134694869be166f24（113,858 字节）
+- SHA256SUMS.txt：3/3 自校验 OK
+- Drive 04_release 文件夹：https://drive.google.com/drive/folders/1E1v8dG3psaIKtHXJXqZeE2XgLLB3sXvj（内含 source.zip、dist.zip、RELEASE_MANIFEST.json、SHA256SUMS.txt、T013 独立审查报告、T014 冻结报告；各文件 Drive 链接见附件清单）
+- 规格书 Drive 00_spec 文件夹：https://drive.google.com/drive/folders/1Z_E9s9qXj0hSJZG7Hhs6OjZUY16v2Qhi（PROJECT_BOOK.md / IMPLEMENTATION_PLAN.md / docx / bundle / SHA256SUMS）
+
+## 二、各阶段验收（主控已亲自重跑全部验收命令，退出码均为 0）
+
+- S0（T001–T003）PASS：s0:geometry 627/627、s0:oracle 117/117、s0:determinism 6/6、s0:gate 120/120；53/53 parity（含 5 边界）、12/12 植入检出、0 误报、100 次 1 哈希；gateSha256 65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26（此后全程不变）
+- S1（T004–T006）PASS：test:schema 259/259、test:validation 273/273、test:modes 1159/1159、oracle:diff:modes 98/98、test:events 1301/1301、test:event-order 22/22、oracle:diff:events 70/70
+- S2（T007–T008）PASS：test:geometry 629/629、oracle:diff:geometry 86/86（34/34 parity）、test:bfs 277/277、test:bfs:determinism 4/4；独立审查 T007 0/0/2 P2、T008 0/0/4 P2
+- S3（T009–T010）PASS：test:ui 202/202、test:export 136/136、build 退出 0、demo 退出 0（resultSha256 88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60、reportSha256 f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8、见证长 1）；T009 独立审查初评 FAIL（P1-1：SVG 对已完成的 UNKNOWN 评估谎称“计算中…”，96/336 横扫命中，属实）——已修 FailClosedNotice，聚焦复核 PASS；T010 审查 PASS 0/0/4 P2
+- S4（T011–T012）PASS：test:property 709/709、test:mutation 31/31（8/8 变异检出）、test:coverage PASS、oracle:diff:coverage 165/165 parity、test:golden 107/107；test:e2e 55/55（真实 Chromium CDP 直驱，0 外部请求，Tab 17 stops）、test:offline 26/26、test:performance 11/11、test:perf PASS（11 checks）、test:stress 15/15、release:verify 15/15；独立审查 T011 0/0/2 P2、T012 0/0/4 P2
+- T013 独立审查（全新会话，未改源码/夹具/Oracle/证据）FINAL_VERDICT: PASS，P0 0 / P1 0 / P2 8：npm ci、typecheck、npm test 全绿、test:oracle（parity 41/41、27/27、34/34、165/165）、test:e2e 55/55、test:offline 26/26、release:verify 15/15，全部 exit 0；s0:gate 120/120，gate 哈希不变；demo 哈希不变
+- T014 正式冻结：release:freeze 28/28（两次构建 byte-identical）、release:verify 15/15、deterministic_zip.py --verify source.zip 669 条目 PASS、dist.zip 10 条目 PASS；npm test 全绿、s0:gate 120/120、typecheck、build、demo 哈希不变
+
+## 三、T013 的 8 项 P2（7 open + 1 已裁决保留，均不阻塞本次 PASS，由终审定夺）
+
+- T013-P2-1（新）：时间轴行状态忽略 GeometryStep.status——评估以 UNKNOWN/INVALID 终止时末行可能显示“PASS（通过）”（src/ui/scenario.ts:339–393、src/render/timeline.tsx:100–104）；实际可达性极低（合同检查是构造定理，UI 参数范围使零面积不可达）
+- T013-P2-2（新）：result===null 的短暂加载窗口顶栏默认显示 UNKNOWN 标签（src/ui/App.tsx:236），一瞬态，同一行同时显示“计算中…”
+- T011-P2-1（承接）：Golden expected.bfs 缺 nodesVisited / nodesEnqueued（24/24 缺，BFS 夹具 15/15 含）；最短性与见证本身已被 witness + witnessLength 钉住
+- T012-P2-1（承接）：test:performance 每次运行重写两份性能证据文件，handoff/T012/sha256.txt 校验 2 项 FAILED（仅实测值变，门槛不变）；T014 已处置：SHA256SUMS 在全部验收跑完最后一步生成并立即自校验
+- T012-P2-2（承接）：evidence/e2e/downloads/ 未保留主流程 resizes-visual 导出文件（哈希 e85dbd57… 本身经重跑复算验证无误）
+- T012-P2-3（承接）：性能门槛全部由下限决定，2×中位数规则从未生效，余量 6–102 倍，门偏松（规则本身是任务卡授权的且执行无误）
+- T012-P2-4（承接）：RELEASE_MANIFEST.json 与 RELEASE_REHEARSAL.json 内容完全相同；T014 已处置：正式冻结只出 release/RELEASE_MANIFEST.json，manifest 以 rehearsalSuperseded 注明预演产物被取代
+- T007-P2-2（已裁决保留）：geometry-eval.ts 的 INVALID 步分支保留为防御性代码（四点论证：校验器先拒零面积、全部仓内路径先校验、58 夹具/50 步骤 INVALID 步 0、该分支是导出函数唯一 fail-closed 守卫），无需修复
+
+另：T009 可选项 4（3×4 对比矩阵）、5（见证逐项展开）已正式登记为不做；上游 KEYBOARD_CLOSE 决策建议维持（TS 三层与 Python Oracle 三层均一致，夹具钉住 visualOffsetTop=100000，改动将破坏 parity 与 S0 gate，由终审定）；T009 审查 8 项 P2 的其余 5 项逐字原文不在仓库快照中，T013 如实写“原文缺失、无法逐项核对”，未编造。
+
+## 四、T014 冻结修正经过（诚实记录）
+
+初版冻结出过两个真实问题，均已在冻结提交前修正，记录在 T014 冻结报告 §11：
+1. 初版 source.zip（4dcaa21e…，已作废）混入工作树改过的 package.json（多了 T014 的 "release:freeze" 入口），而非 HEAD 版；修正：冻结取数改为 git archive HEAD，重冻后 source.zip 为 09b4eef2…；主控亲自解包 diff -r 核实与 git archive HEAD 0 差异，包内 package.json = HEAD 版 2ee4f205…
+2. release:verify 的防护检查断言“release/ 不存在”，正式冻结创建 release/ 后按设计必然失败（修正前 14/15）；修正为行为断言（预演前后 release/ 存在性不变），冻结后重跑 15/15、exit 0；改动仅两处，其余 14 项检查未动。
+
+## 五、诚实限制
+
+- Windows：NOT_TESTED（未实测，不得写 PASS）
+- USER_VALUE 未实测（零真人硬约束）
+- 产品是行为模型实验室，模拟模型不等于真实 iOS Safari / Android 浏览器，不做真实设备兼容性认证
+- 所有频率、成本、性能和工时均为规划假设与验收目标
+- P2 清单见上；许可证 PENDING_SAM_DECISION
+
+## 六、请你做的审查与回复格式
+
+请逐项核查：规格一致性、冻结物哈希与内容（请实际下载 Drive 上的 source.zip/dist.zip/RELEASE_MANIFEST.json 并重算 SHA-256；如读不到某个文件，必须明确写出哪个文件未读到、不得假装读取）、全部测试数字、Oracle parity、确定性、T013 审查结论、P2 清单的完整性与处置、冻结修正的可信度、诚实限制是否如实。
+
+回复格式（必须包含）：
+- FINAL_VERDICT: PASS / FAIL / EVIDENCE_INCOMPLETE（三选一）
+- P0 / P1 / P2：各多少条，并逐条列出（编号、位置、证据、影响）
+- BLOCKERS：有则列出，无则写 NONE
+- 对 8 项 P2 与上游 KEYBOARD_CLOSE 决策逐项表态：接受 / 要求修复 / 要求补充证据
+- 如 verdict 不是 PASS，请给出完成本轮所需的确切修复清单（REQUIRED_NEXT_ACTIONS）
+
+附件（请一并阅读，文件内容以附件为准）：
+1. INDEPENDENT_REVIEW.md — T013 独立审查报告全文（23,658 字节）
+2. T014_FREEZE_REPORT.md — T014 冻结报告全文，含 §11 修正记录（18,664 字节）
+3. RELEASE_MANIFEST.json — 正式冻结清单（113,858 字节）
+4. SHA256SUMS.txt — 冻结物哈希清单
+5. PROJECT_BOOK.md — 规格书项目书全文
+6. IMPLEMENTATION_PLAN.md — 实施计划全文（S0–S5、T001–T014）
+
+请使用谷歌云盘以及任何需要的插件，如果有了的话就算了。

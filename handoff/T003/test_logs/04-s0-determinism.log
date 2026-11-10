@@ -1,0 +1,15 @@
+
+> viewportshift@0.1.0 s0:determinism
+> node scripts/s0-determinism.mjs
+
+typescript: runs=100 uniqueHashes=1 hash=2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6
+oracle: scenarios=48 statuses={'FAIL': 12, 'PASS': 36} analysisSha256=2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6 runs=100 uniqueHashes=1
+python: runs=100 uniqueHashes=1 hash=2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6
+
+wrote evidence/s0/S0_DETERMINISM.json
+wrote evidence/s0/S0_DETERMINISM_PY.json
+
+checks passed: 6, checks failed: 0
+
+S0 determinism: PASS
+EXIT_CODE=0

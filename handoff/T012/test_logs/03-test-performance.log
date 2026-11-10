@@ -1,0 +1,15 @@
+=== 03-test-performance : npm run test:performance ===
+
+> viewportshift@0.1.0 test:performance
+> node scripts/test-performance.mjs
+
+test:performance: build took 6336 ms
+test:performance: demo times 119, 114, 109 ms (median 114)
+test:performance: preview startup took 548 ms
+test:performance: page loads 524, 224, 220 ms (median 224)
+test:performance: timeline click 177, 165, 160 ms (median 165)
+test:performance: mode switch 166, 164, 172, 163, 163, 161 ms (median 164)
+test:performance: template switch 166, 165, 161, 161, 162, 162 ms (median 162)
+test:performance: 11 passed, 0 failed
+test:performance: PASS — all measured values within frozen thresholds
+exit=0

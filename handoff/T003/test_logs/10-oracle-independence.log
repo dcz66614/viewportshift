@@ -1,0 +1,12 @@
+== oracle independence: no TS import/call/subprocess in oracle ==
+grep EXIT_CODE=1 (1 = 0 hits, good)
+== oracle compiles clean ==
+py_compile OK
+== oracle stdlib imports only ==
+64:from __future__ import annotations
+66:import argparse
+67:import hashlib
+68:import json
+69:import math
+70:import sys
+71:from pathlib import Path

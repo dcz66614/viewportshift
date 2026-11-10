@@ -1,0 +1,12 @@
+.gitignore
+README.md
+evidence/environment/ENVIRONMENT_REPORT.md
+index.html
+oracle/python/geometry_oracle.py
+package-lock.json
+package.json
+scripts/env-check.mjs
+src/App.tsx
+src/main.tsx
+tsconfig.json
+vite.config.ts
