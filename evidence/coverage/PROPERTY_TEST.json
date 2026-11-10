@@ -1,0 +1,37 @@
+{
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "t011-properties/v1",
+  "perProperty": {
+    "prop-invariant-sum": {
+      "passed": 200,
+      "failed": 0
+    },
+    "prop-ratio-floor": {
+      "passed": 200,
+      "failed": 0
+    },
+    "prop-determinism": {
+      "passed": 60,
+      "failed": 0
+    },
+    "prop-bfs-shortest": {
+      "passed": 30,
+      "failed": 0
+    },
+    "prop-fail-closed": {
+      "passed": 40,
+      "failed": 0
+    },
+    "prop-pan-clamp": {
+      "passed": 120,
+      "failed": 0
+    },
+    "prop-oracle-parity-random": {
+      "passed": 40,
+      "failed": 0
+    }
+  },
+  "checksPassed": 709,
+  "checksFailed": 0,
+  "analysisSha256": "9e38782b1d7643252e728953384989b50ff73816f1d670882915ae9fffcbc250"
+}

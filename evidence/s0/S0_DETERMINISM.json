@@ -1,0 +1,16 @@
+{
+  "analysisSha256": "2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6",
+  "determinism": {
+    "runs": 100,
+    "tsUniqueHashes": 1,
+    "pyUniqueHashes": 1,
+    "tsHashes": [
+      "2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6"
+    ],
+    "pyHashes": [
+      "2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6"
+    ]
+  },
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "s0-geometry/v1"
+}

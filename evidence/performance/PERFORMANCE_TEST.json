@@ -1,0 +1,60 @@
+{
+  "suite": "test:performance",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "browser": "HeadlessChrome/158.0.8127.18",
+  "assertions": 11,
+  "passed": 11,
+  "failed": 0,
+  "failures": [],
+  "thresholdRule": "threshold = max(2 x measured median of this run, floor); floors: build 120000ms, demo 10000ms, preview startup 10000ms, page load 5000ms, interaction 1000ms. Frozen from this run because ENVIRONMENT_REPORT.md (T001) contains no frozen performance thresholds.",
+  "measured": {
+    "buildMs": 6444,
+    "demoMs": 94,
+    "demoRunsMs": [
+      106,
+      94,
+      93
+    ],
+    "previewStartupMs": 558,
+    "pageLoadMs": 229,
+    "pageLoadRunsMs": [
+      506,
+      227,
+      229
+    ],
+    "timelineClickMs": 162,
+    "timelineClickRunsMs": [
+      186,
+      162,
+      159
+    ],
+    "modeSwitchMs": 165,
+    "modeSwitchRunsMs": [
+      169,
+      165,
+      163,
+      162,
+      164,
+      168
+    ],
+    "templateSwitchMs": 164,
+    "templateSwitchRunsMs": [
+      164,
+      165,
+      161,
+      160,
+      160,
+      164
+    ]
+  },
+  "thresholds": {
+    "buildMs": 120000,
+    "demoMs": 10000,
+    "previewStartupMs": 10000,
+    "pageLoadMs": 5000,
+    "timelineClickMs": 1000,
+    "modeSwitchMs": 1000,
+    "templateSwitchMs": 1000
+  },
+  "windowsTested": "NOT_TESTED"
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>ViewportShift 离线报告 — DEMO-chat-input-overlays-content</title>
+<style>
+body{font-family:sans-serif;max-width:960px;margin:0 auto;padding:16px;color:#111}table{border-collapse:collapse;width:100%}th,td{border:1px solid #999;padding:4px 8px;text-align:left}svg{border:1px solid #111;background:#fff}text{font-size:12px;fill:#111}
+</style>
+</head>
+<body>
+<h1>ViewportShift — 视口潮汐离线报告</h1>
+<p><strong>行为模型实验室，不是真实设备兼容性认证。</strong>本报告只用合成布局、合成事件与固定 seed 做确定性模拟；模拟结果不等价于任何厂商浏览器的完整实现，不能替代真机测试。</p>
+<h2>场景</h2>
+<table>
+<tr><th scope="row">场景 ID</th><td>DEMO-chat-input-overlays-content</td></tr>
+<tr><th scope="row">模式</th><td>overlays-content</td></tr>
+<tr><th scope="row">Seed</th><td>P021-VIEWPORTSHIFT-S0-2026-11-10</td></tr>
+<tr><th scope="row">状态</th><td><strong>FAIL（失败）</strong></td></tr>
+<tr><th scope="row">场景哈希</th><td>b3bc29aa2e21970964eb26959848ebf76c2d0019dcb6c21aed65d27f113048e2</td></tr>
+<tr><th scope="row">布局模板</th><td>chat-input（锚点 bottom）</td></tr>
+<tr><th scope="row">布局视口</th><td>390 × 844 CSS px</td></tr>
+<tr><th scope="row">键盘高度</th><td>300 CSS px</td></tr>
+</table>
+<h2>视口剖面（最终状态）</h2>
+<figure><svg role="img" viewBox="0 0 390 844" width="390" height="844"><rect x="0" y="0" width="390" height="844" fill="#ffffff" stroke="#111111" stroke-width="2" /><text x="4" y="14">布局视口</text><rect x="0" y="0" width="390" height="844" fill="#dbeafe" stroke="#2563eb" stroke-width="2" /><text x="4" y="14">视觉视口</text><rect x="0" y="544" width="390" height="300" fill="#fde68a" stroke="#b45309" stroke-width="2" /><text x="4" y="558">键盘</text><rect x="0" y="788" width="390" height="56" fill="none" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 3" /><text x="4" y="802">期望锚点</text><rect x="0" y="788" width="390" height="56" fill="#bbf7d0" stroke="#15803d" stroke-width="2" /><text x="4" y="802">目标 UI</text><rect x="0" y="788" width="390" height="56" fill="#fca5a5" stroke="#b91c1c" stroke-width="2" /><text x="4" y="802">遮挡热区</text></svg><figcaption>布局视口 390 × 844 CSS px；视觉视口 390 × 844 CSS px，偏移 (0, 0) CSS px；键盘可见，高 300 CSS px；目标 UI 390 × 56 CSS px。</figcaption></figure>
+<h2>关键数值（最终步骤）</h2>
+<table>
+<tr><th scope="row">键盘遮挡面积</th><td>21840 CSS px²</td></tr>
+<tr><th scope="row">视口裁剪面积</th><td>0 CSS px²</td></tr>
+<tr><th scope="row">可见面积</th><td>0 CSS px²</td></tr>
+<tr><th scope="row">可见比例</th><td>0%</td></tr>
+<tr><th scope="row">底部间距</th><td>0 CSS px</td></tr>
+<tr><th scope="row">位置漂移 (dx, dy, 模长)</th><td>(0, 0, 0) CSS px</td></tr>
+</table>
+<h2>事件时间轴</h2>
+<table>
+<thead><tr><th scope="col">步骤</th><th scope="col">事件</th><th scope="col">时间 (ms)</th><th scope="col">键盘遮挡面积 (CSS px²)</th><th scope="col">可见比例</th><th scope="col">底部间距 (CSS px)</th><th scope="col">位置漂移模长 (CSS px)</th><th scope="col">失败谓词</th></tr></thead>
+<tbody>
+<tr><td>初始状态</td><td>INITIAL</td><td>0</td><td>0</td><td>100%</td><td>0</td><td>0</td><td>无</td></tr>
+<tr><td>步骤 1</td><td>KEYBOARD_OPEN（demo-e1）</td><td>100</td><td>21840</td><td>0%</td><td>0</td><td>0</td><td>visibleRatio, keyboardObscuredArea</td></tr>
+</tbody>
+</table>
+<h2>最短失败序列（见证）</h2>
+<p>见证长度：1 个事件；首个失败步骤下标：0；触发谓词：visibleRatio, keyboardObscuredArea；访问节点：1；搜索上限：深度 8，节点 10000。</p>
+<table>
+<thead><tr><th scope="col">步骤</th><th scope="col">事件</th><th scope="col">时间 (ms)</th><th scope="col">参数</th><th scope="col">可见比例</th><th scope="col">键盘遮挡面积 (CSS px²)</th><th scope="col">失败谓词</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>KEYBOARD_OPEN（demo-e1）</td><td>100</td><td>keyboardHeight=300000</td><td>0%</td><td>21840</td><td>visibleRatio, keyboardObscuredArea</td></tr>
+</tbody>
+</table>
+<h2>可复算性</h2>
+<p>场景哈希（SHA-256，规范化场景 JSON）：b3bc29aa2e21970964eb26959848ebf76c2d0019dcb6c21aed65d27f113048e2。</p><p>报告版本 report/v1；Schema viewportshift.scenario/v1；IO io/v1。本报告不含任何外部资源，可离线打开；导出 JSON 的哈希可用规范化 JSON 重新计算验证。</p>
+</body>
+</html>

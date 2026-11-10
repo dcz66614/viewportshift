@@ -1,0 +1,17 @@
+{
+  "analysisSha256": "c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7",
+  "pythonAnalysisSha256": "c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7",
+  "fixturesTotal": 41,
+  "parityPassed": 41,
+  "parityFailed": 0,
+  "parityByMode": {
+    "resizes-visual": 23,
+    "<missing>": 1,
+    "overlays-content": 8,
+    "resizes-content": 8,
+    "resizes-unknown": 1
+  },
+  "mismatches": [],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "modes/v1"
+}

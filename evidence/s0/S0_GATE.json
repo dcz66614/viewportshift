@@ -1,0 +1,1401 @@
+{
+  "analysisSha256": "a7584d47023c38c19cb7fc9cb71c671744d4917f9a67e1ee9f3c8021375165df",
+  "determinism": {
+    "runs": 100,
+    "tsUniqueHashes": 1,
+    "pyUniqueHashes": 1,
+    "analysisSha256": "2f85b424fd3eece3865fd4cc0f27ed4eb02687277db7dfe1930dfa55878769d6"
+  },
+  "edgeCases": [
+    {
+      "scenarioId": "S0-edge-clock-regression",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "UNKNOWN",
+      "tsStatus": "UNKNOWN",
+      "pyStatus": "UNKNOWN",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 21840000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -300000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 300000,
+          "magnitude": 300000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-edge-keyboard-too-tall",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "UNKNOWN",
+      "tsStatus": "UNKNOWN",
+      "pyStatus": "UNKNOWN",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": null
+    },
+    {
+      "scenarioId": "S0-edge-scale-2",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "UNKNOWN",
+      "tsStatus": "UNKNOWN",
+      "pyStatus": "UNKNOWN",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": null
+    },
+    {
+      "scenarioId": "S0-edge-unknown-mode",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-unknown",
+      "expectedStatus": "UNKNOWN",
+      "tsStatus": "UNKNOWN",
+      "pyStatus": "UNKNOWN",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": null
+    },
+    {
+      "scenarioId": "S0-edge-zero-area",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "INVALID",
+      "tsStatus": "INVALID",
+      "pyStatus": "INVALID",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": null
+    }
+  ],
+  "edgeCasesPassed": 5,
+  "edgeCasesTotal": 5,
+  "falsePositives": 0,
+  "gate": "S0",
+  "mismatches": [],
+  "parityFailed": 0,
+  "parityPassed": 53,
+  "plantedErrorsDetected": 12,
+  "plantedErrorsTotal": 12,
+  "project": "P021",
+  "scenarios": [
+    {
+      "scenarioId": "S0-chat-rv-open",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 21840000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -300000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 300000,
+          "magnitude": 300000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rv-open-close",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rv-open-scroll-close",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rv-open-pan",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 21840000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -290000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 290000,
+          "magnitude": 290000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rc-open",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rc-open-close",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rc-open-scroll-close",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-rc-open-pan",
+      "layoutTemplate": "chat-input",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-oc-open",
+      "layoutTemplate": "chat-input",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 21840000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-oc-open-close",
+      "layoutTemplate": "chat-input",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-oc-open-scroll-close",
+      "layoutTemplate": "chat-input",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-chat-oc-open-pan",
+      "layoutTemplate": "chat-input",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 21840000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rv-open",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 117000000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -300000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 300000,
+          "magnitude": 300000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rv-open-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rv-open-scroll-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rv-open-pan",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 3900000000,
+        "viewportClippedArea": 113100000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -290000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 290000,
+          "magnitude": 290000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rc-open",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rc-open-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rc-open-scroll-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-rc-open-pan",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-oc-open",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 117000000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-oc-open-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-oc-open-scroll-close",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-sheet-oc-open-pan",
+      "layoutTemplate": "bottom-sheet",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 117000000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rv-open",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 17184000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -284000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 300000,
+          "magnitude": 300000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rv-open-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rv-open-scroll-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rv-open-pan",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-visual",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "viewport-clipped",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 17184000000,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": -274000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 290000,
+          "magnitude": 290000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rc-open",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rc-open-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rc-open-scroll-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-rc-open-pan",
+      "layoutTemplate": "fixed-cta",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-oc-open",
+      "layoutTemplate": "fixed-cta",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 17184000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-oc-open-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-oc-open-scroll-close",
+      "layoutTemplate": "fixed-cta",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-cta-oc-open-pan",
+      "layoutTemplate": "fixed-cta",
+      "mode": "overlays-content",
+      "expectedStatus": "FAIL",
+      "tsStatus": "FAIL",
+      "pyStatus": "FAIL",
+      "parity": true,
+      "plantedErrorKind": "keyboard-obscured",
+      "detected": true,
+      "firstFailedStepIndex": 0,
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 17184000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0,
+        "bottomGap": 16000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rv-open",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 484000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rv-open-close",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rv-open-scroll-close",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rv-open-pan",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-visual",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 494000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": -10000,
+          "magnitude": 10000
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rc-open",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 484000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rc-open-close",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rc-open-scroll-close",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-rc-open-pan",
+      "layoutTemplate": "search-bar",
+      "mode": "resizes-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 484000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-oc-open",
+      "layoutTemplate": "search-bar",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-oc-open-close",
+      "layoutTemplate": "search-bar",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-oc-open-scroll-close",
+      "layoutTemplate": "search-bar",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "scenarioId": "S0-search-oc-open-pan",
+      "layoutTemplate": "search-bar",
+      "mode": "overlays-content",
+      "expectedStatus": "PASS",
+      "tsStatus": "PASS",
+      "pyStatus": "PASS",
+      "parity": true,
+      "plantedErrorKind": null,
+      "detected": false,
+      "firstFailedStepIndex": null,
+      "failedPredicates": [],
+      "finalMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    }
+  ],
+  "scenariosTotal": 48,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "specVersion": "1.0.0",
+  "status": "PASS",
+  "gateSha256": "65b4b32f4a5298642fd3de5a64441ed7d214e2519d118b8b67a7871ba73aca26"
+}

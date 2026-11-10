@@ -1,0 +1,41 @@
+{
+  "kind": "P021 ViewportShift release REHEARSAL manifest (NOT the T014 formal freeze)",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "builds": 2,
+  "buildsIdentical": true,
+  "dist": [
+    {
+      "file": "assets/index-Ck8UGF3U.js",
+      "size": 285286,
+      "sha256": "6ae8eae67bbe256e094e31300aaf596b09dd6c6aa521f46c7e196b150affc1d0"
+    },
+    {
+      "file": "assets/index-Zih-ycei.css",
+      "size": 1467,
+      "sha256": "2886d497a5ffe03ddf3aa4e949eb4f89908d26812a74c9c7dd203259319a95ec"
+    },
+    {
+      "file": "index.html",
+      "size": 436,
+      "sha256": "41bdfdf691568f898528dc53bcd0bfbe578503315d5099491e0ec384008d82f2"
+    },
+    {
+      "file": "viewportshift.mjs",
+      "size": 75943,
+      "sha256": "f83fec7af9c4ee6c559e41f963f3b830fa8682039e00044cfa9e887094b001db"
+    }
+  ],
+  "demo": {
+    "runs": 2,
+    "resultSha256": "88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60",
+    "reportSha256": "f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8",
+    "witnessLength": "1",
+    "frozenResultSha256": "88f2153afd19cd19659d48587b7a98286621fff7ca9ae37cec0de6a4e50f6b60",
+    "frozenReportSha256": "f329e8144a234eb46e6eea71dc04fc222e63dec44f3f66192b6c0bf0128d90b8"
+  },
+  "assertions": 15,
+  "passed": 15,
+  "failed": 0,
+  "failures": [],
+  "windowsTested": "NOT_TESTED"
+}

@@ -1,0 +1,5432 @@
+{
+  "analysisSha256": "c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7",
+  "determinism": {
+    "hashes": [
+      "c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7"
+    ],
+    "runs": 1,
+    "uniqueHashes": 1
+  },
+  "results": [
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "event_clock_regression",
+      "scenarioId": "T005-clock-regression",
+      "scenarioSha256": "41073b839293b91d80f1292d367205aa0874b838bb9c516113e8e1bb502fa4d4",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "event_clock_regression",
+          "message": "event clock regressed: atMs 100 < previous 200",
+          "path": "events[1].atMs"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "event_limit_exceeded",
+      "scenarioId": "T005-event-limit",
+      "scenarioSha256": "8ace7f9c20463100e582f29aa757abe09ea8b59ac97c492fff53c79e384f2f7f",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "event_limit_exceeded",
+          "message": "event count 9 exceeds limits.maxEvents (8)",
+          "path": "events"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "duplicate_event_id",
+      "scenarioId": "T005-invalid-duplicate-event-id",
+      "scenarioSha256": "19d79db64252febfe5c9feaf405365ccf5098eb682ebec4571cac79e423beaaf",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "INVALID",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "duplicate_event_id",
+          "message": "duplicate event id: e1",
+          "path": "events[1].id"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "",
+      "panReports": [],
+      "reason": "missing_field",
+      "scenarioId": "T005-invalid-missing-mode",
+      "scenarioSha256": "1fd24612246fc31cfa7a1a9393c90bdf73e7ff26d4af1740fb8cf038a15a63a4",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "INVALID",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "missing_field",
+          "message": "missing required field: mode",
+          "path": "mode"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "non_integer_value",
+      "scenarioId": "T005-invalid-non-integer",
+      "scenarioSha256": "81cb40ce493cfd0bc48a9bee85637445bb8a38f90e014d33cb269bdfcbbb995b",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "INVALID",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "non_integer_value",
+          "message": "layoutWidth must be an integer",
+          "path": "viewport.layoutWidth"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "zero_area_surface",
+      "scenarioId": "T005-invalid-zero-area",
+      "scenarioSha256": "cb16706a7dc06eb78d7b7f8d309057341cf7b0b32948321b0119198d11033218",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "INVALID",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "zero_area_surface",
+          "message": "surface area must be positive (zero-area surface is INVALID)",
+          "path": "layout"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "keyboard_height_out_of_range",
+      "scenarioId": "T005-keyboard-too-tall",
+      "scenarioSha256": "06e6b4bf0b9375026b2b99c7d1b94e668be182c06f692e0fd99f9dccb221373f",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "keyboard_height_out_of_range",
+          "message": "keyboard height exceeds the layout viewport height",
+          "path": "events[0].keyboardHeight"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-close-idle",
+      "scenarioSha256": "89c03ff4320a361f7bf4e862ed6db68338e1d64109481fc6fe939f3323b602c9",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open-close",
+      "scenarioSha256": "43200200503502f9b3511e3ed4e98e4ed43f8096687879c1322b4b6c41361984",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 844000,
+          "width": 390000,
+          "x": 0,
+          "y": 0
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open-full-kb",
+      "scenarioSha256": "d298cd8d469efedc0d303481c9b3565723f4f774b79da2b34be9e3f7796d47d8",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 844000,
+              "width": 390000,
+              "x": 0,
+              "y": 0
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 0,
+          "clampReason": "dy clamped to [0, 0]",
+          "clamped": true,
+          "requestedDx": 0,
+          "requestedDy": 100000
+        }
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open-pan-clamp",
+      "scenarioSha256": "0b0e77c6ef29a02b560bd95766bf9ffe2a3e64b365e1720db7ba677177d48075",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 0,
+            "clampReason": "dy clamped to [0, 0]",
+            "clamped": true,
+            "requestedDx": 0,
+            "requestedDy": 100000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 50000,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open-scroll",
+      "scenarioSha256": "b763edeea717b3e843c21e0590992e7676aa54f8a41f976b5f86171d8f03883b",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_offsets",
+              "passed": true
+            },
+            {
+              "name": "scroll_visual_untouched",
+              "passed": true
+            },
+            {
+              "name": "scroll_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "SCROLL",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 50000,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open-zero-kb",
+      "scenarioSha256": "fd8bdb6aa6ebc04834715efca3cf9076501f4808263f1a50fcacd3b233164a63",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-open",
+      "scenarioSha256": "110f8ab6c2218ff4b65a24cecca47f236752dfc13c166803abe0314e5d51cd41",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 200000,
+          "width": 390000,
+          "x": 0,
+          "y": 644000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "overlays-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-oc-reopen",
+      "scenarioSha256": "032b4057997eb341f563c4961faea27312775e2df3ab05b6b4ff7304b7a49dc1",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_visual_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "oc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "oc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "oc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 200000,
+              "width": 390000,
+              "x": 0,
+              "y": 644000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "pan_limit_exceeded",
+      "scenarioId": "T005-pan-limit",
+      "scenarioSha256": "7655d2a1db3904b7cf4722f1347ce9a193b9255ef1be935e474bcfc02f26c030",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "pan_limit_exceeded",
+          "message": "pan delta exceeds limits.maxPanMilli (500000)",
+          "path": "events[0].dx"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-close-idle",
+      "scenarioSha256": "b16eb17542a87380ac771c799e08ce823595028734ad98591b416fce2c9d8bfb",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_restored",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open-close",
+      "scenarioSha256": "087942b3655cac64de3897fa55e4f2f786923cb09367f2b7ba516315de2b6307",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_restored",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 844000,
+          "width": 390000,
+          "x": 0,
+          "y": 0
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 0,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 0,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open-full-kb",
+      "scenarioSha256": "0881669b624224d7780c6a731f06eae04e6070fcfde82660e6b2acebbf14e65c",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 844000,
+              "width": 390000,
+              "x": 0,
+              "y": 0
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 0,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 0,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 544000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 0,
+          "clampReason": "dy clamped to [0, 0]",
+          "clamped": true,
+          "requestedDx": 0,
+          "requestedDy": 100000
+        }
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open-pan-clamp",
+      "scenarioSha256": "b033cc663b7eb5a2da27295c1696a78f43d306c0d820328c1fae073947ea2bd6",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 0,
+            "clampReason": "dy clamped to [0, 0]",
+            "clamped": true,
+            "requestedDx": 0,
+            "requestedDy": 100000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 544000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 50000,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open-scroll",
+      "scenarioSha256": "7ea0c401a3ea71d3ba61b4388f999391fee231c4c94655fadf4121a4b29359ad",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_offsets",
+              "passed": true
+            },
+            {
+              "name": "scroll_visual_untouched",
+              "passed": true
+            },
+            {
+              "name": "scroll_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "SCROLL",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 50000,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open-zero-kb",
+      "scenarioSha256": "044457d9665a813dff3ba9e64dc6d56eecfab748aa8805d78accd5417945b587",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 544000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-open",
+      "scenarioSha256": "cb54c86debd3ab508e1f5bb8bb966c0339e384989fcc6ab82364da518592ab0b",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 200000,
+          "width": 390000,
+          "x": 0,
+          "y": 644000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 644000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 644000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-content",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rc-reopen",
+      "scenarioSha256": "82aa7970936711bc7e3d43391906e0a4c8e24e2b43a9898ebc0432f51cd06c5a",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 544000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_layout_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rc_visual_follows_layout",
+              "passed": true
+            },
+            {
+              "name": "rc_offsets_zeroed",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rc_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rc_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rc_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 200000,
+              "width": 390000,
+              "x": 0,
+              "y": 644000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 644000,
+            "layoutWidth": 390000,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 644000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-close-idle",
+      "scenarioSha256": "10a32c0ecf357c5af819a9ca4b0228f5f19495dba9aacd8e02813c9b0dc408e8",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_restored",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 10000,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-equal-timestamps",
+      "scenarioSha256": "0994dd67346554bae7754cdbd5bf10481d468c47bc399af29cbcbff1e770d8f3",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_offsets",
+              "passed": true
+            },
+            {
+              "name": "scroll_visual_untouched",
+              "passed": true
+            },
+            {
+              "name": "scroll_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "SCROLL",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 10000,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-close",
+      "scenarioSha256": "1f1c419ffd299d3754cdd188aee09e39c8e41f359648228fbde34743f93c1223",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_restored",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 844000,
+          "width": 390000,
+          "x": 0,
+          "y": 0
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 0,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-full-kb",
+      "scenarioSha256": "734a0bdeab8156d1d51721dcd22f53af58288575aa03902c556c7a10d7f5c1e5",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 844000,
+              "width": 390000,
+              "x": 0,
+              "y": 0
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 0,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 300000
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 300000,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 300000,
+          "clampReason": "dy clamped to [0, 300000]",
+          "clamped": true,
+          "requestedDx": 0,
+          "requestedDy": 400000
+        }
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-pan-clamp",
+      "scenarioSha256": "9ff88a93a99d3e902274766c80fe83f9390be3deb8bfb852c1939c901ae17031",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 300000,
+            "clampReason": "dy clamped to [0, 300000]",
+            "clamped": true,
+            "requestedDx": 0,
+            "requestedDy": 400000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 300000
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 300000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 300,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 100000
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 100000,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 100000,
+          "clampReason": null,
+          "clamped": false,
+          "requestedDx": 0,
+          "requestedDy": 100000
+        },
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-pan-close",
+      "scenarioSha256": "9bb328a45c351cc90a975d7804640270be6f0f437091b4d7d8349389574fff49",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 100000,
+            "clampReason": null,
+            "clamped": false,
+            "requestedDx": 0,
+            "requestedDy": 100000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 100000
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 300,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_restored",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect_cleared",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_hidden",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e3",
+          "eventType": "KEYBOARD_CLOSE",
+          "index": 2,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 300,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 100000
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 300,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 100000,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 100000,
+          "clampReason": null,
+          "clamped": false,
+          "requestedDx": 0,
+          "requestedDy": 100000
+        },
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-pan-settled",
+      "scenarioSha256": "d9494daf816a1bdcda17feb14e989b0aaa133d8eee7d54ea1b615ce1e3b47ed8",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 100000,
+            "clampReason": null,
+            "clamped": false,
+            "requestedDx": 0,
+            "requestedDy": 100000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 100000
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 300,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "settled_pending_cleared",
+              "passed": true
+            },
+            {
+              "name": "settled_state_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e3",
+          "eventType": "VIEWPORT_SETTLED",
+          "index": 2,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 300,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 50000,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-scroll",
+      "scenarioSha256": "ac469e9d8d58ad69abd518d471d23c70e1f1c446d6f2d7bf5e2ed230b29c0d0a",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_offsets",
+              "passed": true
+            },
+            {
+              "name": "scroll_visual_untouched",
+              "passed": true
+            },
+            {
+              "name": "scroll_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "SCROLL",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 50000,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open-zero-kb",
+      "scenarioSha256": "989b7b8b2846354ef0c5fb55740565ff7be95fd3da7949833354f649a227578a",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-open",
+      "scenarioSha256": "0e8a07b1b2587bb981520cbaf70c4a6a2ad5d6ced9815eb2d527881c6bfad66f",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 300000,
+          "width": 390000,
+          "x": 0,
+          "y": 544000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 300000
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 544000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 300000,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        {
+          "appliedDx": 0,
+          "appliedDy": 300000,
+          "clampReason": null,
+          "clamped": false,
+          "requestedDx": 0,
+          "requestedDy": 300000
+        }
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-pan-exact",
+      "scenarioSha256": "4d4b6a95a55128568d573f84e15c094d488e5712c4429f2b948da85d062b9e68",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_offsets_clamped",
+              "passed": true
+            },
+            {
+              "name": "pan_pending_recorded",
+              "passed": true
+            },
+            {
+              "name": "pan_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_visual_size_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "pan_scroll_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "index": 1,
+          "panReport": {
+            "appliedDx": 0,
+            "appliedDy": 300000,
+            "clampReason": null,
+            "clamped": false,
+            "requestedDx": 0,
+            "requestedDy": 300000
+          },
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 300000
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 300000,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 200,
+        "keyboardRect": {
+          "height": 200000,
+          "width": 390000,
+          "x": 0,
+          "y": 644000
+        },
+        "keyboardVisible": true,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 644000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null,
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-reopen",
+      "scenarioSha256": "b3cf64edb11387d13c4986c0b7a0b11d011d96275e06a3dd08e216e06e39ce63",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 300000,
+              "width": 390000,
+              "x": 0,
+              "y": 544000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        },
+        {
+          "atMs": 200,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_width_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_visual_height_shrunk",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_rect",
+              "passed": true
+            },
+            {
+              "name": "rv_keyboard_visible",
+              "passed": true
+            },
+            {
+              "name": "rv_offsets_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_scroll_unchanged",
+              "passed": true
+            },
+            {
+              "name": "rv_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e2",
+          "eventType": "KEYBOARD_OPEN",
+          "index": 1,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 200,
+            "keyboardRect": {
+              "height": 200000,
+              "width": 390000,
+              "x": 0,
+              "y": 644000
+            },
+            "keyboardVisible": true,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 644000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": {
+        "eventClock": 100,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "initialState": {
+        "eventClock": 0,
+        "keyboardRect": {
+          "height": 0,
+          "width": 390000,
+          "x": 0,
+          "y": 844000
+        },
+        "keyboardVisible": false,
+        "layoutHeight": 844000,
+        "layoutWidth": 390000,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "scrollX": 0,
+        "scrollY": 0,
+        "visualHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000
+      },
+      "mode": "resizes-visual",
+      "panReports": [
+        null
+      ],
+      "reason": null,
+      "scenarioId": "T005-rv-scroll-negative",
+      "scenarioSha256": "11c755b6e07a1bdc75145582c405dde79f5fee6b2852b03e27ad688a1df469de",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "OK",
+      "steps": [
+        {
+          "atMs": 100,
+          "contractChecks": [
+            {
+              "name": "clock_advanced",
+              "passed": true
+            },
+            {
+              "name": "mode_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_offsets",
+              "passed": true
+            },
+            {
+              "name": "scroll_visual_untouched",
+              "passed": true
+            },
+            {
+              "name": "scroll_layout_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_keyboard_unchanged",
+              "passed": true
+            },
+            {
+              "name": "scroll_pending_pan_unchanged",
+              "passed": true
+            }
+          ],
+          "eventId": "e1",
+          "eventType": "SCROLL",
+          "index": 0,
+          "panReport": null,
+          "reason": null,
+          "state": {
+            "eventClock": 100,
+            "keyboardRect": {
+              "height": 0,
+              "width": 390000,
+              "x": 0,
+              "y": 844000
+            },
+            "keyboardVisible": false,
+            "layoutHeight": 844000,
+            "layoutWidth": 390000,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "scrollX": 0,
+            "scrollY": 0,
+            "visualHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000
+          },
+          "status": "OK"
+        }
+      ],
+      "validationIssues": []
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "unsupported_scale",
+      "scenarioId": "T005-scale-2",
+      "scenarioSha256": "080d58de17fa2b767d74f433ac0f477a5e0706813d8a74a1d9d20f9f50a69f02",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "unsupported_scale",
+          "message": "unsupported scale: 2 (MVP scale is fixed at 1)",
+          "path": "profile.scale"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "unsupported_event_type",
+      "scenarioId": "T005-unknown-event-type",
+      "scenarioSha256": "db8d4dbd22b9c92035c086d125a802043c3a5047e75f48e35ab3c2f4f1614b84",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "unsupported_event_type",
+          "message": "unsupported event type: KEYBOARD_TOGGLE",
+          "path": "events[0].type"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-unknown",
+      "panReports": [],
+      "reason": "unsupported_mode",
+      "scenarioId": "T005-unknown-mode",
+      "scenarioSha256": "24c71b50143f62e9d0b5435a559c803122ae5561758b2ca20b647a557d80cde6",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "unsupported_mode",
+          "message": "unsupported viewport mode: resizes-unknown",
+          "path": "mode"
+        }
+      ]
+    },
+    {
+      "failedEventId": null,
+      "failedStepIndex": null,
+      "finalState": null,
+      "initialState": null,
+      "mode": "resizes-visual",
+      "panReports": [],
+      "reason": "unsupported_layout_template",
+      "scenarioId": "T005-unknown-template",
+      "scenarioSha256": "247e9d19ad00ff61a333008f37695366614b19fa6e3a515c4a168228994b9830",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "status": "UNKNOWN",
+      "steps": [],
+      "validationIssues": [
+        {
+          "code": "unsupported_layout_template",
+          "message": "unsupported layout template: carousel",
+          "path": "layout.template"
+        }
+      ]
+    }
+  ],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "modes/v1"
+}

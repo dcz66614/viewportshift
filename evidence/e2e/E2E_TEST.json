@@ -1,0 +1,179 @@
+{
+  "suite": "test:e2e",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "driver": {
+    "method": "CDP (Input.dispatchMouseEvent / Input.dispatchKeyEvent) on cached Chromium headless shell",
+    "playwrightPackageInstalled": false,
+    "browser": "HeadlessChrome/158.0.8127.18",
+    "chromeBinary": "/home/hatch/.cache/ms-playwright/chromium_headless_shell-1254/chrome-headless-shell-linux64/chrome-headless-shell"
+  },
+  "assertions": 55,
+  "passed": 55,
+  "failed": 0,
+  "failures": [],
+  "screenshots": {
+    "e2e-main-flow.png": "32e67fb132f9268dcd9a8a2f6b1299f63665eae264fd4e0e035c737f92f9d5f0",
+    "e2e-keyboard-visible.png": "7f3d83e0d213bfd7fd4be96e5e6f5cd93852314645ec388e228b40a8b480d2d7",
+    "e2e-tab-focus-export.png": "efdbaf4e3ca7a20005cf9f73d8773c6dbd1090721f7d77110d92925c98331b93"
+  },
+  "network": {
+    "totalRequests": 6,
+    "externalRequests": 0,
+    "externalUrls": [],
+    "requestUrls": [
+      "http://127.0.0.1:4174/?template=chat-input&mode=resizes-visual&sequence=open",
+      "http://127.0.0.1:4174/assets/index-Ck8UGF3U.js",
+      "http://127.0.0.1:4174/assets/index-Zih-ycei.css",
+      "http://127.0.0.1:4174/?template=chat-input&mode=resizes-visual&sequence=open",
+      "http://127.0.0.1:4174/assets/index-Ck8UGF3U.js",
+      "http://127.0.0.1:4174/assets/index-Zih-ycei.css"
+    ]
+  },
+  "export": {
+    "method": "real-blob-download",
+    "file": "UI-chat-input-resizes-visual.viewportshift.json",
+    "scenarioSha256": "e85dbd57685bebae4ded0983163e16f9ef1c704d3de6f95a0e13474242f37585",
+    "expectedScenarioSha256": "e85dbd57685bebae4ded0983163e16f9ef1c704d3de6f95a0e13474242f37585",
+    "canonicalRoundTrip": true
+  },
+  "tabTraversal": {
+    "stops": 17,
+    "wrapped": false,
+    "visited": {
+      "templateRadio": true,
+      "testSetButton": true,
+      "modeRadio": true,
+      "numberInput": true,
+      "sequenceSelect": true,
+      "timelineStep": true,
+      "exportButton": true
+    },
+    "chain": [
+      {
+        "idx": 0,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "template",
+        "text": "chat-input"
+      },
+      {
+        "idx": 3,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "聊天输入框"
+      },
+      {
+        "idx": 4,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "底部面板"
+      },
+      {
+        "idx": 5,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "固定 CTA"
+      },
+      {
+        "idx": 6,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "搜索栏"
+      },
+      {
+        "idx": 7,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "mode",
+        "text": "resizes-visual"
+      },
+      {
+        "idx": 10,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "390"
+      },
+      {
+        "idx": 11,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "844"
+      },
+      {
+        "idx": 12,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "300"
+      },
+      {
+        "idx": 13,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "0"
+      },
+      {
+        "idx": 14,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "100"
+      },
+      {
+        "idx": 15,
+        "tag": "INPUT",
+        "testid": "",
+        "name": "",
+        "text": "100"
+      },
+      {
+        "idx": 16,
+        "tag": "SELECT",
+        "testid": "",
+        "name": "",
+        "text": "仅键盘展开展开 + 滚动展开 + 延迟平移 + 稳定展开 +"
+      },
+      {
+        "idx": 17,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "导出 JSON（场景 + 重放 + 见证）"
+      },
+      {
+        "idx": 18,
+        "tag": "BUTTON",
+        "testid": "",
+        "name": "",
+        "text": "清空当前合成工作区（恢复默认）"
+      },
+      {
+        "idx": 19,
+        "tag": "BUTTON",
+        "testid": "timeline-step--1",
+        "name": "",
+        "text": "初始状态"
+      },
+      {
+        "idx": 20,
+        "tag": "BUTTON",
+        "testid": "timeline-step-0",
+        "name": "",
+        "text": "步骤 1"
+      }
+    ]
+  },
+  "t009Leftovers": {
+    "keyboardVisibleScreenshot": "e2e-keyboard-visible.png (after real click on timeline-step-0)",
+    "exportClickVerified": "real-blob-download",
+    "tabTraversal": "17 stops, document-order monotonic"
+  },
+  "windowsTested": "NOT_TESTED"
+}

@@ -1,0 +1,151 @@
+{
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "bfs/v1",
+  "verdicts": [
+    {
+      "mutation_id": "M01-triple-to-pairwise",
+      "description": "computeGeometry: keyboard obscuration uses |S n K| instead of the triple intersection |S n V n K| (counts keyboard area outside the visual viewport as obscured).",
+      "target_file": "src/domain/geometry.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-rv-chat-pan-settled",
+        "golden-rv-chat-pan100"
+      ],
+      "detectedByHit": [
+        "golden-rv-chat-pan100"
+      ]
+    },
+    {
+      "mutation_id": "M02-bottom-gap-sign",
+      "description": "computeGeometry: bottomGap sign flipped (surface bottom minus visual bottom).",
+      "target_file": "src/domain/geometry.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-oc-cta-open",
+        "golden-oc-search-open",
+        "golden-rc-cta-open",
+        "golden-rc-search-open",
+        "golden-rv-chat-kb0",
+        "golden-rv-chat-kbfull",
+        "golden-rv-chat-open",
+        "golden-rv-chat-pan-close",
+        "golden-rv-chat-pan-neg",
+        "golden-rv-chat-pan-settled",
+        "golden-rv-chat-pan100",
+        "golden-rv-chat-pan300",
+        "golden-rv-cta-open",
+        "golden-rv-search-open",
+        "golden-rv-sheet-open",
+        "bfs-1step-rc-search",
+        "bfs-3step-rv-chat",
+        "bfs-prefix-rv-sheet",
+        "prefix-trigger-rv-chat"
+      ],
+      "detectedByHit": [
+        "golden-rv-chat-open"
+      ]
+    },
+    {
+      "mutation_id": "M03-rv-close-resets-offset",
+      "description": "viewport-state resizes-visual KEYBOARD_CLOSE resets visualOffsetTop to 0 (breaks the frozen retained-offset decision).",
+      "target_file": "src/domain/viewport-state.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-rv-chat-pan-close",
+        "bfs-3step-rv-chat",
+        "bfs-dedup-rv-sheet"
+      ],
+      "detectedByHit": [
+        "golden-rv-chat-pan-close"
+      ]
+    },
+    {
+      "mutation_id": "M04-alphabet-order-swap",
+      "description": "BFS alphabet: KEYBOARD_OPEN 300 explored before 150 (breaks the frozen tie-break).",
+      "target_file": "src/domain/bfs.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-rv-chat-kb0",
+        "bfs-1step-oc-chat",
+        "bfs-1step-rc-search",
+        "bfs-2step-rv-sheet",
+        "bfs-3step-rv-chat"
+      ],
+      "detectedByHit": [
+        "golden-rv-chat-kb0",
+        "bfs-1step-oc-chat"
+      ]
+    },
+    {
+      "mutation_id": "M05-dedup-naive-sum",
+      "description": "BFS dedup key replaced by a naive numeric-field sum (merges states with different observable geometry).",
+      "target_file": "src/domain/bfs.ts",
+      "detected": true,
+      "failingFixtures": [
+        "bfs-2step-rv-sheet",
+        "bfs-3step-rv-chat",
+        "bfs-bounded-nodes",
+        "bfs-bounded-rc-sheet",
+        "bfs-dedup-rv-sheet",
+        "bfs-prefix-rv-sheet"
+      ],
+      "detectedByHit": [
+        "bfs-dedup-rv-sheet"
+      ]
+    },
+    {
+      "mutation_id": "M06-visible-area-no-deduction",
+      "description": "computeGeometry: visibleArea no longer deducts the keyboard-obscured part (double-counts the overlap).",
+      "target_file": "src/domain/geometry.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-oc-chat-open",
+        "golden-oc-chat-scroll",
+        "golden-oc-cta-open",
+        "golden-oc-sheet-open",
+        "golden-rv-chat-pan-close",
+        "golden-rv-chat-pan300",
+        "prefix-trigger-oc-chat"
+      ],
+      "detectedByHit": [
+        "golden-oc-chat-open"
+      ]
+    },
+    {
+      "mutation_id": "M07-pan-clamp-zero",
+      "description": "viewport-state DELAYED_VISUAL_PAN clamps the new visual top to 0 (pan never moves the viewport).",
+      "target_file": "src/domain/viewport-state.ts",
+      "detected": true,
+      "failingFixtures": [
+        "golden-rv-chat-pan-close",
+        "golden-rv-chat-pan-settled",
+        "golden-rv-chat-pan100",
+        "golden-rv-chat-pan300",
+        "golden-rv-search-open",
+        "bfs-2step-rv-sheet",
+        "bfs-3step-rv-chat",
+        "bfs-dedup-rv-sheet",
+        "bfs-prefix-rv-sheet"
+      ],
+      "detectedByHit": [
+        "golden-rv-chat-pan100"
+      ]
+    },
+    {
+      "mutation_id": "M08-bfs-depth-off-by-one",
+      "description": "BFS depth bound uses > instead of >= (searches one level deeper than the frozen maxDepth).",
+      "target_file": "src/domain/bfs.ts",
+      "detected": true,
+      "failingFixtures": [
+        "bfs-bounded-rc-sheet",
+        "bfs-dedup-rv-sheet"
+      ],
+      "detectedByHit": [
+        "bfs-bounded-rc-sheet"
+      ]
+    }
+  ],
+  "checksPassed": 31,
+  "checksFailed": 0,
+  "analysisSha256": "69704ebc13b9bd2c8f595d9bd8e6cb20930d1a82023107abd453ef7fbfcab1f0"
+}

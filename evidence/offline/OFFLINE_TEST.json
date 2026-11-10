@@ -1,0 +1,38 @@
+{
+  "suite": "test:offline",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "assertions": 26,
+  "passed": 26,
+  "failed": 0,
+  "failures": [],
+  "staticScan": {
+    "indexHtmlExternalRefs": [],
+    "srcNetworkTokens": [],
+    "distNetworkCallSites": [],
+    "fetchCallSites": [
+      {
+        "file": "dist/assets/index-Ck8UGF3U.js",
+        "isModulepreloadPolyfill": true
+      }
+    ],
+    "distUrlLiterals": [
+      "http://www.w3.org/1998/Math/MathML",
+      "http://www.w3.org/1999/xlink",
+      "http://www.w3.org/2000/svg",
+      "http://www.w3.org/XML/1998/namespace",
+      "https://react.dev/errors/"
+    ],
+    "disallowedUrlLiterals": []
+  },
+  "leg2Interception": {
+    "totalRequests": 3,
+    "externalRequests": 0
+  },
+  "leg3OfflineEmulation": {
+    "newRequestsWhileOffline": 0,
+    "externalRequests": 0
+  },
+  "exportScenarioSha256": "f3daec4bfba0c8ae8f06e2462f7dd0164017b8069fde6af2a5e4feae7b98da3d",
+  "leg3ExportScenarioSha256": "a6fa92fcf6aae9d919df536e6f9758572c9d181c9074b93c62a07bb04f79c0d0",
+  "windowsTested": "NOT_TESTED"
+}

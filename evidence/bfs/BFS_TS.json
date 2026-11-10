@@ -1,0 +1,1703 @@
+{
+  "analysisSha256": "c457c9dbd71ad77c6bd31bac8f9644b8d8c1310ffa9c794c1af4d2758eeac1e2",
+  "determinism": {
+    "runs": 2,
+    "uniqueHashes": 1,
+    "hashes": [
+      "c457c9dbd71ad77c6bd31bac8f9644b8d8c1310ffa9c794c1af4d2758eeac1e2"
+    ]
+  },
+  "results": [
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-1step-oc-chat",
+      "scenarioSha256": "58084e0975e7bc8b8236f176ea2266c5773a3a58a3464858ac9ba2024827f2db",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "overlays-content",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "FAIL",
+      "reason": null,
+      "witness": [
+        {
+          "index": 0,
+          "eventId": "bfs-1-open-150000",
+          "eventType": "KEYBOARD_OPEN",
+          "atMs": 100,
+          "params": {
+            "keyboardHeight": 150000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000,
+            "visualHeight": 844000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 694000,
+              "width": 390000,
+              "height": 150000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "overlays-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "eventClock": 100
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 788000,
+            "width": 390000,
+            "height": 56000
+          },
+          "metrics": {
+            "surfaceArea": 21840000000,
+            "keyboardObscuredArea": 21840000000,
+            "viewportClippedArea": 0,
+            "visibleArea": 0,
+            "visibleRatio": 0,
+            "bottomGap": 0,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 0,
+              "magnitude": 0
+            }
+          },
+          "failedPredicates": [
+            "keyboardObscuredArea"
+          ]
+        }
+      ],
+      "witnessLength": 1,
+      "failedPredicates": [
+        "keyboardObscuredArea"
+      ],
+      "firstFailedStepIndex": 0,
+      "nodesVisited": 1,
+      "nodesEnqueued": 1,
+      "nodesPrunedDuplicate": 0,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 1,
+      "limitReached": null,
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "overlays-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-1step-rc-search",
+      "scenarioSha256": "ebfea94cac795ed03d4d2086d166fc5920b0cbcd02637d98aa76f73a2af802a5",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-content",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "FAIL",
+      "reason": null,
+      "witness": [
+        {
+          "index": 0,
+          "eventId": "bfs-1-open-300000",
+          "eventType": "KEYBOARD_OPEN",
+          "atMs": 100,
+          "params": {
+            "keyboardHeight": 300000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 544000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000,
+            "visualHeight": 544000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 544000,
+              "width": 390000,
+              "height": 300000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-content",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "eventClock": 100
+          },
+          "surfaceRect": {
+            "x": 16000,
+            "y": 12000,
+            "width": 358000,
+            "height": 48000
+          },
+          "metrics": {
+            "surfaceArea": 17184000000,
+            "keyboardObscuredArea": 0,
+            "viewportClippedArea": 0,
+            "visibleArea": 17184000000,
+            "visibleRatio": 1000,
+            "bottomGap": 484000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 0,
+              "magnitude": 0
+            }
+          },
+          "failedPredicates": [
+            "bottomGap"
+          ]
+        }
+      ],
+      "witnessLength": 1,
+      "failedPredicates": [
+        "bottomGap"
+      ],
+      "firstFailedStepIndex": 0,
+      "nodesVisited": 1,
+      "nodesEnqueued": 2,
+      "nodesPrunedDuplicate": 0,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 1,
+      "limitReached": null,
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 17184000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 17184000000,
+        "visibleRatio": 1000,
+        "bottomGap": 784000,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-2step-rv-sheet",
+      "scenarioSha256": "77dcffd1408e5eca60290a41cbadfda4162cd3b8644b97e7db1bbf53bc8cf9ef",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-visual",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "FAIL",
+      "reason": null,
+      "witness": [
+        {
+          "index": 0,
+          "eventId": "bfs-1-open-150000",
+          "eventType": "KEYBOARD_OPEN",
+          "atMs": 100,
+          "params": {
+            "keyboardHeight": 150000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000,
+            "visualHeight": 694000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 694000,
+              "width": 390000,
+              "height": 150000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "eventClock": 100
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 544000,
+            "width": 390000,
+            "height": 300000
+          },
+          "metrics": {
+            "surfaceArea": 117000000000,
+            "keyboardObscuredArea": 0,
+            "viewportClippedArea": 58500000000,
+            "visibleArea": 58500000000,
+            "visibleRatio": 500,
+            "bottomGap": -150000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 150000,
+              "magnitude": 150000
+            }
+          },
+          "failedPredicates": []
+        },
+        {
+          "index": 1,
+          "eventId": "bfs-2-pan-0-100000",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "atMs": 200,
+          "params": {
+            "dx": 0,
+            "dy": 100000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000,
+            "visualHeight": 694000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 694000,
+              "width": 390000,
+              "height": 150000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 100000
+            },
+            "eventClock": 200
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 544000,
+            "width": 390000,
+            "height": 300000
+          },
+          "metrics": {
+            "surfaceArea": 117000000000,
+            "keyboardObscuredArea": 39000000000,
+            "viewportClippedArea": 19500000000,
+            "visibleArea": 58500000000,
+            "visibleRatio": 500,
+            "bottomGap": -50000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 50000,
+              "magnitude": 50000
+            }
+          },
+          "failedPredicates": [
+            "keyboardObscuredArea"
+          ]
+        }
+      ],
+      "witnessLength": 2,
+      "failedPredicates": [
+        "keyboardObscuredArea"
+      ],
+      "firstFailedStepIndex": 1,
+      "nodesVisited": 2,
+      "nodesEnqueued": 11,
+      "nodesPrunedDuplicate": 11,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 2,
+      "limitReached": null,
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-3step-rv-chat",
+      "scenarioSha256": "e2c34d48681196dbcc4e7a68610e98f33936407e5d9510629da9e44c1a2a0d4b",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-visual",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "FAIL",
+      "reason": null,
+      "witness": [
+        {
+          "index": 0,
+          "eventId": "bfs-1-open-300000",
+          "eventType": "KEYBOARD_OPEN",
+          "atMs": 100,
+          "params": {
+            "keyboardHeight": 300000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000,
+            "visualHeight": 544000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 544000,
+              "width": 390000,
+              "height": 300000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "eventClock": 100
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 788000,
+            "width": 390000,
+            "height": 56000
+          },
+          "metrics": {
+            "surfaceArea": 21840000000,
+            "keyboardObscuredArea": 0,
+            "viewportClippedArea": 21840000000,
+            "visibleArea": 0,
+            "visibleRatio": 0,
+            "bottomGap": -300000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 300000,
+              "magnitude": 300000
+            }
+          },
+          "failedPredicates": []
+        },
+        {
+          "index": 1,
+          "eventId": "bfs-2-pan-0-300000",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "atMs": 200,
+          "params": {
+            "dx": 0,
+            "dy": 300000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 300000,
+            "visualWidth": 390000,
+            "visualHeight": 544000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 544000,
+              "width": 390000,
+              "height": 300000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 300000
+            },
+            "eventClock": 200
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 788000,
+            "width": 390000,
+            "height": 56000
+          },
+          "metrics": {
+            "surfaceArea": 21840000000,
+            "keyboardObscuredArea": 21840000000,
+            "viewportClippedArea": 0,
+            "visibleArea": 0,
+            "visibleRatio": 0,
+            "bottomGap": 0,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 0,
+              "magnitude": 0
+            }
+          },
+          "failedPredicates": []
+        },
+        {
+          "index": 2,
+          "eventId": "bfs-3-close",
+          "eventType": "KEYBOARD_CLOSE",
+          "atMs": 300,
+          "params": {},
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 300000,
+            "visualWidth": 390000,
+            "visualHeight": 844000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 844000,
+              "width": 390000,
+              "height": 0
+            },
+            "keyboardVisible": false,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 300000
+            },
+            "eventClock": 300
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 788000,
+            "width": 390000,
+            "height": 56000
+          },
+          "metrics": {
+            "surfaceArea": 21840000000,
+            "keyboardObscuredArea": 0,
+            "viewportClippedArea": 0,
+            "visibleArea": 21840000000,
+            "visibleRatio": 1000,
+            "bottomGap": 300000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": -300000,
+              "magnitude": 300000
+            }
+          },
+          "failedPredicates": [
+            "bottomGap"
+          ]
+        }
+      ],
+      "witnessLength": 3,
+      "failedPredicates": [
+        "bottomGap"
+      ],
+      "firstFailedStepIndex": 2,
+      "nodesVisited": 17,
+      "nodesEnqueued": 63,
+      "nodesPrunedDuplicate": 132,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 3,
+      "limitReached": null,
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 21840000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 21840000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-bounded-nodes",
+      "scenarioSha256": "069efd6b20732fdf076e6466d216d4638af7617c33351dd877ab2f3fad7e9231",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-content",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 8,
+        "maxNodes": 5
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "BOUNDED_NO_WITNESS",
+      "reason": null,
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 1,
+      "nodesEnqueued": 5,
+      "nodesPrunedDuplicate": 2,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 1,
+      "limitReached": "nodes",
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-bounded-rc-sheet",
+      "scenarioSha256": "c73534fdeafcce657293830bf70e3bb6e72eaf1d518ada002159178ddf2b81f3",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-content",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "BOUNDED_NO_WITNESS",
+      "reason": null,
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 40,
+      "nodesEnqueued": 40,
+      "nodesPrunedDuplicate": 177,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 3,
+      "limitReached": "depth",
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-content",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-dedup-rv-sheet",
+      "scenarioSha256": "c7375c7b260a8cc4266b912592fababe9c51fcd046e39c216574ae064ef50ca0",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-visual",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "BOUNDED_NO_WITNESS",
+      "reason": null,
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 74,
+      "nodesEnqueued": 74,
+      "nodesPrunedDuplicate": 191,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 3,
+      "limitReached": "depth",
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-invalid-zero-area",
+      "scenarioSha256": "3a8cd162dda3ae28a1d0e1a18bf7eb17705adec95d4ce27d7d8629562acca7d3",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "overlays-content",
+      "status": "INVALID",
+      "reason": "zero_area_surface",
+      "validationIssues": [
+        {
+          "code": "zero_area_surface",
+          "path": "layout",
+          "message": "surface area must be positive (zero-area surface is INVALID)"
+        }
+      ],
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 0,
+      "nodesEnqueued": 0,
+      "nodesPrunedDuplicate": 0,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 0,
+      "limitReached": null,
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "limitsFallbackReason": null,
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "initialState": null,
+      "initialMetrics": null
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-prefix-rv-sheet",
+      "scenarioSha256": "7e2dad2c3c3256def4467ca52498e2979bd72639959af9be7e0487fdb06e2a8c",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "resizes-visual",
+      "validationIssues": [],
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "status": "FAIL",
+      "reason": null,
+      "witness": [
+        {
+          "index": 0,
+          "eventId": "e1",
+          "eventType": "KEYBOARD_OPEN",
+          "atMs": 100,
+          "params": {
+            "keyboardHeight": 150000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 0,
+            "visualWidth": 390000,
+            "visualHeight": 694000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 694000,
+              "width": 390000,
+              "height": 150000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 0
+            },
+            "eventClock": 100
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 544000,
+            "width": 390000,
+            "height": 300000
+          },
+          "metrics": {
+            "surfaceArea": 117000000000,
+            "keyboardObscuredArea": 0,
+            "viewportClippedArea": 58500000000,
+            "visibleArea": 58500000000,
+            "visibleRatio": 500,
+            "bottomGap": -150000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 150000,
+              "magnitude": 150000
+            }
+          },
+          "failedPredicates": []
+        },
+        {
+          "index": 1,
+          "eventId": "bfs-2-pan-0-100000",
+          "eventType": "DELAYED_VISUAL_PAN",
+          "atMs": 200,
+          "params": {
+            "dx": 0,
+            "dy": 100000
+          },
+          "state": {
+            "layoutWidth": 390000,
+            "layoutHeight": 844000,
+            "visualOffsetLeft": 0,
+            "visualOffsetTop": 100000,
+            "visualWidth": 390000,
+            "visualHeight": 694000,
+            "keyboardRect": {
+              "x": 0,
+              "y": 694000,
+              "width": 390000,
+              "height": 150000
+            },
+            "keyboardVisible": true,
+            "scrollX": 0,
+            "scrollY": 0,
+            "mode": "resizes-visual",
+            "pendingPan": {
+              "dx": 0,
+              "dy": 100000
+            },
+            "eventClock": 200
+          },
+          "surfaceRect": {
+            "x": 0,
+            "y": 544000,
+            "width": 390000,
+            "height": 300000
+          },
+          "metrics": {
+            "surfaceArea": 117000000000,
+            "keyboardObscuredArea": 39000000000,
+            "viewportClippedArea": 19500000000,
+            "visibleArea": 58500000000,
+            "visibleRatio": 500,
+            "bottomGap": -50000,
+            "anchorDrift": {
+              "dx": 0,
+              "dy": 50000,
+              "magnitude": 50000
+            }
+          },
+          "failedPredicates": [
+            "keyboardObscuredArea"
+          ]
+        }
+      ],
+      "witnessLength": 2,
+      "failedPredicates": [
+        "keyboardObscuredArea"
+      ],
+      "firstFailedStepIndex": 1,
+      "nodesVisited": 1,
+      "nodesEnqueued": 6,
+      "nodesPrunedDuplicate": 4,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 1,
+      "limitReached": null,
+      "initialState": {
+        "layoutWidth": 390000,
+        "layoutHeight": 844000,
+        "visualOffsetLeft": 0,
+        "visualOffsetTop": 0,
+        "visualWidth": 390000,
+        "visualHeight": 844000,
+        "keyboardRect": {
+          "x": 0,
+          "y": 844000,
+          "width": 390000,
+          "height": 0
+        },
+        "keyboardVisible": false,
+        "scrollX": 0,
+        "scrollY": 0,
+        "mode": "resizes-visual",
+        "pendingPan": {
+          "dx": 0,
+          "dy": 0
+        },
+        "eventClock": 0
+      },
+      "initialMetrics": {
+        "surfaceArea": 117000000000,
+        "keyboardObscuredArea": 0,
+        "viewportClippedArea": 0,
+        "visibleArea": 117000000000,
+        "visibleRatio": 1000,
+        "bottomGap": 0,
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        }
+      }
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-unknown-mode",
+      "scenarioSha256": "0d1676abc0fe7313ffa0f2f568bc512cfe63627b2b614aefd73583d1a8490bb2",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "pinch-zoom",
+      "status": "UNKNOWN",
+      "reason": "unsupported_mode",
+      "validationIssues": [
+        {
+          "code": "unsupported_mode",
+          "path": "mode",
+          "message": "unsupported viewport mode: pinch-zoom"
+        }
+      ],
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 0,
+      "nodesEnqueued": 0,
+      "nodesPrunedDuplicate": 0,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 0,
+      "limitReached": null,
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "limitsFallbackReason": null,
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "initialState": null,
+      "initialMetrics": null
+    },
+    {
+      "bfsVersion": "bfs/v1",
+      "scenarioId": "bfs-unknown-scale",
+      "scenarioSha256": "d585e28c73172594ae2cd4020bb53e1979a87e4f80e796d44dc1d6123ee6dabd",
+      "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+      "mode": "overlays-content",
+      "status": "UNKNOWN",
+      "reason": "unsupported_scale",
+      "validationIssues": [
+        {
+          "code": "unsupported_scale",
+          "path": "profile.scale",
+          "message": "unsupported scale: 2 (MVP scale is fixed at 1)"
+        }
+      ],
+      "witness": null,
+      "witnessLength": null,
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "nodesVisited": 0,
+      "nodesEnqueued": 0,
+      "nodesPrunedDuplicate": 0,
+      "transitionsSkippedUnknown": 0,
+      "maxDepthReached": 0,
+      "limitReached": null,
+      "limits": {
+        "maxDepth": 3,
+        "maxNodes": 10000
+      },
+      "limitsFallbackReason": null,
+      "alphabet": [
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 150000
+        },
+        {
+          "type": "KEYBOARD_OPEN",
+          "keyboardHeight": 300000
+        },
+        {
+          "type": "KEYBOARD_CLOSE"
+        },
+        {
+          "type": "SCROLL",
+          "dx": -100000,
+          "dy": 0
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "SCROLL",
+          "dx": 100000,
+          "dy": 0
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -300000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": -100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 100000
+        },
+        {
+          "type": "DELAYED_VISUAL_PAN",
+          "dx": 0,
+          "dy": 300000
+        },
+        {
+          "type": "VIEWPORT_SETTLED"
+        }
+      ],
+      "initialState": null,
+      "initialMetrics": null
+    }
+  ],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "bfs/v1"
+}

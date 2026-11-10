@@ -1,0 +1,21 @@
+{
+  "analysisSha256": "c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f",
+  "pythonAnalysisSha256": "c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f",
+  "fixturesTotal": 34,
+  "parityPassed": 34,
+  "parityFailed": 0,
+  "parityByKind": {
+    "direct": 13,
+    "scenario": 21
+  },
+  "parityByMode": {
+    "direct": 13,
+    "overlays-content": 12,
+    "resizes-visual": 5,
+    "resizes-content": 3,
+    "resizes-unknown": 1
+  },
+  "mismatches": [],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "geometry/v1"
+}

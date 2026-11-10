@@ -1,0 +1,15 @@
+{
+  "analysisSha256": "b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951",
+  "pythonAnalysisSha256": "b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951",
+  "fixturesTotal": 27,
+  "parityPassed": 27,
+  "parityFailed": 0,
+  "parityByMode": {
+    "resizes-visual": 24,
+    "overlays-content": 2,
+    "resizes-content": 1
+  },
+  "mismatches": [],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "events/v1"
+}

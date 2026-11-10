@@ -1,0 +1,60 @@
+{
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "generatedBy": "oracle:diff:coverage (T011)",
+  "sets": {
+    "modes": {
+      "fixtures": 41,
+      "parityPassed": 41,
+      "parityFailed": 0,
+      "parityPercent": 100,
+      "analysisSha256": "c0ab0d487bda99bc1d495a8d0c04dd6faafee29d9c25e7edc1e115513dcd7cf7",
+      "version": "modes/v1"
+    },
+    "events": {
+      "fixtures": 27,
+      "parityPassed": 27,
+      "parityFailed": 0,
+      "parityPercent": 100,
+      "analysisSha256": "b76fe8f4f659475a3e69739fdd9cd3bbd686de29f6847c2464ec29dc4c807951",
+      "version": "events/v1"
+    },
+    "geometry": {
+      "fixtures": 34,
+      "parityPassed": 34,
+      "parityFailed": 0,
+      "parityPercent": 100,
+      "analysisSha256": "c7109f327bf8d1b7dd8113c553799fe40375c75fe2ab97b0fad8b2475d5c1b9f",
+      "version": "geometry/v1"
+    },
+    "bfsCoverage": {
+      "fixtures": 39,
+      "parityPassed": 39,
+      "parityFailed": 0,
+      "parityPercent": 100,
+      "analysisSha256": "b731a75a2177bc84194c0ad021d13b6e429491a2d9ed1d3662f7ee90246c12aa",
+      "pythonAnalysisSha256": "b731a75a2177bc84194c0ad021d13b6e429491a2d9ed1d3662f7ee90246c12aa",
+      "version": "bfs/v1",
+      "mismatches": []
+    },
+    "geometryGolden": {
+      "fixtures": 24,
+      "parityPassed": 24,
+      "parityFailed": 0,
+      "parityPercent": 100,
+      "analysisSha256": "fd7c70d487330dc5f36f3b7415e4f9f82dabe7bd7a8ce6d7707deb4ea93bd146",
+      "pythonAnalysisSha256": "fd7c70d487330dc5f36f3b7415e4f9f82dabe7bd7a8ce6d7707deb4ea93bd146",
+      "version": "geometry/v1",
+      "mismatches": []
+    }
+  },
+  "total": {
+    "fixtures": 165,
+    "parityPassed": 165,
+    "parityFailed": 0,
+    "parityPercent": 100
+  },
+  "layeringNote": "Python Oracle layering (T007 P2-1 / T011 P2-6, accepted as-is): the Python Geometry Oracle reuses the same-side Python Modes Oracle (modes_oracle.py) as its replay/validation layer, and the Python BFS Oracle reuses the same-side Python Modes/Events/Geometry Oracles for single-step transitions and rectangle geometry, exactly as the TypeScript geometry evaluator reuses the same-side modes.ts and the TypeScript BFS reuses the same-side geometry-eval.ts / events.ts. The BFS search itself (alphabet, queue order, dedup key, bounds, fail-closed limits) is implemented independently on each side. There is zero shared code and zero calling between the TypeScript side and the Python side — the two sides share only read-only fixtures, field names and the canonical-JSON definition — so the parity remains a genuine cross-check. No ignore list exists.",
+  "analysisSha256": "c8ba7a0bcaae6b95d1631dcb0eeff1be2f8606f8c822e4e40ed1d1460153b53e",
+  "checksPassed": 24,
+  "checksFailed": 0
+}

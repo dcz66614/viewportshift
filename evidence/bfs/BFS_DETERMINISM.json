@@ -1,0 +1,19 @@
+{
+  "fullRuns": {
+    "runs": 2,
+    "uniqueHashes": 1,
+    "hashes": [
+      "c457c9dbd71ad77c6bd31bac8f9644b8d8c1310ffa9c794c1af4d2758eeac1e2",
+      "c457c9dbd71ad77c6bd31bac8f9644b8d8c1310ffa9c794c1af4d2758eeac1e2"
+    ]
+  },
+  "repeatRuns": {
+    "runs": 100,
+    "uniqueHashes": 1,
+    "hashes": [
+      "93d99daf5a40cc1931829fadda59028d69830692903f842be5f94d0def8d1883"
+    ]
+  },
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "bfs/v1"
+}

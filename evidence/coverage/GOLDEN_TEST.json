@@ -1,0 +1,853 @@
+{
+  "results": [
+    {
+      "scenarioId": "golden-invalid-zero-area",
+      "geometry": {
+        "status": "INVALID",
+        "reason": "zero_area_surface",
+        "finalMetrics": null,
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "INVALID",
+        "reason": "zero_area_surface",
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-oc-chat-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 21840000000,
+          "viewportClippedArea": 0,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-oc-chat-scroll",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 21840000000,
+          "viewportClippedArea": 0,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-oc-cta-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 22912000000,
+          "keyboardObscuredArea": 22912000000,
+          "viewportClippedArea": 0,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": 16000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-oc-search-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 17184000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 17184000000,
+          "visibleRatio": 1000,
+          "bottomGap": 780000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "BOUNDED_NO_WITNESS",
+        "reason": null,
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": "depth",
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-oc-sheet-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 109200000000,
+          "keyboardObscuredArea": 109200000000,
+          "viewportClippedArea": 0,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rc-chat-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 21840000000,
+          "visibleRatio": 1000,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "BOUNDED_NO_WITNESS",
+        "reason": null,
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": "depth",
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rc-cta-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 22912000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 22912000000,
+          "visibleRatio": 1000,
+          "bottomGap": 16000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "BOUNDED_NO_WITNESS",
+        "reason": null,
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": "depth",
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rc-search-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 17184000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 17184000000,
+          "visibleRatio": 1000,
+          "bottomGap": 480000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "BOUNDED_NO_WITNESS",
+        "reason": null,
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": "depth",
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rc-sheet-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 109200000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 109200000000,
+          "visibleRatio": 1000,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "BOUNDED_NO_WITNESS",
+        "reason": null,
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": "depth",
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-kb0",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 21840000000,
+          "visibleRatio": 1000,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 2,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-kbfull",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 21840000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -844000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 844000,
+            "magnitude": 844000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 21840000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -300000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 300000,
+            "magnitude": 300000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-pan-close",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 21840000000,
+          "visibleRatio": 1000,
+          "bottomGap": 300000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": -300000,
+            "magnitude": 300000
+          }
+        },
+        "finalFailedPredicates": [
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-pan-neg",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 21840000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -300000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 300000,
+            "magnitude": 300000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-pan-settled",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 21840000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -200000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 200000,
+            "magnitude": 200000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-pan100",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 21840000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -200000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 200000,
+            "magnitude": 200000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-chat-pan300",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 21840000000,
+          "keyboardObscuredArea": 21840000000,
+          "viewportClippedArea": 0,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": 0,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "keyboardObscuredArea"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-cta-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 22912000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 22912000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -284000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 300000,
+            "magnitude": 300000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-search-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 17184000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 0,
+          "visibleArea": 17184000000,
+          "visibleRatio": 1000,
+          "bottomGap": 480000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 0,
+            "magnitude": 0
+          }
+        },
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 2,
+        "failedPredicates": [
+          "visibleRatio",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-rv-sheet-open",
+      "geometry": {
+        "status": "OK",
+        "reason": null,
+        "finalMetrics": {
+          "surfaceArea": 109200000000,
+          "keyboardObscuredArea": 0,
+          "viewportClippedArea": 109200000000,
+          "visibleArea": 0,
+          "visibleRatio": 0,
+          "bottomGap": -300000,
+          "anchorDrift": {
+            "dx": 0,
+            "dy": 300000,
+            "magnitude": 300000
+          }
+        },
+        "finalFailedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ]
+      },
+      "bfs": {
+        "status": "FAIL",
+        "reason": null,
+        "witnessLength": 1,
+        "failedPredicates": [
+          "visibleRatio",
+          "bottomGap",
+          "anchorDriftMagnitude"
+        ],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-unknown-clock",
+      "geometry": {
+        "status": "UNKNOWN",
+        "reason": "event_clock_regression",
+        "finalMetrics": null,
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "UNKNOWN",
+        "reason": "event_clock_regression",
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-unknown-mode",
+      "geometry": {
+        "status": "UNKNOWN",
+        "reason": "unsupported_mode",
+        "finalMetrics": null,
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "UNKNOWN",
+        "reason": "unsupported_mode",
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    },
+    {
+      "scenarioId": "golden-unknown-scale",
+      "geometry": {
+        "status": "UNKNOWN",
+        "reason": "unsupported_scale",
+        "finalMetrics": null,
+        "finalFailedPredicates": []
+      },
+      "bfs": {
+        "status": "UNKNOWN",
+        "reason": "unsupported_scale",
+        "witnessLength": null,
+        "failedPredicates": [],
+        "limitReached": null,
+        "limits": {
+          "maxDepth": 3,
+          "maxNodes": 10000
+        },
+        "limitsFallbackReason": null
+      }
+    }
+  ],
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "version": "bfs/v1",
+  "analysisSha256": "e859af92586c49b0595af974af182436687627821baf5c48a9673e9184669916",
+  "checksPassed": 107,
+  "checksFailed": 0
+}
