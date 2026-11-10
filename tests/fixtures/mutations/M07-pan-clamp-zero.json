@@ -1,0 +1,10 @@
+{
+  "description": "viewport-state DELAYED_VISUAL_PAN clamps the new visual top to 0 (pan never moves the viewport).",
+  "detected_by": [
+    "golden-rv-chat-pan100"
+  ],
+  "find": "      const newTop = clampInt(\n        current.visualOffsetTop + event.dy,\n        0,\n        maxTop,\n      );",
+  "mutation_id": "M07-pan-clamp-zero",
+  "replace": "      const newTop = clampInt(\n        current.visualOffsetTop + event.dy,\n        0,\n        0,\n      );",
+  "target_file": "src/domain/viewport-state.ts"
+}

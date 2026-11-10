@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T004-invalid-missing-mode",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

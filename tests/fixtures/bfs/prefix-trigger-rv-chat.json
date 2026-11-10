@@ -1,0 +1,66 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "expected": {
+    "failedPredicates": [
+      "visibleRatio"
+    ],
+    "firstFailedStepIndex": 0,
+    "limitReached": null,
+    "nodesEnqueued": 1,
+    "nodesVisited": 1,
+    "reason": null,
+    "status": "FAIL",
+    "witness": [
+      {
+        "atMs": 100,
+        "id": "e1",
+        "keyboardHeight": 300000,
+        "type": "KEYBOARD_OPEN"
+      }
+    ],
+    "witnessLength": 1
+  },
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "prefix-trigger-rv-chat",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

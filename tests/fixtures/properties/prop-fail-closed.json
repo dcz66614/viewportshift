@@ -1,0 +1,7 @@
+{
+  "description": "Unsupported inputs (unknown mode, scale != 1, clock regression, keyboard too tall) never evaluate to PASS or FAIL; they fail closed to UNKNOWN (or INVALID for structural faults).",
+  "kind": "fail-closed",
+  "property_id": "prop-fail-closed",
+  "sample_count": 40,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Random scenarios: TS geometry evaluation and the Python Geometry Oracle agree field-by-field (parity on generated, not only hand-written, fixtures).",
+  "kind": "oracle-parity-random",
+  "property_id": "prop-oracle-parity-random",
+  "sample_count": 40,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

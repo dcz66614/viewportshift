@@ -1,0 +1,92 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "expected": {
+    "bfs": {
+      "failedPredicates": [],
+      "firstFailedStepIndex": null,
+      "limitReached": "depth",
+      "limitsFallbackReason": null,
+      "reason": null,
+      "status": "BOUNDED_NO_WITNESS",
+      "witness": null,
+      "witnessLength": null
+    },
+    "geometry": {
+      "finalFailedPredicates": [],
+      "finalMetrics": {
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        },
+        "bottomGap": 16000,
+        "keyboardObscuredArea": 0,
+        "surfaceArea": 22912000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 22912000000,
+        "visibleRatio": 1000
+      },
+      "reason": null,
+      "status": "OK",
+      "steps": 1
+    }
+  },
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    },
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    },
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 0
+    },
+    {
+      "field": "anchorDriftMagnitude",
+      "op": ">",
+      "threshold": 50000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 64000,
+    "offsetMilli": 16000,
+    "template": "fixed-cta",
+    "widthMilli": 358000,
+    "xMilli": 16000
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-content",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "golden-rc-cta-open",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

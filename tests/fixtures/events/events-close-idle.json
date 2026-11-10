@@ -1,0 +1,100 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "type": "KEYBOARD_CLOSE"
+    }
+  ],
+  "expected": {
+    "clampBounds": [
+      null
+    ],
+    "clampEvidence": [],
+    "failedEventId": null,
+    "failedStepIndex": null,
+    "final": {
+      "eventClock": 100,
+      "keyboardRect": {
+        "height": 0,
+        "width": 390000,
+        "x": 0,
+        "y": 844000
+      },
+      "keyboardVisible": false,
+      "layoutHeight": 844000,
+      "layoutWidth": 390000,
+      "mode": "resizes-visual",
+      "pendingPan": {
+        "dx": 0,
+        "dy": 0
+      },
+      "scrollX": 0,
+      "scrollY": 0,
+      "visualHeight": 844000,
+      "visualOffsetLeft": 0,
+      "visualOffsetTop": 0,
+      "visualWidth": 390000
+    },
+    "panReports": [
+      null
+    ],
+    "reason": null,
+    "scrollReports": [
+      null
+    ],
+    "status": "OK",
+    "stepContractChecks": [
+      [
+        "clock_advanced",
+        "mode_unchanged",
+        "rv_layout_unchanged",
+        "rv_visual_width_unchanged",
+        "rv_visual_restored",
+        "rv_keyboard_rect_cleared",
+        "rv_keyboard_hidden",
+        "rv_offsets_unchanged",
+        "rv_scroll_unchanged",
+        "rv_pending_pan_unchanged"
+      ]
+    ],
+    "stepEventChecks": [
+      [
+        "ev_clock_advanced",
+        "ev_clock_monotonic",
+        "ev_mode_unchanged",
+        "ev_close_hidden",
+        "ev_close_offsets_retained",
+        "ev_close_pending_retained",
+        "ev_close_scroll_unchanged"
+      ]
+    ]
+  },
+  "failure_predicates": [],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T006-close-idle",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

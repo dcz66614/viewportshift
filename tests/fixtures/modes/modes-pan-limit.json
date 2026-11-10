@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "dx": 600000,
+      "dy": 0,
+      "id": "e1",
+      "type": "DELAYED_VISUAL_PAN"
+    }
+  ],
+  "expected": {
+    "failedEventId": null,
+    "failedStepIndex": null,
+    "final": null,
+    "reason": "pan_limit_exceeded",
+    "status": "UNKNOWN",
+    "stepChecks": []
+  },
+  "failure_predicates": [],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T005-pan-limit",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

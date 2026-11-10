@@ -1,0 +1,105 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "expected": {
+    "bfs": {
+      "failedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "firstFailedStepIndex": 0,
+      "limitReached": null,
+      "limitsFallbackReason": null,
+      "reason": null,
+      "status": "FAIL",
+      "witness": [
+        {
+          "atMs": 100,
+          "id": "e1",
+          "keyboardHeight": 300000,
+          "type": "KEYBOARD_OPEN"
+        }
+      ],
+      "witnessLength": 1
+    },
+    "geometry": {
+      "finalFailedPredicates": [
+        "visibleRatio",
+        "keyboardObscuredArea"
+      ],
+      "finalMetrics": {
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 0,
+          "magnitude": 0
+        },
+        "bottomGap": 0,
+        "keyboardObscuredArea": 21840000000,
+        "surfaceArea": 21840000000,
+        "viewportClippedArea": 0,
+        "visibleArea": 0,
+        "visibleRatio": 0
+      },
+      "reason": null,
+      "status": "OK",
+      "steps": 1
+    }
+  },
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    },
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    },
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 0
+    },
+    {
+      "field": "anchorDriftMagnitude",
+      "op": ">",
+      "threshold": 50000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "overlays-content",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "golden-oc-chat-open",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

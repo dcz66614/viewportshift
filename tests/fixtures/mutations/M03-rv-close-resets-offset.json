@@ -1,0 +1,10 @@
+{
+  "description": "viewport-state resizes-visual KEYBOARD_CLOSE resets visualOffsetTop to 0 (breaks the frozen retained-offset decision).",
+  "detected_by": [
+    "golden-rv-chat-pan-close"
+  ],
+  "find": "visualHeight: current.visualHeight + h,",
+  "mutation_id": "M03-rv-close-resets-offset",
+  "replace": "visualHeight: current.visualHeight + h,\n            visualOffsetTop: 0,",
+  "target_file": "src/domain/viewport-state.ts"
+}

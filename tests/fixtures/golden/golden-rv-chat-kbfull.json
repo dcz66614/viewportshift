@@ -1,0 +1,107 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 844000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "expected": {
+    "bfs": {
+      "failedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "firstFailedStepIndex": 0,
+      "limitReached": null,
+      "limitsFallbackReason": null,
+      "reason": null,
+      "status": "FAIL",
+      "witness": [
+        {
+          "atMs": 100,
+          "id": "e1",
+          "keyboardHeight": 844000,
+          "type": "KEYBOARD_OPEN"
+        }
+      ],
+      "witnessLength": 1
+    },
+    "geometry": {
+      "finalFailedPredicates": [
+        "visibleRatio",
+        "bottomGap",
+        "anchorDriftMagnitude"
+      ],
+      "finalMetrics": {
+        "anchorDrift": {
+          "dx": 0,
+          "dy": 844000,
+          "magnitude": 844000
+        },
+        "bottomGap": -844000,
+        "keyboardObscuredArea": 0,
+        "surfaceArea": 21840000000,
+        "viewportClippedArea": 21840000000,
+        "visibleArea": 0,
+        "visibleRatio": 0
+      },
+      "reason": null,
+      "status": "OK",
+      "steps": 1
+    }
+  },
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    },
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    },
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 0
+    },
+    {
+      "field": "anchorDriftMagnitude",
+      "op": ">",
+      "threshold": 50000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "golden-rv-chat-kbfull",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

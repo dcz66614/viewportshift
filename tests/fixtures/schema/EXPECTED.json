@@ -1,0 +1,280 @@
+{
+  "invalid-bad-anchor.json": {
+    "codes": [
+      "invalid_enum"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-bad-predicate-field.json": {
+    "codes": [
+      "invalid_enum"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-bad-predicate-op.json": {
+    "codes": [
+      "invalid_enum"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-dimension-too-large.json": {
+    "codes": [
+      "value_out_of_range"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-dimension-unit-string.json": {
+    "codes": [
+      "illegal_unit"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-duplicate-event-id.json": {
+    "codes": [
+      "duplicate_event_id"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-empty-scenario-id.json": {
+    "codes": [
+      "invalid_value"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-float-dimension.json": {
+    "codes": [
+      "non_integer_value"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-illegal-unit.json": {
+    "codes": [
+      "illegal_unit"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-keyboard-open-missing-height.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-limits-max-events-zero.json": {
+    "codes": [
+      "invalid_limits"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-event-id.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-events.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-layout.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-limits.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-mode.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-predicate-threshold.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-missing-scenario-id.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-negative-at-ms.json": {
+    "codes": [
+      "invalid_at_ms"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-negative-keyboard-height.json": {
+    "codes": [
+      "negative_size"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-negative-viewport.json": {
+    "codes": [
+      "non_positive_viewport"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-negative-width.json": {
+    "codes": [
+      "negative_size"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-plus-unknown.json": {
+    "codes": [
+      "negative_size",
+      "unsupported_scale"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-scroll-missing-dy.json": {
+    "codes": [
+      "missing_field"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-string-dimension.json": {
+    "codes": [
+      "invalid_type"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-top-level-string.json": {
+    "codes": [
+      "invalid_type"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-zero-area.json": {
+    "codes": [
+      "zero_area_surface"
+    ],
+    "outcome": "INVALID"
+  },
+  "invalid-zero-viewport.json": {
+    "codes": [
+      "non_positive_viewport"
+    ],
+    "outcome": "INVALID"
+  },
+  "unknown-clock-regression.json": {
+    "codes": [
+      "event_clock_regression"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-event-limit.json": {
+    "codes": [
+      "event_limit_exceeded"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-event-type.json": {
+    "codes": [
+      "unsupported_event_type"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-keyboard-decl-too-tall.json": {
+    "codes": [
+      "keyboard_height_out_of_range"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-keyboard-too-tall.json": {
+    "codes": [
+      "keyboard_height_out_of_range"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-mode.json": {
+    "codes": [
+      "unsupported_mode"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-pan-over-limit.json": {
+    "codes": [
+      "pan_limit_exceeded"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-scale-2.json": {
+    "codes": [
+      "unsupported_scale"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-template.json": {
+    "codes": [
+      "unsupported_layout_template"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "unknown-two-issues.json": {
+    "codes": [
+      "event_clock_regression",
+      "unsupported_scale"
+    ],
+    "outcome": "UNKNOWN"
+  },
+  "valid-chat-rv-open.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-default-limits.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-empty-events.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-empty-predicates.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-equal-timestamps.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-explicit-unit.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-fixed-cta-offsets.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-keyboard-height-equals-layout.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-max-events.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-other-seed.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-pan-at-max.json": {
+    "codes": [],
+    "outcome": "VALID"
+  },
+  "valid-search-top-anchor.json": {
+    "codes": [],
+    "outcome": "VALID"
+  }
+}

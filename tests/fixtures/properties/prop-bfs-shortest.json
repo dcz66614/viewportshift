@@ -1,0 +1,7 @@
+{
+  "description": "For random small scenarios (maxDepth 2): the BFS witness is a shortest firing sequence \u2014 brute-force enumeration finds no shorter firing sequence and the witness is first in alphabet order at its length.",
+  "kind": "bfs-shortest",
+  "property_id": "prop-bfs-shortest",
+  "sample_count": 30,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

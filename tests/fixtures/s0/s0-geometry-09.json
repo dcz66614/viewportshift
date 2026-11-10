@@ -1,0 +1,63 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    }
+  ],
+  "expected_status": "FAIL",
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    },
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    },
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 0
+    },
+    {
+      "field": "anchorDriftMagnitude",
+      "op": ">",
+      "threshold": 50000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "overlays-content",
+  "planted_error": {
+    "description": "Surface obscured by the keyboard overlay (keyboardObscuredArea > 0, visibleRatio < 1000).",
+    "kind": "keyboard-obscured"
+  },
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "S0-chat-oc-open",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

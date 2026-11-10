@@ -1,0 +1,60 @@
+{
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "description": "ViewportShift — deterministic mobile soft-keyboard viewport behaviour lab (P021). S0 skeleton only; no business logic yet.",
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "name": "viewportshift",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit && vite build && vite build --config vite.cli.config.ts",
+    "build:cli": "vite build --config vite.cli.config.ts",
+    "dev": "vite",
+    "env:check": "node scripts/env-check.mjs",
+    "oracle:diff:modes": "node scripts/oracle-diff-modes.mjs",
+    "s0:determinism": "node scripts/s0-determinism.mjs",
+    "s0:gate": "node scripts/s0-gate.mjs",
+    "s0:geometry": "node scripts/s0-geometry.mjs",
+    "s0:oracle": "node scripts/s0-oracle.mjs",
+    "s0:state-machine": "node scripts/s0-state-machine.mjs",
+    "test:modes": "node scripts/test-modes.mjs",
+    "test:events": "node scripts/test-events.mjs",
+    "test:event-order": "node scripts/test-event-order.mjs",
+    "oracle:diff:events": "node scripts/oracle-diff-events.mjs",
+    "test:schema": "node scripts/test-schema.mjs",
+    "test:validation": "node scripts/test-validation.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:geometry": "node scripts/test-geometry.mjs",
+    "oracle:diff:geometry": "node scripts/oracle-diff-geometry.mjs",
+    "test:bfs": "node scripts/test-bfs.mjs",
+    "test:bfs:determinism": "node scripts/test-bfs-determinism.mjs",
+    "test:ui": "node scripts/test-ui.mjs",
+    "test:export": "node scripts/test-export.mjs",
+    "test": "node scripts/test-all.mjs",
+    "test:golden": "node scripts/test-golden.mjs",
+    "test:property": "node scripts/test-property.mjs",
+    "test:oracle": "node scripts/test-oracle.mjs",
+    "test:mutation": "node scripts/test-mutation.mjs",
+    "test:coverage": "node scripts/test-coverage.mjs",
+    "oracle:diff:coverage": "node scripts/oracle-diff-coverage.mjs",
+    "test:e2e": "node scripts/test-e2e.mjs",
+    "test:offline": "node scripts/test-offline.mjs",
+    "test:performance": "node scripts/test-performance.mjs",
+    "test:perf": "node scripts/test-perf.mjs",
+    "test:stress": "node scripts/test-stress.mjs",
+    "release:verify": "node scripts/release-verify.mjs",
+    "release:freeze": "node scripts/release-freeze.mjs"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

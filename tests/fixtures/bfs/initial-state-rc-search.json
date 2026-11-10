@@ -1,0 +1,52 @@
+{
+  "events": [],
+  "expected": {
+    "failedPredicates": [
+      "bottomGap"
+    ],
+    "firstFailedStepIndex": -1,
+    "limitReached": null,
+    "nodesEnqueued": 1,
+    "nodesVisited": 1,
+    "reason": null,
+    "status": "FAIL",
+    "witness": [],
+    "witnessLength": 0
+  },
+  "failure_predicates": [
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 800000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "top",
+    "heightMilli": 48000,
+    "offsetMilli": 16000,
+    "template": "search-bar",
+    "widthMilli": 358000,
+    "xMilli": 16000
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-content",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "initial-state-rc-search",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

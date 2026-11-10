@@ -1,0 +1,57 @@
+{
+  "events": [],
+  "expected": {
+    "failedPredicates": [
+      "bottomGap"
+    ],
+    "limitReached": null,
+    "nodesEnqueued": 2,
+    "nodesVisited": 1,
+    "reason": null,
+    "status": "FAIL",
+    "witness": [
+      {
+        "atMs": 100,
+        "id": "bfs-1-open-300000",
+        "keyboardHeight": 300000,
+        "type": "KEYBOARD_OPEN"
+      }
+    ]
+  },
+  "failure_predicates": [
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 500000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "top",
+    "heightMilli": 48000,
+    "offsetMilli": 12000,
+    "template": "search-bar",
+    "widthMilli": 358000,
+    "xMilli": 16000
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-content",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "bfs-1step-rc-search",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

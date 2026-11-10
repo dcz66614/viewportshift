@@ -1,0 +1,10 @@
+{
+  "description": "computeGeometry: visibleArea no longer deducts the keyboard-obscured part (double-counts the overlap).",
+  "detected_by": [
+    "golden-oc-chat-open"
+  ],
+  "find": "      keyboardObscuredArea = intersectionArea(surface, visibleKeyboard);\n    }\n  }\n  const visibleArea = visibleIntersection - keyboardObscuredArea;",
+  "mutation_id": "M06-visible-area-no-deduction",
+  "replace": "      keyboardObscuredArea = intersectionArea(surface, visibleKeyboard);\n    }\n  }\n  const visibleArea = visibleIntersection;",
+  "target_file": "src/domain/geometry.ts"
+}

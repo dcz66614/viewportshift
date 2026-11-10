@@ -1,0 +1,77 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 150,
+      "dx": 0,
+      "dy": 100000,
+      "id": "e2",
+      "type": "SCROLL"
+    },
+    {
+      "atMs": 200,
+      "id": "e3",
+      "type": "KEYBOARD_CLOSE"
+    },
+    {
+      "atMs": 250,
+      "id": "e4",
+      "type": "VIEWPORT_SETTLED"
+    }
+  ],
+  "expected_status": "PASS",
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    },
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    },
+    {
+      "field": "bottomGap",
+      "op": "<",
+      "threshold": 0
+    },
+    {
+      "field": "anchorDriftMagnitude",
+      "op": ">",
+      "threshold": 50000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 48000,
+    "offsetMilli": 16000,
+    "template": "fixed-cta",
+    "widthMilli": 358000,
+    "xMilli": 16000
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "planted_error": null,
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "S0-cta-rv-open-scroll-close",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

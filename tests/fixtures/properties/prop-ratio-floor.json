@@ -1,0 +1,7 @@
+{
+  "description": "visibleRatio == floor(visibleArea * 1000 / surfaceArea) and 0 <= visibleRatio <= 1000 on every step.",
+  "kind": "ratio-floor",
+  "property_id": "prop-ratio-floor",
+  "sample_count": 200,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

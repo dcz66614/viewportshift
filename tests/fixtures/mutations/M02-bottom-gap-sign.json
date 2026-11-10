@@ -1,0 +1,10 @@
+{
+  "description": "computeGeometry: bottomGap sign flipped (surface bottom minus visual bottom).",
+  "detected_by": [
+    "golden-rv-chat-open"
+  ],
+  "find": "  const bottomGap =\n    state.visualOffsetTop + state.visualHeight - (surface.y + surface.height);",
+  "mutation_id": "M02-bottom-gap-sign",
+  "replace": "  const bottomGap =\n    (surface.y + surface.height) - (state.visualOffsetTop + state.visualHeight);",
+  "target_file": "src/domain/geometry.ts"
+}

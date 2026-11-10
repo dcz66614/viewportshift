@@ -1,0 +1,57 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 200,
+      "dx": 0,
+      "dy": 500001,
+      "id": "e2",
+      "type": "DELAYED_VISUAL_PAN"
+    }
+  ],
+  "expected": {
+    "clampBounds": [],
+    "clampEvidence": [],
+    "failedEventId": null,
+    "failedStepIndex": null,
+    "final": null,
+    "panReports": [],
+    "reason": "pan_limit_exceeded",
+    "scrollReports": [],
+    "status": "UNKNOWN",
+    "stepContractChecks": [],
+    "stepEventChecks": []
+  },
+  "failure_predicates": [],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T006-pan-limit",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

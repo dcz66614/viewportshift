@@ -1,0 +1,154 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 200,
+      "dx": 0,
+      "dy": -50000,
+      "id": "e2",
+      "type": "DELAYED_VISUAL_PAN"
+    }
+  ],
+  "expected": {
+    "clampBounds": [
+      null,
+      {
+        "maxLeft": 0,
+        "maxTop": 300000
+      }
+    ],
+    "clampEvidence": [
+      {
+        "appliedDx": 0,
+        "appliedDy": 0,
+        "clampReason": "dy clamped to [0, 300000]",
+        "clamped": true,
+        "eventId": "e2",
+        "maxLeft": 0,
+        "maxTop": 300000,
+        "requestedDx": 0,
+        "requestedDy": -50000,
+        "scenarioId": "T006-rv-open-pan-negative",
+        "stepIndex": 1
+      }
+    ],
+    "failedEventId": null,
+    "failedStepIndex": null,
+    "final": {
+      "eventClock": 200,
+      "keyboardRect": {
+        "height": 300000,
+        "width": 390000,
+        "x": 0,
+        "y": 544000
+      },
+      "keyboardVisible": true,
+      "layoutHeight": 844000,
+      "layoutWidth": 390000,
+      "mode": "resizes-visual",
+      "pendingPan": {
+        "dx": 0,
+        "dy": 0
+      },
+      "scrollX": 0,
+      "scrollY": 0,
+      "visualHeight": 544000,
+      "visualOffsetLeft": 0,
+      "visualOffsetTop": 0,
+      "visualWidth": 390000
+    },
+    "panReports": [
+      null,
+      {
+        "appliedDx": 0,
+        "appliedDy": 0,
+        "clampReason": "dy clamped to [0, 300000]",
+        "clamped": true,
+        "requestedDx": 0,
+        "requestedDy": -50000
+      }
+    ],
+    "reason": null,
+    "scrollReports": [
+      null,
+      null
+    ],
+    "status": "OK",
+    "stepContractChecks": [
+      [
+        "clock_advanced",
+        "mode_unchanged",
+        "rv_layout_unchanged",
+        "rv_visual_width_unchanged",
+        "rv_visual_height_shrunk",
+        "rv_keyboard_rect",
+        "rv_keyboard_visible",
+        "rv_offsets_unchanged",
+        "rv_scroll_unchanged",
+        "rv_pending_pan_unchanged"
+      ],
+      [
+        "clock_advanced",
+        "mode_unchanged",
+        "pan_offsets_clamped",
+        "pan_pending_recorded",
+        "pan_layout_unchanged",
+        "pan_visual_size_unchanged",
+        "pan_keyboard_unchanged",
+        "pan_scroll_unchanged"
+      ]
+    ],
+    "stepEventChecks": [
+      [
+        "ev_clock_advanced",
+        "ev_clock_monotonic",
+        "ev_mode_unchanged",
+        "ev_open_visible",
+        "ev_open_pending_unchanged",
+        "ev_open_scroll_unchanged"
+      ],
+      [
+        "ev_clock_advanced",
+        "ev_clock_monotonic",
+        "ev_mode_unchanged",
+        "ev_pan_within_bounds",
+        "ev_pan_applied_matches_report",
+        "ev_pan_pending_is_applied",
+        "ev_pan_visual_size_unchanged",
+        "ev_pan_scroll_unchanged"
+      ]
+    ]
+  },
+  "failure_predicates": [],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T006-rv-open-pan-negative",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

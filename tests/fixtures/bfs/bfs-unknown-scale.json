@@ -1,0 +1,48 @@
+{
+  "events": [],
+  "expected": {
+    "failedPredicates": [],
+    "limitReached": null,
+    "nodesEnqueued": 0,
+    "nodesVisited": 0,
+    "reason": "unsupported_scale",
+    "status": "UNKNOWN",
+    "witness": null
+  },
+  "failure_predicates": [
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "overlays-content",
+  "profile": {
+    "scale": 2
+  },
+  "scenario_id": "bfs-unknown-scale",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

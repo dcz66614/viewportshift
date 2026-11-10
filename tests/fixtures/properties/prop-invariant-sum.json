@@ -1,0 +1,7 @@
+{
+  "description": "For every replayed step of every generated scenario: visibleArea + viewportClippedArea + keyboardObscuredArea == surfaceArea (exact integer invariant, PROJECT_BOOK SS4.4).",
+  "kind": "invariant-sum",
+  "property_id": "prop-invariant-sum",
+  "sample_count": 200,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

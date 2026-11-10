@@ -1,0 +1,69 @@
+{
+  "events": [],
+  "expected": {
+    "failedPredicates": [
+      "bottomGap"
+    ],
+    "limitReached": null,
+    "nodesEnqueued": 63,
+    "nodesVisited": 17,
+    "reason": null,
+    "status": "FAIL",
+    "witness": [
+      {
+        "atMs": 100,
+        "id": "bfs-1-open-300000",
+        "keyboardHeight": 300000,
+        "type": "KEYBOARD_OPEN"
+      },
+      {
+        "atMs": 200,
+        "dx": 0,
+        "dy": 300000,
+        "id": "bfs-2-pan-0-300000",
+        "type": "DELAYED_VISUAL_PAN"
+      },
+      {
+        "atMs": 300,
+        "id": "bfs-3-close",
+        "type": "KEYBOARD_CLOSE"
+      }
+    ]
+  },
+  "failure_predicates": [
+    {
+      "field": "bottomGap",
+      "op": ">",
+      "threshold": 200000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "bfs-3step-rv-chat",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

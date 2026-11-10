@@ -1,0 +1,10 @@
+{
+  "description": "computeGeometry: keyboard obscuration uses |S n K| instead of the triple intersection |S n V n K| (counts keyboard area outside the visual viewport as obscured).",
+  "detected_by": [
+    "golden-rv-chat-pan100"
+  ],
+  "find": "      keyboardObscuredArea = intersectionArea(surface, visibleKeyboard);",
+  "mutation_id": "M01-triple-to-pairwise",
+  "replace": "      keyboardObscuredArea = intersectionArea(surface, keyboardRect);",
+  "target_file": "src/domain/geometry.ts"
+}

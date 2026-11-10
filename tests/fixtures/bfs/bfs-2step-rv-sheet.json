@@ -1,0 +1,64 @@
+{
+  "events": [],
+  "expected": {
+    "failedPredicates": [
+      "keyboardObscuredArea"
+    ],
+    "limitReached": null,
+    "nodesEnqueued": 11,
+    "nodesVisited": 2,
+    "reason": null,
+    "status": "FAIL",
+    "witness": [
+      {
+        "atMs": 100,
+        "id": "bfs-1-open-150000",
+        "keyboardHeight": 150000,
+        "type": "KEYBOARD_OPEN"
+      },
+      {
+        "atMs": 200,
+        "dx": 0,
+        "dy": 100000,
+        "id": "bfs-2-pan-0-100000",
+        "type": "DELAYED_VISUAL_PAN"
+      }
+    ]
+  },
+  "failure_predicates": [
+    {
+      "field": "keyboardObscuredArea",
+      "op": ">",
+      "threshold": 0
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 300000,
+    "offsetMilli": 0,
+    "template": "bottom-sheet",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxDepth": 3,
+    "maxEvents": 8,
+    "maxNodes": 10000,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "bfs-2step-rv-sheet",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "unit": "css-px-milli",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

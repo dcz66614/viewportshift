@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 150,
+      "dx": 0,
+      "dy": 100000,
+      "id": "e2",
+      "type": "SCROLL"
+    },
+    {
+      "atMs": 200,
+      "dx": 0,
+      "dy": 10000,
+      "id": "e3",
+      "type": "DELAYED_VISUAL_PAN"
+    },
+    {
+      "atMs": 300,
+      "id": "e4",
+      "type": "VIEWPORT_SETTLED"
+    },
+    {
+      "atMs": 400,
+      "id": "e5",
+      "type": "KEYBOARD_CLOSE"
+    },
+    {
+      "atMs": 500,
+      "id": "e6",
+      "type": "VIEWPORT_SETTLED"
+    },
+    {
+      "atMs": 600,
+      "id": "e7",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 700,
+      "id": "e8",
+      "type": "KEYBOARD_CLOSE"
+    },
+    {
+      "atMs": 800,
+      "id": "e9",
+      "type": "VIEWPORT_SETTLED"
+    }
+  ],
+  "failure_predicates": [
+    {
+      "field": "visibleRatio",
+      "op": "<",
+      "threshold": 1000
+    }
+  ],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T004-unknown-event-limit",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "description": "BFS depth bound uses > instead of >= (searches one level deeper than the frozen maxDepth).",
+  "detected_by": [
+    "bfs-bounded-rc-sheet"
+  ],
+  "find": "    if (node.depth >= limits.maxDepth) continue;",
+  "mutation_id": "M08-bfs-depth-off-by-one",
+  "replace": "    if (node.depth > limits.maxDepth) continue;",
+  "target_file": "src/domain/bfs.ts"
+}

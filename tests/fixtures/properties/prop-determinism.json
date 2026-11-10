@@ -1,0 +1,7 @@
+{
+  "description": "Evaluating and searching the same scenario twice (fresh loads) yields byte-identical canonical JSON.",
+  "kind": "determinism",
+  "property_id": "prop-determinism",
+  "sample_count": 60,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

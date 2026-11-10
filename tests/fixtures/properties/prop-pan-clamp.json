@@ -1,0 +1,7 @@
+{
+  "description": "After any DELAYED_VISUAL_PAN, visualOffsetTop stays in [0, max(0, layoutHeight - visualHeight-before-pan)] and visualOffsetLeft stays 0.",
+  "kind": "pan-clamp",
+  "property_id": "prop-pan-clamp",
+  "sample_count": 120,
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10"
+}

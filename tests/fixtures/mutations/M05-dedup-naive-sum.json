@@ -1,0 +1,10 @@
+{
+  "description": "BFS dedup key replaced by a naive numeric-field sum (merges states with different observable geometry).",
+  "detected_by": [
+    "bfs-dedup-rv-sheet"
+  ],
+  "find": "  return canonicalStateJson(state);",
+  "mutation_id": "M05-dedup-naive-sum",
+  "replace": "  return String(\n    state.layoutWidth + state.layoutHeight + state.visualOffsetLeft +\n      state.visualOffsetTop + state.visualWidth + state.visualHeight +\n      state.keyboardRect.height + state.scrollX + state.scrollY +\n      state.eventClock,\n  );",
+  "target_file": "src/domain/bfs.ts"
+}

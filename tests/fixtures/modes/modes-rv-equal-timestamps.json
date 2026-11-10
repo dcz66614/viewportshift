@@ -1,0 +1,96 @@
+{
+  "events": [
+    {
+      "atMs": 100,
+      "id": "e1",
+      "keyboardHeight": 300000,
+      "type": "KEYBOARD_OPEN"
+    },
+    {
+      "atMs": 100,
+      "dx": 0,
+      "dy": 10000,
+      "id": "e2",
+      "type": "SCROLL"
+    }
+  ],
+  "expected": {
+    "failedEventId": null,
+    "failedStepIndex": null,
+    "final": {
+      "eventClock": 100,
+      "keyboardRect": {
+        "height": 300000,
+        "width": 390000,
+        "x": 0,
+        "y": 544000
+      },
+      "keyboardVisible": true,
+      "layoutHeight": 844000,
+      "layoutWidth": 390000,
+      "mode": "resizes-visual",
+      "pendingPan": {
+        "dx": 0,
+        "dy": 0
+      },
+      "scrollX": 0,
+      "scrollY": 10000,
+      "visualHeight": 544000,
+      "visualOffsetLeft": 0,
+      "visualOffsetTop": 0,
+      "visualWidth": 390000
+    },
+    "reason": null,
+    "status": "OK",
+    "stepChecks": [
+      [
+        "clock_advanced",
+        "mode_unchanged",
+        "rv_layout_unchanged",
+        "rv_visual_width_unchanged",
+        "rv_visual_height_shrunk",
+        "rv_keyboard_rect",
+        "rv_keyboard_visible",
+        "rv_offsets_unchanged",
+        "rv_scroll_unchanged",
+        "rv_pending_pan_unchanged"
+      ],
+      [
+        "clock_advanced",
+        "mode_unchanged",
+        "scroll_offsets",
+        "scroll_visual_untouched",
+        "scroll_layout_unchanged",
+        "scroll_keyboard_unchanged",
+        "scroll_pending_pan_unchanged"
+      ]
+    ]
+  },
+  "failure_predicates": [],
+  "keyboard": {
+    "heightMilli": 300000
+  },
+  "layout": {
+    "anchor": "bottom",
+    "heightMilli": 56000,
+    "offsetMilli": 0,
+    "template": "chat-input",
+    "widthMilli": 390000,
+    "xMilli": 0
+  },
+  "limits": {
+    "maxEvents": 8,
+    "maxPanMilli": 500000,
+    "scale": 1
+  },
+  "mode": "resizes-visual",
+  "profile": {
+    "scale": 1
+  },
+  "scenario_id": "T005-rv-equal-timestamps",
+  "seed": "P021-VIEWPORTSHIFT-S0-2026-11-10",
+  "viewport": {
+    "layoutHeight": 844000,
+    "layoutWidth": 390000
+  }
+}

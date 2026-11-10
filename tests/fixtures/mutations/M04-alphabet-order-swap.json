@@ -1,0 +1,11 @@
+{
+  "description": "BFS alphabet: KEYBOARD_OPEN 300 explored before 150 (breaks the frozen tie-break).",
+  "detected_by": [
+    "golden-rv-chat-kb0",
+    "bfs-1step-oc-chat"
+  ],
+  "find": "  { type: \"KEYBOARD_OPEN\", keyboardHeight: 150000 },\n  { type: \"KEYBOARD_OPEN\", keyboardHeight: 300000 },",
+  "mutation_id": "M04-alphabet-order-swap",
+  "replace": "  { type: \"KEYBOARD_OPEN\", keyboardHeight: 300000 },\n  { type: \"KEYBOARD_OPEN\", keyboardHeight: 150000 },",
+  "target_file": "src/domain/bfs.ts"
+}
